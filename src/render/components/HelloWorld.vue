@@ -1,70 +1,49 @@
 <template>
-  <h1>{{ msg }}</h1>
+    <h1>{{ title }}</h1>
 
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a
-      href="https://marketplace.visualstudio.com/items?itemName=octref.vetur"
-      target="_blank"
-    >
-      Vetur
-    </a>
-    or
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    (if using
-    <code>&lt;script setup&gt;</code>)
-  </p>
-
-  <p>See <code>README.md</code> for more information.</p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Docs
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-  </p>
-
-  <button @click="count++">count is: {{ count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+    <textarea cols="60" rows="10" v-model="log" disabled />
+    <div style="margin-top: 20px">
+        <input type="text" v-model="msg" placeholder="send msg to main process" />
+        <button style="margin-left: 20px" @click="sendMsg">Send</button>
+    </div>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent } from 'vue'
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true
+<script setup lang="ts">
+import { EVENTS } from "@common/events";
+import { sendMsgToMainProcess } from "@render/api";
+import { useIpc } from "@render/plugins/ipc";
+import { ref, onBeforeUnmount } from "vue";
+
+const props = defineProps({
+    title: {
+        type: String,
+        default: "Vite + Electron & Esbuild"
     }
-  },
-  setup: () => {
-    const count = ref(0)
-    return { count }
-  }
-})
+});
+
+const log = ref("");
+const msg = ref("");
+
+const sendMsg = async () => {
+    try {
+        log.value += `[render]: ${msg.value} \n`;
+        const { data } = await sendMsgToMainProcess(msg.value);
+        log.value += `[main]: ${data}  \n`;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+const ipc = useIpc();
+
+ipc.on(EVENTS.REPLY_MSG, (msg: string) => {
+    log.value += `[main]: ${msg}  \n`;
+});
+
+onBeforeUnmount(() => {
+    ipc.off(EVENTS.REPLY_MSG)
+});
 </script>
 
-<style scoped>
-a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
+<style>
 </style>

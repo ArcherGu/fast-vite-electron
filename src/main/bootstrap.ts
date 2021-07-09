@@ -52,18 +52,18 @@ export async function bootstrap(webContents: WebContents) {
                 const func = controller[funcName];
 
                 if (returnType.name === 'Promise') {
-                    controller[funcName] = (async (...args: any[]) => {
-                        const result = await func(...args);
+                    controller[funcName] = async (...args: any[]) => {
+                        const result = await func.call(controller, ...args);
                         webContents.send(event, result);
                         return result;
-                    }).bind(controller);
+                    };
                 }
                 else {
-                    controller[funcName] = ((...args: any[]) => {
-                        const result = func(...args);
+                    controller[funcName] = (...args: any[]) => {
+                        const result = func.call(controller, ...args);
                         webContents.send(event, result);
                         return result;
-                    }).bind(controller);
+                    };
                 }
             }
         });
