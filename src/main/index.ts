@@ -1,12 +1,9 @@
 import 'reflect-metadata';
 import { join } from 'path';
 import { app, BrowserWindow } from 'electron';
-import dotenv from 'dotenv';
 import { bootstrap, destroy } from './bootstrap';
 
 const isDev = !app.isPackaged;
-
-dotenv.config({ path: join(__dirname, '../../.env') });
 
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 

@@ -2,6 +2,14 @@ import { join } from 'path';
 import { esbuildDecorators } from "@anatine/esbuild-decorators";
 import { builtinModules } from "module";
 import { BuildOptions } from "esbuild";
+import dotenv from 'dotenv';
+dotenv.config({ path: join(__dirname, '../.env') });
+
+const define = {};
+for (const k in process.env) {
+    if (['ProgramFiles(x86)', 'CommonProgramFiles(x86)'].includes(k)) continue;
+    define[`process.env.${k}`] = JSON.stringify(process.env[k]);
+}
 
 export function createOptions(): BuildOptions {
     return {
@@ -11,6 +19,7 @@ export function createOptions(): BuildOptions {
         format: 'cjs',
         bundle: true,
         platform: 'node',
+        define,
         plugins: [
             esbuildDecorators({
                 tsconfig: join(__dirname, '../tsconfig.json')
