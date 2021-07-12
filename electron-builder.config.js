@@ -3,15 +3,17 @@
  * @see https://www.electron.build/configuration/configuration
  */
 const config = {
+    directories: {
+        output: 'dist/electron'
+    },
     npmRebuild: false,
     buildDependenciesFromSource: true,
     electronDownload: {
         mirror: 'https://npm.taobao.org/mirrors/electron/'
     },
     files: [
-        "node_modules",
-        "dist/main/**",
-        "dist/render/**"
+        "dist/main/**/*",
+        "dist/render/**/*"
     ],
     nsis: {
         oneClick: false,

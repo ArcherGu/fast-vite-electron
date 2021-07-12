@@ -5,12 +5,12 @@
     "main": "dist/main/index.js",
     "scripts": {
         "dev": "npm run dev:all",
-        "dev:all": "concurrently -n=vite,ele -c=#646cff,#74b1be \"npm run dev:vite\" \"npm run dev:ele\"",
+        "dev:all": "concurrently -n=vite,main -c=#646cff,#74b1be \"npm run dev:vite\" \"npm run dev:main\"",
         "dev:vite": "vite",
-        "dev:ele": "node -r ts-node/register script/build --env=development --watch",
+        "dev:main": "node -r ts-node/register script/build.main --env=development --watch",
         "build:vite": "vite build",
-        "build:ele": "node -r ts-node/register script/build --env=production",
-        "build": "npm run build:vite && npm run build:ele && electron-builder --config electron-builder.config.js",
+        "build:main": "node -r ts-node/register script/build.main --env=production",
+        "build": "npm run build:vite && npm run build:main && electron-builder --config electron-builder.config.js",
         "postinstall": "electron-builder install-app-deps",
         "postuninstall": "electron-builder install-app-deps"
     },

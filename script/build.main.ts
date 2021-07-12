@@ -13,8 +13,8 @@ dotenv.config({ path: join(__dirname, '../.env') });
 
 const argv = minimist(process.argv.slice(2));
 const options = createOptions();
-const TAG = '[script/build.ts]';
-const spinner = ora(`${TAG} Electron build...`);
+const TAG = '[script/build.main.ts]';
+const spinner = ora(`${TAG} Main Process Building...`);
 
 const runApp = () => {
     return spawn(electron as any, [join(__dirname, `../${main}`)], { stdio: 'inherit' });
@@ -55,9 +55,9 @@ if (argv.watch) {
 } else {
     spinner.start();
     build(options).then(() => {
-        console.log(TAG, chalk.green('Electron Build Succeeded.'));
+        console.log(TAG, chalk.green('Main Process Build Succeeded.'));
     }).catch(error => {
-        console.log(`\n${TAG} ${chalk.red('Electron Build Failed')}\n`, error, '\n');
+        console.log(`\n${TAG} ${chalk.red('Main Process Build Failed')}\n`, error, '\n');
     }).finally(() => {
         spinner.stop();
     });
