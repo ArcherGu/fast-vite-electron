@@ -20,9 +20,10 @@ export function createOptions(): BuildOptions {
         bundle: true,
         platform: 'node',
         define,
+        tsconfig: join(__dirname, '../tsconfig.main.json'),
         plugins: [
             esbuildDecorators({
-                tsconfig: join(__dirname, '../tsconfig.json')
+                tsconfig: join(__dirname, '../tsconfig.main.json')
             })
         ],
         external: [
