@@ -12,7 +12,7 @@
 import { EVENTS } from "@common/events";
 import { sendMsgToMainProcess } from "@render/api";
 import { useIpc } from "@render/plugins/ipc";
-import { ref, onBeforeUnmount } from "vue";
+import { ref } from "vue";
 
 const props = defineProps({
     title: {
@@ -38,10 +38,6 @@ const ipc = useIpc();
 
 ipc.on(EVENTS.REPLY_MSG, (msg: string) => {
     log.value += `[main]: ${msg}  \n`;
-});
-
-onBeforeUnmount(() => {
-    ipc.off(EVENTS.REPLY_MSG)
 });
 </script>
 
