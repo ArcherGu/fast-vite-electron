@@ -15,3 +15,4 @@ Click the [Use this template](https://github.com/ArcherGu/fast-vite-electron/gen
 ## Relative
 
 [极速 DX Vite + Electron + esbuild](https://archergu.me/posts/vite-electron-esbuild)
+[用装饰器给 Electron 提供一个基础 API 框架](https://archergu.me/posts/electron-decorators)
