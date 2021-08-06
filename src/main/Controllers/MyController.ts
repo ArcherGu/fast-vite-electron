@@ -11,7 +11,7 @@ export class MyController {
     }
 
     @IpcOn(EVENTS.REPLY_MSG)
-    public async replyMsg(msg: string) {
+    public replyMsg(msg: string) {
         return `${this.myService.getDelayTime()} seconds later, the main process replies to your message: ${msg}`;
     }
 

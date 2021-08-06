@@ -48,23 +48,13 @@ export async function bootstrap(webContents: WebContents) {
             else {
                 event = Reflect.getMetadata('ipc-on', proto, funcName);
                 if (!event) return;
-                const returnType = Reflect.getMetadata('design:returntype', ControllerClass.prototype, funcName);
-                const func = controller[funcName];
 
-                if (returnType.name === 'Promise') {
-                    controller[funcName] = async (...args: any[]) => {
-                        const result = await func.call(controller, ...args);
-                        webContents.send(event, result);
-                        return result;
-                    };
-                }
-                else {
-                    controller[funcName] = (...args: any[]) => {
-                        const result = func.call(controller, ...args);
-                        webContents.send(event, result);
-                        return result;
-                    };
-                }
+                const func = controller[funcName];
+                controller[funcName] = async (...args: any[]) => {
+                    const result = await func.call(controller, ...args);
+                    webContents.send(event, result);
+                    return result;
+                };
             }
         });
     }
