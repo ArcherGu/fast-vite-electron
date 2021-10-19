@@ -720,6 +720,11 @@ builder-util@22.13.1:
     stat-mode "^1.0.0"
     temp-file "^3.4.0"
 
+bytenode@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/bytenode/-/bytenode-1.3.3.tgz#cec8ef591647baa9ba6e8059c29625f95372fcc3"
+  integrity sha512-N/d5zwUSsl7WbwY3xVmh8TzDjW4PyVxbb0RQdwc80PKs97a99WVfO+k/dfdG49Xr4NQyab8s6lQJd4tdUo7X1Q==
+
 cacheable-request@^6.0.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-6.1.0.tgz#20ffb8bd162ba4be11e9567d823db651052ca912"
@@ -2502,7 +2507,7 @@ restore-cursor@^3.1.0:
     onetime "^5.1.0"
     signal-exit "^3.0.2"
 
-rimraf@^3.0.0:
+rimraf@^3.0.0, rimraf@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
   integrity sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==
