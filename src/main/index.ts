@@ -15,7 +15,6 @@ async function createWindow() {
             webPreferences: {
                 nodeIntegration: true,
                 webSecurity: false,
-                enableRemoteModule: true,
                 contextIsolation: false,
             },
             autoHideMenuBar: isDev ? false : true,
