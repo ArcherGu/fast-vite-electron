@@ -16,8 +16,9 @@ async function createWindow() {
                 nodeIntegration: true,
                 webSecurity: false,
                 contextIsolation: false,
+                devTools: isDev
             },
-            autoHideMenuBar: isDev ? false : true,
+            autoHideMenuBar: !isDev,
         });
 
         win.maximize();
@@ -32,6 +33,9 @@ async function createWindow() {
 
         if (isDev) {
             win.webContents.openDevTools();
+        }
+        else {
+            win.removeMenu();
         }
 
         win.on('closed', () => {
