@@ -26,7 +26,7 @@ async function createWindow() {
         await bootstrap(win.webContents);
 
         const URL = isDev
-            ? import.meta.env.DEV_SERVER_URL as string
+            ? process.env.DEV_SERVER_URL
             : `file://${join(app.getAppPath(), 'dist/render/index.html')}`;
 
         win.loadURL(URL);

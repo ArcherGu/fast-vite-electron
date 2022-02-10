@@ -5,7 +5,7 @@ import { ResolvedViteElectronBuilderOptions } from './types';
 export function createEsbuildOptions(options: ResolvedViteElectronBuilderOptions): BuildOptions {
     const define = Object.entries(options.env).reduce((preVal, [key, value]) => ({
         ...preVal,
-        [`import.meta.env.${key}`]: JSON.stringify(value)
+        [`process.env.${key}`]: JSON.stringify(value)
     }), {})
 
     const { entryFile, mainFile, tsconfig, external } = options;
