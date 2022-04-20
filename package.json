@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "rimraf dist && vite",
         "build": "rimraf dist && vite build",
+        "test:main": "vitest run --passWithNoTests",
         "postinstall": "electron-builder install-app-deps",
         "postuninstall": "electron-builder install-app-deps"
     },

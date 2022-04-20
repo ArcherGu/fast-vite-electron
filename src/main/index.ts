@@ -1,52 +1,8 @@
 import 'reflect-metadata';
-import { join } from 'path';
-import { app, BrowserWindow } from 'electron';
-import { bootstrap, destroy } from './bootstrap';
-
-const isDev = !app.isPackaged;
+import { app } from 'electron';
+import { createWindow, restoreOrCreateWindow } from './mainWindow';
 
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
-
-async function createWindow() {
-    try {
-        const win = new BrowserWindow({
-            width: 1000,
-            height: 800,
-            webPreferences: {
-                nodeIntegration: true,
-                webSecurity: false,
-                contextIsolation: false,
-                devTools: isDev
-            },
-            autoHideMenuBar: !isDev,
-        });
-
-        win.maximize();
-
-        await bootstrap(win.webContents);
-
-        const URL = isDev
-            ? process.env.DEV_SERVER_URL
-            : `file://${join(app.getAppPath(), 'dist/render/index.html')}`;
-
-        win.loadURL(URL);
-
-        if (isDev) {
-            win.webContents.openDevTools();
-        }
-        else {
-            win.removeMenu();
-        }
-
-        win.on('closed', () => {
-            destroy();
-            win.destroy();
-        });
-    } catch (error) {
-        console.log(error);
-        app.quit();
-    }
-}
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
@@ -54,15 +10,23 @@ app.on('window-all-closed', () => {
     }
 });
 
-app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) createWindow();
+app.on('activate', async () => {
+    try {
+        await restoreOrCreateWindow();
+    } catch (error) {
+        app.quit();
+    }
 });
 
 app.on('ready', async () => {
-    createWindow();
+    try {
+        await createWindow();
+    } catch (error) {
+        app.quit();
+    }
 });
 
-if (isDev) {
+if (!app.isPackaged) {
     if (process.platform === 'win32') {
         process.on('message', (data) => {
             if (data === 'graceful-exit') {

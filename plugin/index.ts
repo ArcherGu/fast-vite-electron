@@ -6,9 +6,13 @@ import { ResolvedViteElectronBuilderOptions, ViteElectronBuilderOptions } from '
 export function VitePluginElectronBuilder(userOptions: Partial<ViteElectronBuilderOptions> = {}): Plugin {
     let viteConfig: ResolvedConfig;
     let options: ResolvedViteElectronBuilderOptions;
+    let currentMode;
 
     return {
         name: 'vite-plugin-electron-builder',
+        config(_, { mode }) {
+            currentMode = mode;
+        },
         configResolved(config) {
             viteConfig = config;
             options = resolveOptions(userOptions, viteConfig);
@@ -22,6 +26,7 @@ export function VitePluginElectronBuilder(userOptions: Partial<ViteElectronBuild
             })
         },
         closeBundle: () => {
+            if (currentMode == 'test') return;
             handleBuild(options)
         }
     }
