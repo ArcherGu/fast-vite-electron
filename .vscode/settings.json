@@ -6,6 +6,7 @@
         "middlewares",
         "nsis",
         "outfile",
-        "postuninstall"
+        "postuninstall",
+        "vitest"
     ]
 }
