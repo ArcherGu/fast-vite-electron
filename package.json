@@ -6,7 +6,9 @@
     "scripts": {
         "dev": "rimraf dist && vite",
         "build": "rimraf dist && vite build",
-        "test:main": "vitest run --passWithNoTests",
+        "test": "npm run test:main && npm run test:render",
+        "test:render": "vitest run -r src/render --passWithNoTests",
+        "test:main": "vitest run -r src/main --passWithNoTests",
         "postinstall": "electron-builder install-app-deps",
         "postuninstall": "electron-builder install-app-deps"
     },
@@ -19,10 +21,12 @@
         "@anatine/esbuild-decorators": "^0.2.19",
         "@vitejs/plugin-vue": "^2.3.1",
         "@vue/compiler-sfc": "^3.2.33",
+        "@vue/test-utils": "^2.0.0-rc.20",
         "chalk": "^4.1.2",
         "electron": "^18.0.4",
         "electron-builder": "^23.0.3",
         "esbuild": "^0.14.36",
+        "happy-dom": "^2.55.0",
         "rimraf": "^3.0.2",
         "tslib": "^2.3.1",
         "typescript": "^4.6.3",

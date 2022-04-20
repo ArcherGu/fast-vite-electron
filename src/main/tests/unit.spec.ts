@@ -1,5 +1,5 @@
 import { beforeEach, expect, test, vi } from 'vitest';
-import { restoreOrCreateWindow } from "../src/main/mainWindow";
+import { restoreOrCreateWindow } from "../mainWindow";
 import { BrowserWindow } from 'electron';
 
 vi.mock('electron', () => {
@@ -25,7 +25,7 @@ vi.mock('electron', () => {
     };
 });
 
-vi.mock('../src/main/bootstrap', () => ({
+vi.mock('../bootstrap', () => ({
     bootstrap: vi.fn(),
     destroy: vi.fn()
 }))
