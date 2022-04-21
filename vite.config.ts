@@ -37,7 +37,9 @@ export default defineConfig({
         outDir: join(__dirname, 'dist/render'),
         emptyOutDir: true
     },
-    test: {
+    test: { // e2e tests
         include: ['./tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-    },
+        testTimeout: 30_000,
+        hookTimeout: 30_000,
+    }
 });
