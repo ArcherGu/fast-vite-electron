@@ -1,12 +1,12 @@
-import { Injectable } from "../decorators";
+import { Injectable } from '../decorators'
 
 @Injectable('MyService')
 export class MyService {
-    constructor() {
-        // do nothing
-    }
+  constructor() {
+    // do nothing
+  }
 
-    public getDelayTime(): number {
-        return 2;
-    }
+  public getDelayTime(): number {
+    return 2
+  }
 }

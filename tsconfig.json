@@ -28,7 +28,7 @@
             ],
             "@common/*": [
                 "src/common/*"
-            ],
+            ]
         }
     },
     "include": [
