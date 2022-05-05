@@ -16,6 +16,7 @@ const config = {
       rules: {
         'no-useless-call': 'off',
         'no-console': 'off',
+        '@typescript-eslint/consistent-type-imports': 'off',
       },
     },
   ],
