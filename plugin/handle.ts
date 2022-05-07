@@ -9,7 +9,7 @@ import type { ResolvedViteElectronBuilderOptions } from './types'
 
 function runMainProcess(mainFile: string) {
   return spawn(electron as any, [mainFile], { stdio: 'inherit' }).on('exit', () => {
-    console.error(chalk.yellow('Main Process Exited'))
+    console.info(chalk.yellow('Main Process Exited'))
     process.exit(0)
   })
 }
