@@ -6,7 +6,7 @@ import type { ResolvedViteElectronBuilderOptions, ViteElectronBuilderOptions } f
 export function VitePluginElectronBuilder(userOptions: Partial<ViteElectronBuilderOptions> = {}): Plugin {
   let viteConfig: ResolvedConfig
   let options: ResolvedViteElectronBuilderOptions
-  let currentMode
+  let currentMode: string
 
   return {
     name: 'vite-plugin-electron-builder',

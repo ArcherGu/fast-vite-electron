@@ -13,6 +13,7 @@ export function resolveOptions(options: Partial<ViteElectronBuilderOptions>, vit
 
   const {
     mainFile = join(root, 'dist/main/index.js'),
+    preloadFile = false,
     entryFile = join(root, 'src/main/index.ts'),
     tsconfig,
     electronBuilderConfig,
@@ -24,6 +25,7 @@ export function resolveOptions(options: Partial<ViteElectronBuilderOptions>, vit
   const resolvedViteElectronBuilderOptions: ResolvedViteElectronBuilderOptions = {
     root,
     mainFile,
+    preloadFile,
     entryFile,
     tsconfig,
     electronBuilderConfig,

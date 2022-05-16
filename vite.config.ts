@@ -13,6 +13,7 @@ export default defineConfig({
     vue(),
     VitePluginElectronBuilder({
       root: process.cwd(),
+      preloadFile: join(__dirname, 'src/preload/index.ts'),
       tsconfig: './tsconfig.main.json',
       electronBuilderConfig: './electron-builder.config.js',
       afterEsbuildBuild: async () => {

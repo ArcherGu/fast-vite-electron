@@ -9,9 +9,9 @@ export async function createWindow() {
     width: 1000,
     height: 800,
     webPreferences: {
-      nodeIntegration: true,
-      webSecurity: false,
-      contextIsolation: false,
+      nodeIntegration: false,
+      contextIsolation: true,
+      preload: join(__dirname, '../preload/index.js'),
       devTools: isDev,
     },
     autoHideMenuBar: !isDev,
