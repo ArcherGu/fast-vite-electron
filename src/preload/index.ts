@@ -3,8 +3,8 @@ import { contextBridge, ipcRenderer } from 'electron'
 contextBridge.exposeInMainWorld(
   'ipcRenderer',
   {
-    invoke: ipcRenderer.invoke,
-    on: ipcRenderer.on,
-    removeAllListeners: ipcRenderer.removeAllListeners,
+    invoke: ipcRenderer.invoke.bind(ipcRenderer),
+    on: ipcRenderer.on.bind(ipcRenderer),
+    removeAllListeners: ipcRenderer.removeAllListeners.bind(ipcRenderer),
   },
 )
