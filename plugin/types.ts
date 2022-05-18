@@ -5,6 +5,7 @@ export interface ViteElectronBuilderOptions {
   mainFile?: string
   preloadFile?: string | boolean
   entryFile?: string
+  outdir?: string
   tsconfig?: string
   external?: string[]
   electronBuilderConfig?: string | ElectronBuilderConfiguration

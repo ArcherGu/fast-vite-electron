@@ -1,12 +1,13 @@
 {
-    "cSpell.words": [
-        "anatine",
-        "bytenode",
-        "deine",
-        "middlewares",
-        "nsis",
-        "outfile",
-        "postuninstall",
-        "vitest"
-    ]
+  "cSpell.words": [
+    "anatine",
+    "bytenode",
+    "deine",
+    "middlewares",
+    "nsis",
+    "outdir",
+    "outfile",
+    "postuninstall",
+    "vitest"
+  ]
 }
