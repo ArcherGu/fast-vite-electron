@@ -6,7 +6,7 @@ const config = {
   directories: {
     output: 'dist/electron',
   },
-  publish: 'never',
+  publish: null,
   npmRebuild: false,
   buildDependenciesFromSource: true,
   electronDownload: {
