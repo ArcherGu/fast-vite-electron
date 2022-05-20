@@ -33,6 +33,7 @@
     "esbuild": "^0.14.39",
     "eslint": "^8.15.0",
     "happy-dom": "^3.2.2",
+    "kolorist": "^1.5.1",
     "lint-staged": "^12.4.1",
     "playwright": "^1.22.1",
     "pnpm": "^7.1.1",

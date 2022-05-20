@@ -13,6 +13,7 @@ specifiers:
   esbuild: ^0.14.39
   eslint: ^8.15.0
   happy-dom: ^3.2.2
+  kolorist: ^1.5.1
   lint-staged: ^12.4.1
   playwright: ^1.22.1
   pnpm: ^7.1.1
@@ -43,6 +44,7 @@ devDependencies:
   esbuild: 0.14.39
   eslint: 8.15.0
   happy-dom: 3.2.2
+  kolorist: 1.5.1
   lint-staged: 12.4.1
   playwright: 1.22.1
   pnpm: 7.1.1
@@ -3181,6 +3183,10 @@ packages:
     resolution: {integrity: sha512-9ykJ/46SN/9KPM/sichzQ7OvXyGDYKGTaDlKMGCAlg2UK8KRy4jb0d8sFc+0Tt0YYnThq8X2RZgCg74RPxgcVA==}
     dependencies:
       json-buffer: 3.0.0
+    dev: true
+
+  /kolorist/1.5.1:
+    resolution: {integrity: sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ==}
     dev: true
 
   /latest-version/5.1.0:
