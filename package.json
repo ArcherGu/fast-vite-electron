@@ -28,7 +28,7 @@
     "@vue/compiler-sfc": "3.2.37",
     "@vue/test-utils": "2.0.0",
     "chalk": "5.0.1",
-    "electron": "18.3.5",
+    "electron": "19.0.7",
     "electron-builder": "23.1.0",
     "esbuild": "0.14.48",
     "eslint": "8.19.0",
