@@ -1,6 +1,6 @@
 import { EVENTS } from '@common/events'
 import { Controller, IpcInvoke, IpcOn } from '../decorators'
-import { MyService } from '../Services/MyService'
+import type { MyService } from '../Services/MyService'
 
 @Controller()
 export class MyController {

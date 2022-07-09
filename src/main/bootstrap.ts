@@ -33,6 +33,7 @@ export async function bootstrap(webContents: WebContents) {
       if (event) {
         ipcMain.handle(event, async (e, ...args) => {
           try {
+            // eslint-disable-next-line no-useless-call
             const result = await controller[funcName].call(controller, ...args)
 
             return {
@@ -40,6 +41,7 @@ export async function bootstrap(webContents: WebContents) {
             }
           }
           catch (error) {
+            // eslint-disable-next-line no-console
             console.log(error)
             return {
               error,
