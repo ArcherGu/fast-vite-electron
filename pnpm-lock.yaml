@@ -15,7 +15,7 @@ specifiers:
   happy-dom: 6.0.2
   kolorist: 1.5.1
   lint-staged: 13.0.3
-  playwright: 1.23.1
+  playwright: 1.23.2
   pnpm: 7.5.0
   reflect-metadata: ^0.1.13
   rimraf: 3.0.2
@@ -46,7 +46,7 @@ devDependencies:
   happy-dom: 6.0.2
   kolorist: 1.5.1
   lint-staged: 13.0.3
-  playwright: 1.23.1
+  playwright: 1.23.2
   pnpm: 7.5.0
   rimraf: 3.0.2
   simple-git-hooks: 2.8.0
@@ -3860,19 +3860,19 @@ packages:
     dev: true
     optional: true
 
-  /playwright-core/1.23.1:
-    resolution: {integrity: sha512-9CXsE0gawph4KXl6oUaa0ehHRySZjHvly4TybcBXDvzK3N3o6L/eZ8Q6iVWUiMn0LLS5bRFxo1qEtOETlYJxjw==}
+  /playwright-core/1.23.2:
+    resolution: {integrity: sha512-UGbutIr0nBALDHWW/HcXfyK6ZdmefC99Moo4qyTr89VNIkYZuDrW8Sw554FyFUamcFSdKOgDPk6ECSkofGIZjQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
 
-  /playwright/1.23.1:
-    resolution: {integrity: sha512-+lgiy1JZMNPwpBp5tsUdjTGxuJ+lXZbtSKmMDc0/f1oVsNDXXA+r7zeC9Kzd+4jSHteoJJocargxVx2Mn1o2kw==}
+  /playwright/1.23.2:
+    resolution: {integrity: sha512-c7nyyuDRifGBUNb+/zZh4AjyQXQISVHZY2cpHCsSIWueZNtY7q6Qfv0hJbVdtJhWSGgcix0hmES30l5jlPmy5Q==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      playwright-core: 1.23.1
+      playwright-core: 1.23.2
     dev: true
 
   /plist/3.0.5:
