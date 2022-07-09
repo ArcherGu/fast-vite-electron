@@ -22,7 +22,7 @@ specifiers:
   simple-git-hooks: 2.8.0
   tslib: 2.4.0
   typescript: 4.7.4
-  vite: 2.9.13
+  vite: 2.9.14
   vitest: 0.17.1
   vue: ^3.2.33
   vue-tsc: 0.38.3
@@ -35,7 +35,7 @@ dependencies:
 devDependencies:
   '@anatine/esbuild-decorators': 0.2.19_esbuild@0.14.48
   '@antfu/eslint-config': 0.23.1_4x5o4skxv6sl53vpwefgt23khm
-  '@vitejs/plugin-vue': 2.3.3_vite@2.9.13+vue@3.2.33
+  '@vitejs/plugin-vue': 2.3.3_vite@2.9.14+vue@3.2.33
   '@vue/compiler-sfc': 3.2.37
   '@vue/test-utils': 2.0.2_vue@3.2.33
   chalk: 5.0.1
@@ -52,7 +52,7 @@ devDependencies:
   simple-git-hooks: 2.8.0
   tslib: 2.4.0
   typescript: 4.7.4
-  vite: 2.9.13
+  vite: 2.9.14
   vitest: 0.17.1_happy-dom@6.0.2
   vue-tsc: 0.38.3_typescript@4.7.4
 
@@ -592,14 +592,14 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/2.3.3_vite@2.9.13+vue@3.2.33:
+  /@vitejs/plugin-vue/2.3.3_vite@2.9.14+vue@3.2.33:
     resolution: {integrity: sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.9.13
+      vite: 2.9.14
       vue: 3.2.33
     dev: true
 
@@ -4760,8 +4760,8 @@ packages:
     dev: true
     optional: true
 
-  /vite/2.9.13:
-    resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==}
+  /vite/2.9.14:
+    resolution: {integrity: sha512-P/UCjSpSMcE54r4mPak55hWAZPlyfS369svib/gpmz8/01L822lMPOJ/RYW6tLCe1RPvMvOsJ17erf55bKp4Hw==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
@@ -4815,7 +4815,7 @@ packages:
       local-pkg: 0.4.1
       tinypool: 0.2.1
       tinyspy: 0.3.3
-      vite: 2.9.13
+      vite: 2.9.14
     transitivePeerDependencies:
       - less
       - sass
