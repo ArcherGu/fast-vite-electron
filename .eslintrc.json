@@ -6,6 +6,12 @@
       "rules": {
         "no-console": "off"
       }
+    },
+    {
+      "files": "src/main/**/*.ts",
+      "rules": {
+        "@typescript-eslint/consistent-type-imports": "off"
+      }
     }
   ]
 }
