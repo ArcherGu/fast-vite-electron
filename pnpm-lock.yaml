@@ -16,7 +16,7 @@ specifiers:
   kolorist: 1.5.1
   lint-staged: 13.0.3
   playwright: 1.24.0
-  pnpm: 7.5.2
+  pnpm: 7.6.0
   reflect-metadata: ^0.1.13
   rimraf: 3.0.2
   simple-git-hooks: 2.8.0
@@ -47,7 +47,7 @@ devDependencies:
   kolorist: 1.5.1
   lint-staged: 13.0.3
   playwright: 1.24.0
-  pnpm: 7.5.2
+  pnpm: 7.6.0
   rimraf: 3.0.2
   simple-git-hooks: 2.8.0
   tslib: 2.4.0
@@ -3917,8 +3917,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.5.2:
-    resolution: {integrity: sha512-tTLvMnu1zIAWrD87Q/Dgw0+d71Brhlm+aM62KkDr/EPNZyA7dBIsu7tS9pNfRSvwgVF7V1Dhc8jJLAsTNTXnDQ==}
+  /pnpm/7.6.0:
+    resolution: {integrity: sha512-pCFZ4OSM3M7JUHShnmk4Hlt9A8QDxLx+i+9kkK4g60YuYhhhD3oqBfWrHax0/XMDvr7GwK0fqFjA8iD8HlZ8Kw==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
