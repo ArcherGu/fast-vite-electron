@@ -30,7 +30,7 @@
     "chalk": "5.0.1",
     "electron": "19.0.10",
     "electron-builder": "23.1.0",
-    "esbuild": "0.14.50",
+    "esbuild": "0.14.51",
     "eslint": "8.20.0",
     "happy-dom": "6.0.4",
     "kolorist": "1.5.1",
