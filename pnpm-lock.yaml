@@ -9,7 +9,7 @@ specifiers:
   bytenode: ^1.3.6
   chalk: 5.0.1
   electron: 19.0.10
-  electron-builder: 23.1.0
+  electron-builder: 23.3.3
   esbuild: 0.14.51
   eslint: 8.20.0
   happy-dom: 6.0.4
@@ -40,7 +40,7 @@ devDependencies:
   '@vue/test-utils': 2.0.2_vue@3.2.33
   chalk: 5.0.1
   electron: 19.0.10
-  electron-builder: 23.1.0
+  electron-builder: 23.3.3
   esbuild: 0.14.51
   eslint: 8.20.0
   happy-dom: 6.0.4
@@ -895,8 +895,8 @@ packages:
     resolution: {integrity: sha512-xwdG0FJPQMe0M0UA4Tz0zEB8rBJTRA5a476ZawAqiBkMv16GRK5xpXThOjMaEOFnZ6zabejjG4J3da0SXG63KA==}
     dev: true
 
-  /app-builder-lib/23.1.0:
-    resolution: {integrity: sha512-aZpKjBBLzyxtr4Cmbyi3dl8uRO8SI2PG2MYEKYRZL6pl7IsKP2hJkCYzlD6NjLJlRIAZcFPFjFbJliO74DFf7w==}
+  /app-builder-lib/23.3.3:
+    resolution: {integrity: sha512-m0+M53+HYMzqKxwNQZT143K7WwXEGUy9LY31l8dJphXx2P/FQod615mVbxHyqbDCG4J5bHdWm21qZ0e2DVY6CQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@develar/schema-utils': 2.6.5
@@ -905,13 +905,13 @@ packages:
       7zip-bin: 5.1.1
       async-exit-hook: 2.0.1
       bluebird-lst: 1.0.9
-      builder-util: 23.0.9
-      builder-util-runtime: 9.0.2
+      builder-util: 23.3.3
+      builder-util-runtime: 9.0.3
       chromium-pickle-js: 0.2.0
       debug: 4.3.4
       ejs: 3.1.7
       electron-osx-sign: 0.6.0
-      electron-publish: 23.0.9
+      electron-publish: 23.3.3
       form-data: 4.0.0
       fs-extra: 10.1.0
       hosted-git-info: 4.1.0
@@ -1120,8 +1120,8 @@ packages:
     dev: true
     optional: true
 
-  /builder-util-runtime/9.0.2:
-    resolution: {integrity: sha512-xF55W/8mgfT6+sMbX0TeiJkTusA5GMOzckM4rajN4KirFcUIuLTH8oEaTYmM86YwVCZaTwa/7GyFhauXaEICwA==}
+  /builder-util-runtime/9.0.3:
+    resolution: {integrity: sha512-SfG2wnyjpUbbdtpnqDpWwklujofC6GarGpvdWrEkg9p5AD/xJmTF2buTNaqs3qtsNBEVQDDjZz9xc2GGpVyMfA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       debug: 4.3.4
@@ -1130,15 +1130,15 @@ packages:
       - supports-color
     dev: true
 
-  /builder-util/23.0.9:
-    resolution: {integrity: sha512-ccPFwI1Sex4yLt8R3LI+H07p2jHICKwEWtxkFkb6jiU/g/VJnF1wazW7I1oMcCFcPTEl30GhqoRv9rfDD9VAiQ==}
+  /builder-util/23.3.3:
+    resolution: {integrity: sha512-MJZlUiq2PY5hjYv9+XNaoYdsITqvLgRDoHSFg/4nzpInbNxNjLQOolL04Zsyp+hgfcbFvMC4h0KkR1CMPHLWbA==}
     dependencies:
       '@types/debug': 4.1.7
       '@types/fs-extra': 9.0.13
       7zip-bin: 5.1.1
       app-builder-bin: 4.0.0
       bluebird-lst: 1.0.9
-      builder-util-runtime: 9.0.2
+      builder-util-runtime: 9.0.3
       chalk: 4.1.2
       cross-spawn: 7.0.3
       debug: 4.3.4
@@ -1561,12 +1561,12 @@ packages:
       path-type: 4.0.0
     dev: true
 
-  /dmg-builder/23.1.0:
-    resolution: {integrity: sha512-CzhPk/k12nJ2KqTbePkIwHOLiaWneQu2cgXCT9Hb5FhwI1vxTPalLsg8OZ57wKCrkL8AEftqqSff8gB5yWY/xw==}
+  /dmg-builder/23.3.3:
+    resolution: {integrity: sha512-ECwAjt+ZWyOvddrkDx1xRD6IVUCZb5SV6vSMHZd+Va3G2sUXHrnglR1cGDKRF4oYRQm8SYVrpLZKbi8npyDcAQ==}
     dependencies:
-      app-builder-lib: 23.1.0
-      builder-util: 23.0.9
-      builder-util-runtime: 9.0.2
+      app-builder-lib: 23.3.3
+      builder-util: 23.3.3
+      builder-util-runtime: 9.0.3
       fs-extra: 10.1.0
       iconv-lite: 0.6.3
       js-yaml: 4.1.0
@@ -1580,7 +1580,6 @@ packages:
     resolution: {integrity: sha512-ZdzmqwKmECOWJpqefloC5OJy1+WZBBse5+MR88z9g9Zn4VY+WYUkAyojmhzJckH5YbbZGcYIuGAkY5/Ys5OM2Q==}
     engines: {node: '>=8'}
     os: [darwin]
-    deprecated: 'Disk image license agreements are deprecated by Apple and will probably be removed in a future macOS release. Discussion at: https://github.com/argv-minus-one/dmg-license/issues/11'
     hasBin: true
     requiresBuild: true
     dependencies:
@@ -1668,17 +1667,17 @@ packages:
       jake: 10.8.5
     dev: true
 
-  /electron-builder/23.1.0:
-    resolution: {integrity: sha512-UEblaQY8N9m8/HriOwl7jgFJ4olpWDXwdDBqwUkQiRHVNRnCfrA0u8LV03li5ZYhma6zFWzfIZbHd+uk8y//lQ==}
+  /electron-builder/23.3.3:
+    resolution: {integrity: sha512-mFYYdhoFPKevP6y5uaaF3dusmB2OtQ/HnwwpyOePeU7QDS0SEIAUokQsHUanAiJAZcBqtY7iyLBgX18QybdFFw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       '@types/yargs': 17.0.10
-      app-builder-lib: 23.1.0
-      builder-util: 23.0.9
-      builder-util-runtime: 9.0.2
+      app-builder-lib: 23.3.3
+      builder-util: 23.3.3
+      builder-util-runtime: 9.0.3
       chalk: 4.1.2
-      dmg-builder: 23.1.0
+      dmg-builder: 23.3.3
       fs-extra: 10.1.0
       is-ci: 3.0.1
       lazy-val: 1.0.5
@@ -1704,12 +1703,12 @@ packages:
       - supports-color
     dev: true
 
-  /electron-publish/23.0.9:
-    resolution: {integrity: sha512-afr2z6L07/elgDX+6I/G/0vzXOP6xYUd/aXx9tnTPSVZ/3AuvCegHrKiuh8sKYHmzoAcNGXe3ikISYIu961IfA==}
+  /electron-publish/23.3.3:
+    resolution: {integrity: sha512-1dX17eE5xVXedTxjC+gjsP74oC0+sIHgqysp0ryTlF9+yfQUyXjBk6kcK+zhtBA2SsHMSglDtM+JPxDD/WpPTQ==}
     dependencies:
       '@types/fs-extra': 9.0.13
-      builder-util: 23.0.9
-      builder-util-runtime: 9.0.2
+      builder-util: 23.3.3
+      builder-util-runtime: 9.0.3
       chalk: 4.1.2
       fs-extra: 10.1.0
       lazy-val: 1.0.5
