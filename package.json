@@ -29,7 +29,7 @@
     "@vue/test-utils": "2.0.2",
     "chalk": "5.0.1",
     "electron": "19.0.10",
-    "electron-builder": "23.1.0",
+    "electron-builder": "23.3.3",
     "esbuild": "0.14.51",
     "eslint": "8.20.0",
     "happy-dom": "6.0.4",
