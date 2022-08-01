@@ -23,6 +23,7 @@ app.on('ready', async () => {
     await createWindow()
   }
   catch (error) {
+    console.error(error)
     app.quit()
   }
 })
