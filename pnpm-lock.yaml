@@ -6,14 +6,10 @@ specifiers:
   '@vitejs/plugin-vue': 3.0.1
   '@vue/compiler-sfc': 3.2.37
   '@vue/test-utils': 2.0.2
-  bytenode: ^1.3.6
-  chalk: 5.0.1
   electron: 19.0.10
   electron-builder: 23.3.3
-  esbuild: 0.14.51
   eslint: 8.20.0
   happy-dom: 6.0.4
-  kolorist: 1.5.1
   lint-staged: 13.0.3
   playwright: 1.24.2
   pnpm: 7.8.0
@@ -29,23 +25,19 @@ specifiers:
   vue-tsc: 0.39.4
 
 dependencies:
-  bytenode: 1.3.6
   reflect-metadata: 0.1.13
   vue: 3.2.33
 
 devDependencies:
-  '@anatine/esbuild-decorators': 0.2.19_esbuild@0.14.51
+  '@anatine/esbuild-decorators': 0.2.19
   '@lightwing/eslint-config': 0.0.3_he2ccbldppg44uulnyq4rwocfa
   '@vitejs/plugin-vue': 3.0.1_vite@3.0.4+vue@3.2.33
   '@vue/compiler-sfc': 3.2.37
   '@vue/test-utils': 2.0.2_vue@3.2.33
-  chalk: 5.0.1
   electron: 19.0.10
   electron-builder: 23.3.3
-  esbuild: 0.14.51
   eslint: 8.20.0
   happy-dom: 6.0.4
-  kolorist: 1.5.1
   lint-staged: 13.0.3
   playwright: 1.24.2
   pnpm: 7.8.0
@@ -64,12 +56,10 @@ packages:
     resolution: {integrity: sha512-sAP4LldeWNz0lNzmTird3uWfFDWWTeg6V/MsmyyLR9X1idwKBWIgt/ZvinqQldJm3LecKEs1emkbquO6PCiLVQ==}
     dev: true
 
-  /@anatine/esbuild-decorators/0.2.19_esbuild@0.14.51:
+  /@anatine/esbuild-decorators/0.2.19:
     resolution: {integrity: sha512-pyj6ULyMacyzpDqlnbS2OCkOqxcVgk8IqiTMRJ5CrsF8Yl1azvlX/AM6xWR8UzHKUYDlWOw5mOpos3+7KKR0Lw==}
     peerDependencies:
       esbuild: ~0.14.29
-    dependencies:
-      esbuild: 0.14.51
     dev: true
 
   /@antfu/eslint-config-basic/0.25.2_zdmw3c27sbylpcvpz7ojhgqlrq:
@@ -1397,11 +1387,6 @@ packages:
       load-tsconfig: 0.2.3
     dev: true
 
-  /bytenode/1.3.6:
-    resolution: {integrity: sha512-t/e1psHP/r9ipj136i9FUOznv/9el1DcY7mB8nBM1FPDqYTvQY73J8uVwRPciWdKZzZrS5yxEyzNEEnB835Fyg==}
-    hasBin: true
-    dev: false
-
   /cac/6.7.12:
     resolution: {integrity: sha512-rM7E2ygtMkJqD9c7WnFU6fruFcN3xe4FM5yUmgxhZzIKJk4uHl9U/fhwdajGFQbQuv43FAUo1Fe8gX/oIKDeSA==}
     engines: {node: '>=8'}
@@ -1469,11 +1454,6 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-    dev: true
-
-  /chalk/5.0.1:
-    resolution: {integrity: sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
   /character-entities-legacy/1.1.4:
@@ -3621,10 +3601,6 @@ packages:
     resolution: {integrity: sha512-9ykJ/46SN/9KPM/sichzQ7OvXyGDYKGTaDlKMGCAlg2UK8KRy4jb0d8sFc+0Tt0YYnThq8X2RZgCg74RPxgcVA==}
     dependencies:
       json-buffer: 3.0.0
-    dev: true
-
-  /kolorist/1.5.1:
-    resolution: {integrity: sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ==}
     dev: true
 
   /latest-version/5.1.0:
