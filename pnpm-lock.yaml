@@ -18,7 +18,7 @@ specifiers:
   tslib: 2.4.0
   typescript: 4.7.4
   vite: 3.0.4
-  vite-plugin-doubleshot: 0.1.0-alpha.1
+  vite-plugin-doubleshot: 0.1.0-beta.0
   vitest: 0.20.2
   vue: ^3.2.33
   vue-tsc: 0.39.4
@@ -44,7 +44,7 @@ devDependencies:
   tslib: 2.4.0
   typescript: 4.7.4
   vite: 3.0.4
-  vite-plugin-doubleshot: 0.1.0-alpha.1_w2rnl3vkkzvyupmsvlg4u2b57e
+  vite-plugin-doubleshot: 0.1.0-beta.0_w2rnl3vkkzvyupmsvlg4u2b57e
   vitest: 0.20.2_happy-dom@6.0.4
   vue-tsc: 0.39.4_typescript@4.7.4
 
@@ -197,13 +197,13 @@ packages:
       ajv-keywords: 3.5.2_ajv@6.12.6
     dev: true
 
-  /@doubleshot/builder/0.1.0-alpha.5_farh5en2vgpo6xixgrqchtq7qa:
-    resolution: {integrity: sha512-hcC5DDa6szyugtQjIDzFFX3nKZoMgD61SKxfMaNPtwb88nx8GmT0AMzYJxEHAtLLRqDZCpNCHVibopPrh+cSfA==}
+  /@doubleshot/builder/0.1.0-beta.0_farh5en2vgpo6xixgrqchtq7qa:
+    resolution: {integrity: sha512-kRhl4Vr6zeCZr3//teJFYNQxwy0HB/WlFbpcpM5Pj4GkTDXEVkDLgGkveGS5K+KcUcQ0nRaczKpIJW9C5yE47Q==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
-      electron: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      electron-builder: ^23.0.3
+      electron: '>=16.0.0'
+      electron-builder: '>=20.0.0'
     peerDependenciesMeta:
       electron:
         optional: true
@@ -5262,13 +5262,13 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot/0.1.0-alpha.1_w2rnl3vkkzvyupmsvlg4u2b57e:
-    resolution: {integrity: sha512-ir6iAImh6i8gMYKNfQG4Hn7X/vRRtRvc+HmSgjUsUE2u1dISAzYxXuRQOLmzHRiY8mI9By3qPuT+DTTi6RWOMA==}
+  /vite-plugin-doubleshot/0.1.0-beta.0_w2rnl3vkkzvyupmsvlg4u2b57e:
+    resolution: {integrity: sha512-QgaC202MooMgstyDXMeO3/nOxe2l4MTOo6sx41zvmyrgyYLS/Wpn5htgCXemjqO8OqAEt2bbbGHFIRz9D24s4g==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      vite: ^3.0.2
+      vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.1.0-alpha.5_farh5en2vgpo6xixgrqchtq7qa
+      '@doubleshot/builder': 0.1.0-beta.0_farh5en2vgpo6xixgrqchtq7qa
       vite: 3.0.4
     transitivePeerDependencies:
       - debug
