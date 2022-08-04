@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@anatine/esbuild-decorators': 0.2.19
   '@lightwing/eslint-config': 0.0.3
   '@vitejs/plugin-vue': 3.0.1
   '@vue/compiler-sfc': 3.2.37
@@ -29,7 +28,6 @@ dependencies:
   vue: 3.2.33
 
 devDependencies:
-  '@anatine/esbuild-decorators': 0.2.19
   '@lightwing/eslint-config': 0.0.3_he2ccbldppg44uulnyq4rwocfa
   '@vitejs/plugin-vue': 3.0.1_vite@3.0.4+vue@3.2.33
   '@vue/compiler-sfc': 3.2.37
@@ -54,12 +52,6 @@ packages:
 
   /7zip-bin/5.1.1:
     resolution: {integrity: sha512-sAP4LldeWNz0lNzmTird3uWfFDWWTeg6V/MsmyyLR9X1idwKBWIgt/ZvinqQldJm3LecKEs1emkbquO6PCiLVQ==}
-    dev: true
-
-  /@anatine/esbuild-decorators/0.2.19:
-    resolution: {integrity: sha512-pyj6ULyMacyzpDqlnbS2OCkOqxcVgk8IqiTMRJ5CrsF8Yl1azvlX/AM6xWR8UzHKUYDlWOw5mOpos3+7KKR0Lw==}
-    peerDependencies:
-      esbuild: ~0.14.29
     dev: true
 
   /@antfu/eslint-config-basic/0.25.2_zdmw3c27sbylpcvpz7ojhgqlrq:

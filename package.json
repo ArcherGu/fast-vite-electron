@@ -21,7 +21,6 @@
     "vue": "^3.2.33"
   },
   "devDependencies": {
-    "@anatine/esbuild-decorators": "0.2.19",
     "@lightwing/eslint-config": "0.0.3",
     "@vitejs/plugin-vue": "3.0.1",
     "@vue/compiler-sfc": "3.2.37",
