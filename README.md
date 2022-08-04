@@ -2,11 +2,24 @@
     <img width="400" src="https://github.com/ArcherGu/fast-vite-electron/blob/main/logo.png" alt="logo">
 </p>
 
-# ⚡Vite + Electron & Esbuild Template
+# ⚡Vite + Electron & Doubleshot Template
 
-This template is used to build vite + electron projects.
+This template is used to build vite + electron projects. Build with [Doubleshot](https://github.com/Doubleshotjs/doubleshot), crazy fast!
 
-**NOTE:** Main process is built with esbuild. After some modifications, it currently supports [`emitDecoratorMetadata`](https://www.typescriptlang.org/tsconfig#emitDecoratorMetadata).
+🎉 [Doubleshot](https://github.com/Doubleshotjs/doubleshot) is a whole new set of tools to help you quickly build and start a node backend or electron main process.
+
+## Features
+
+- 🔨 [vite-plugin-doubleshot](https://github.com/archergu/doubleshot/tree/main/packages/plugin-vite#readme) to run/build electron main process.
+<br>
+
+- 😎 Controllers/Services ipc communication, powered by Typescript [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html).
+<br>
+
+- ⚡ Rendering process is powered by [Vite](https://vite.io/).
+<br>
+
+- ⏩ Quick start and build, powered by [tsup](https://tsup.egoist.sh/) and [electron-builder](https://www.electron.build/) integrated in [@doubleshot/builder](https://github.com/Doubleshotjs/doubleshot/tree/main/packages/builder)
 
 ## Motivation
 
