@@ -19,7 +19,7 @@ specifiers:
   typescript: 4.7.4
   vite: 3.0.5
   vite-plugin-doubleshot: 0.1.0-beta.1
-  vitest: 0.21.0
+  vitest: 0.21.1
   vue: ^3.2.33
   vue-tsc: 0.39.5
 
@@ -45,7 +45,7 @@ devDependencies:
   typescript: 4.7.4
   vite: 3.0.5
   vite-plugin-doubleshot: 0.1.0-beta.1_bff6ttcpcg3jqgzzobzflmkcla
-  vitest: 0.21.0_happy-dom@6.0.4
+  vitest: 0.21.1_happy-dom@6.0.4
   vue-tsc: 0.39.5_typescript@4.7.4
 
 packages:
@@ -536,11 +536,11 @@ packages:
   /@types/chai-subset/1.3.3:
     resolution: {integrity: sha512-frBecisrNGz+F4T6bcc+NLeolfiojh5FxW2klu669+8BARtyQv2C/GkNW6FUodVe4BroGMP/wER/YDGc7rEllw==}
     dependencies:
-      '@types/chai': 4.3.1
+      '@types/chai': 4.3.3
     dev: true
 
-  /@types/chai/4.3.1:
-    resolution: {integrity: sha512-/zPMqDkzSZ8t3VtxOa4KPq7uzzW978M9Tvh+j7GHKuo6k6GTLxPJ4J5gE5cjfJ26pnXst0N5Hax8Sr0T2Mi9zQ==}
+  /@types/chai/4.3.3:
+    resolution: {integrity: sha512-hC7OMnszpxhZPduX+m+nrx+uFoLkWOMiR4oa/AZF3MuSETYTZmFfJAHqZEM8MVlvfG7BEUcgvtwoCTxBp6hm3g==}
     dev: true
 
   /@types/concat-stream/1.6.1:
@@ -5351,8 +5351,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.21.0_happy-dom@6.0.4:
-    resolution: {integrity: sha512-+BQB2swk4wQdw5loOoL8esIYh/1ifAliuwj2HWHNE2F8SAl/jF7/aoCJBoXGSf/Ws19k3pH4NrWeVtcSwM0j2w==}
+  /vitest/0.21.1_happy-dom@6.0.4:
+    resolution: {integrity: sha512-WBIxuFmIDPuK47GO6Lu9eNeRMqHj/FWL3dk73OHH3eyPPWPiu+UB3QHLkLK2PEggCqJW4FaWoWg8R68S7p9+9Q==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -5376,7 +5376,7 @@ packages:
       jsdom:
         optional: true
     dependencies:
-      '@types/chai': 4.3.1
+      '@types/chai': 4.3.3
       '@types/chai-subset': 1.3.3
       '@types/node': 17.0.25
       chai: 4.3.6
