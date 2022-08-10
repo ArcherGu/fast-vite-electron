@@ -1,7 +1,7 @@
-import { Injectable } from '../framework'
+import { Injectable } from './framework'
 
-@Injectable('MyService')
-export class MyService {
+@Injectable('AppService')
+export class AppService {
   constructor() {
     // do nothing
   }

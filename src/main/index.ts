@@ -1,8 +1,8 @@
 import 'reflect-metadata'
 import { app } from 'electron'
-import { MyController } from './Controllers'
+import { AppController } from './app.controller'
 import { init } from './framework'
-import { createWindow } from './mainWindow'
+import { createWindow } from './main.window'
 
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true'
 
@@ -36,7 +36,7 @@ async function bootstrap() {
 
     await init({
       window: createWindow,
-      controllers: [MyController],
+      controllers: [AppController],
     })
   }
   catch (error) {
