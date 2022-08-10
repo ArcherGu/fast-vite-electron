@@ -1,4 +1,3 @@
-import { EVENTS } from '@common/events'
 import { Controller, IpcInvoke, IpcOn } from '../decorators'
 import { MyService } from '../Services/MyService'
 
@@ -10,12 +9,12 @@ export class MyController {
 
   }
 
-  @IpcOn(EVENTS.REPLY_MSG)
+  @IpcOn('reply-msg')
   public replyMsg(msg: string) {
     return `${this.myService.getDelayTime()} seconds later, the main process replies to your message: ${msg}`
   }
 
-  @IpcInvoke(EVENTS.SEND_MSG)
+  @IpcInvoke('send-msg')
   public async handleSendMsg(msg: string): Promise<string> {
     setTimeout(() => {
       this.replyMsg(msg)

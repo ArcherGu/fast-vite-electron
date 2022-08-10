@@ -1,4 +1,3 @@
-import { EVENTS } from '@common/events'
 import type { WebContents } from 'electron'
 import { ipcMain } from 'electron'
 import { MyController } from './Controllers'
@@ -65,6 +64,7 @@ export async function bootstrap(webContents: WebContents) {
   }
 }
 
+const EVENTS = ['reply-msg', 'send-msg']
 export function destroy() {
   for (const EVENT in EVENTS)
     ipcMain.removeHandler(EVENTS[EVENT])

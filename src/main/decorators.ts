@@ -1,14 +1,12 @@
-import type { EVENTS } from '@common/events'
-
-export function IpcInvoke(event: EVENTS): MethodDecorator {
+export function IpcInvoke(event: string): MethodDecorator {
   return (target: any, propertyName: string) => {
-    Reflect.defineMetadata('ipc-invoke', event.toString(), target, propertyName)
+    Reflect.defineMetadata('ipc-invoke', event, target, propertyName)
   }
 }
 
-export function IpcOn(event: EVENTS): MethodDecorator {
+export function IpcOn(event: string): MethodDecorator {
   return (target: any, propertyName: string) => {
-    Reflect.defineMetadata('ipc-on', event.toString(), target, propertyName)
+    Reflect.defineMetadata('ipc-on', event, target, propertyName)
   }
 }
 

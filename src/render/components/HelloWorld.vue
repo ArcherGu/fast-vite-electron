@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { EVENTS } from '@common/events'
 import { sendMsgToMainProcess } from '@render/api'
 import { useIpc } from '@render/plugins/ipc'
 import { ref } from 'vue'
@@ -27,7 +26,7 @@ const sendMsg = async () => {
 
 const ipc = useIpc()
 
-ipc.on(EVENTS.REPLY_MSG, (msg: string) => {
+ipc.on('reply-msg', (msg: string) => {
   log.value += `[main]: ${msg}  \n`
 })
 </script>

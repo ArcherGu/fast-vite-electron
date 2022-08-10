@@ -1,11 +1,10 @@
-import type { EVENTS } from '@common/events'
 import type { IpcResponse } from '@common/types'
 import { getCurrentInstance, onUnmounted, toRaw } from 'vue'
 const { ipcRenderer } = window
 
 interface IpcInstance {
-  send: <T = any>(target: EVENTS, ...args: any[]) => Promise<IpcResponse<T>>
-  on: (event: EVENTS, callback: (...args: any[]) => void) => void
+  send: <T = any>(target: string, ...args: any[]) => Promise<IpcResponse<T>>
+  on: (event: string, callback: (...args: any[]) => void) => void
 }
 
 export const ipcInstance: IpcInstance = {
