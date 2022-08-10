@@ -5,7 +5,7 @@ specifiers:
   '@vitejs/plugin-vue': 3.0.1
   '@vue/compiler-sfc': 3.2.37
   '@vue/test-utils': 2.0.2
-  electron: 20.0.1
+  electron: 20.0.2
   electron-builder: 23.3.3
   eslint: 8.21.0
   happy-dom: 6.0.4
@@ -32,7 +32,7 @@ devDependencies:
   '@vitejs/plugin-vue': 3.0.1_vite@3.0.5+vue@3.2.33
   '@vue/compiler-sfc': 3.2.37
   '@vue/test-utils': 2.0.2_vue@3.2.33
-  electron: 20.0.1
+  electron: 20.0.2
   electron-builder: 23.3.3
   eslint: 8.21.0
   happy-dom: 6.0.4
@@ -44,7 +44,7 @@ devDependencies:
   tslib: 2.4.0
   typescript: 4.7.4
   vite: 3.0.5
-  vite-plugin-doubleshot: 0.1.0-beta.1_bff6ttcpcg3jqgzzobzflmkcla
+  vite-plugin-doubleshot: 0.1.0-beta.1_aznyskojf4cyhyih4cz2liujku
   vitest: 0.21.1_happy-dom@6.0.4
   vue-tsc: 0.40.0_typescript@4.7.4
 
@@ -197,7 +197,7 @@ packages:
       ajv-keywords: 3.5.2_ajv@6.12.6
     dev: true
 
-  /@doubleshot/builder/0.1.0-beta.1_jxgbss3vbtcj3ju2noyjrmctxa:
+  /@doubleshot/builder/0.1.0-beta.1_4gf2fjuvajv23pka3bkksunq6y:
     resolution: {integrity: sha512-2QiqisHDpUQ6ObxdRGUTzKtPXenLgw2YkDSrvL3u1Ki43OLGpa9a1X8ixsr0tXVJT4H5QlztDOAd6CnaqDXThQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -215,7 +215,7 @@ packages:
       cac: 6.7.12
       check-package-exists: 1.1.0
       colorette: 2.0.19
-      electron: 20.0.1
+      electron: 20.0.2
       electron-builder: 23.3.3
       esbuild: 0.14.51
       joycon: 3.1.1
@@ -1959,8 +1959,8 @@ packages:
       - supports-color
     dev: true
 
-  /electron/20.0.1:
-    resolution: {integrity: sha512-5c7zr8oy1JsCV86BaoIPVLo4yevDfvPEsMQcGlgfJ5PS7ouAVvR1aHt0tjF65bL1vYdoQ1olvpextg2T8FyICA==}
+  /electron/20.0.2:
+    resolution: {integrity: sha512-Op4nxSyXH0tXjhvWC+WDn9EI0gep5etPccainxu1A4wes+ZFQBMCBXxibotanJfG+WNW4RaOv88NArwHIsSmPw==}
     engines: {node: '>= 10.17.0'}
     hasBin: true
     requiresBuild: true
@@ -5298,13 +5298,13 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot/0.1.0-beta.1_bff6ttcpcg3jqgzzobzflmkcla:
+  /vite-plugin-doubleshot/0.1.0-beta.1_aznyskojf4cyhyih4cz2liujku:
     resolution: {integrity: sha512-37MduVmC1NDkJk1YKgIe/nDZj1NEpF34Uo5xuJgZz+W48DF7VTknOXBupEVjT6rdzGQB3HkyfdhzMkCUWZPmDQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.1.0-beta.1_jxgbss3vbtcj3ju2noyjrmctxa
+      '@doubleshot/builder': 0.1.0-beta.1_4gf2fjuvajv23pka3bkksunq6y
       vite: 3.0.5
     transitivePeerDependencies:
       - debug
