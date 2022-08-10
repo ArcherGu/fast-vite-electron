@@ -1,4 +1,4 @@
-import { Controller, IpcInvoke, IpcOn } from '../decorators'
+import { Controller, IpcInvoke, IpcOn } from '../framework'
 import { MyService } from '../Services/MyService'
 
 @Controller()

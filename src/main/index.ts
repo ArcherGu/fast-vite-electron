@@ -1,43 +1,48 @@
 import 'reflect-metadata'
 import { app } from 'electron'
-import { createWindow, restoreOrCreateWindow } from './mainWindow'
+import { MyController } from './Controllers'
+import { init } from './framework'
+import { createWindow } from './mainWindow'
 
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true'
 
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin')
-    app.quit()
-})
+async function electronAppInit() {
+  const isDev = !app.isPackaged
+  app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin')
+      app.exit()
+  })
 
-app.on('activate', async () => {
-  try {
-    await restoreOrCreateWindow()
+  if (isDev) {
+    if (process.platform === 'win32') {
+      process.on('message', (data) => {
+        if (data === 'graceful-exit')
+          app.exit()
+      })
+    }
+    else {
+      process.on('SIGTERM', () => {
+        app.exit()
+      })
+    }
   }
-  catch (error) {
-    app.quit()
-  }
-})
 
-app.on('ready', async () => {
+  await app.whenReady()
+}
+
+async function bootstrap() {
   try {
-    await createWindow()
+    await electronAppInit()
+
+    await init({
+      window: createWindow,
+      controllers: [MyController],
+    })
   }
   catch (error) {
     console.error(error)
     app.quit()
   }
-})
-
-if (!app.isPackaged) {
-  if (process.platform === 'win32') {
-    process.on('message', (data) => {
-      if (data === 'graceful-exit')
-        app.quit()
-    })
-  }
-  else {
-    process.on('SIGTERM', () => {
-      app.quit()
-    })
-  }
 }
+
+bootstrap()

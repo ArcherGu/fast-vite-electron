@@ -1,4 +1,4 @@
-import { Injectable } from '../decorators'
+import { Injectable } from '../framework'
 
 @Injectable('MyService')
 export class MyService {

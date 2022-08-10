@@ -1,6 +1,5 @@
 import { join } from 'path'
 import { BrowserWindow, app } from 'electron'
-import { bootstrap, destroy } from './bootstrap'
 
 const isDev = !app.isPackaged
 
@@ -19,8 +18,6 @@ export async function createWindow() {
 
   win.maximize()
 
-  await bootstrap(win.webContents)
-
   const URL = isDev
     ? process.env.DS_RENDERER_URL
     : `file://${join(app.getAppPath(), 'dist/render/index.html')}`
@@ -34,7 +31,6 @@ export async function createWindow() {
     win.removeMenu()
 
   win.on('closed', () => {
-    destroy()
     win.destroy()
   })
 
