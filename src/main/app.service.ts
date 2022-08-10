@@ -1,11 +1,7 @@
 import { Injectable } from './framework'
 
-@Injectable('AppService')
+@Injectable()
 export class AppService {
-  constructor() {
-    // do nothing
-  }
-
   public getDelayTime(): number {
     return 2
   }

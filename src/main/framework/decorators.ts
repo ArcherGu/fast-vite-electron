@@ -11,13 +11,21 @@ export function IpcOn(event: string): MethodDecorator {
 }
 
 export function Controller(): ClassDecorator {
-  return (_: object) => {
+  return (_) => {
     // do nothing
   }
 }
 
-export function Injectable(name: string): ClassDecorator {
-  return (target: object) => {
-    Reflect.defineMetadata('name', name, target)
+export function Injectable(): ClassDecorator {
+  return (target) => {
+    Reflect.defineMetadata('injectable', true, target)
+  }
+}
+
+export function Inject(name: string): ParameterDecorator {
+  return (target, _, index) => {
+    const param = Reflect.getMetadata('design:paramtypes', target)[index]
+    Reflect.defineMetadata('custom-inject', true, param)
+    Reflect.defineMetadata('name', name, param)
   }
 }

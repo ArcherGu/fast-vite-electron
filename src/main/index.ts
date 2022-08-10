@@ -37,6 +37,10 @@ async function bootstrap() {
     await init({
       window: createWindow,
       controllers: [AppController],
+      injects: [{
+        name: 'IS_DEV',
+        inject: !app.isPackaged,
+      }],
     })
   }
   catch (error) {
