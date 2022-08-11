@@ -1,5 +1,5 @@
 import { BrowserWindow, ipcMain } from 'electron'
-import { INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_ON, PARAMTYPES_METADATA } from './constants'
+import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_ON, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 export * from './decorators'
 
 type Construct<T = any> = new (...args: Array<any>) => T
@@ -30,7 +30,7 @@ export async function init({ window, controllers, injects = [] }: Options) {
       windows.push(typeof win === 'function' ? (await win()) : win)
   }
   else {
-    windows = [typeof window === 'function' ? ({ name: 'main', win: (await window()) }) : ({ name: 'main', win: window })]
+    windows = [typeof window === 'function' ? ({ name: DEFAULT_WIN_NAME, win: (await window()) }) : ({ name: DEFAULT_WIN_NAME, win: window })]
   }
 
   const existInjectableClass = {}
@@ -111,12 +111,21 @@ export async function init({ window, controllers, injects = [] }: Options) {
         if (!event)
           return
 
-        const func = controller[funcName]
-        const { webContents } = windows[0].win
-        controller[funcName] = async (...args: any[]) => {
-          const result = await func.call(controller, ...args)
-          webContents.send(event, result)
-          return result
+        const winName = Reflect.getMetadata(IPC_WIN_NAME, proto, funcName)
+        const winInfo = windows.find(item => item.name === winName)
+        if (winInfo) {
+          const { webContents } = winInfo.win
+          const func = controller[funcName]
+
+          controller[funcName] = async (...args: any[]) => {
+            const result = await func.call(controller, ...args)
+            webContents.send(event, result)
+            return result
+          }
+        }
+        else {
+          // eslint-disable-next-line no-console
+          console.log(`\x1B[33m WARNING: Can not find window [${winName}] to emit event [${event}] \x1B[0m`)
         }
       }
     })

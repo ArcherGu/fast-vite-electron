@@ -1,4 +1,4 @@
-import { INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_ON, PARAMTYPES_METADATA } from './constants'
+import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_ON, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 
 export function IpcInvoke(event: string): MethodDecorator {
   if (!event)
@@ -9,12 +9,13 @@ export function IpcInvoke(event: string): MethodDecorator {
   }
 }
 
-export function IpcOn(event: string): MethodDecorator {
+export function IpcOn(event: string, name: string = DEFAULT_WIN_NAME): MethodDecorator {
   if (!event)
     throw new Error('ipc on event is required')
 
   return (target: any, propertyName: string) => {
     Reflect.defineMetadata(IPC_ON, event, target, propertyName)
+    Reflect.defineMetadata(IPC_WIN_NAME, name, target, propertyName)
   }
 }
 
@@ -41,7 +42,7 @@ export function Inject(name: string): ParameterDecorator {
   }
 }
 
-export function Window(name = 'main'): ParameterDecorator {
+export function Window(name = DEFAULT_WIN_NAME): ParameterDecorator {
   return (target, _, index) => {
     const param = Reflect.getMetadata(PARAMTYPES_METADATA, target)[index]
     Reflect.defineMetadata(INJECTABLE, INJECT_TYPE.WINDOW, param)
