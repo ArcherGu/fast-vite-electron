@@ -5,9 +5,7 @@ import { AppService } from './app.service'
 export class AppController {
   constructor(
     private appService: AppService,
-  ) {
-
-  }
+  ) { }
 
   @IpcOn('reply-msg')
   public replyMsg(msg: string) {

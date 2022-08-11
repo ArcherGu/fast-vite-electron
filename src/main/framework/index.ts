@@ -1,4 +1,5 @@
 import { BrowserWindow, ipcMain } from 'electron'
+import { INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_ON, PARAMTYPES_METADATA } from './constants'
 export * from './decorators'
 
 type Construct<T = any> = new (...args: Array<any>) => T
@@ -22,37 +23,7 @@ export interface Options {
 }
 
 export async function init({ window, controllers, injects = [] }: Options) {
-  const ExistInjectable = {}
-  function factory<T>(constructClass: Construct<T>): T {
-    const paramtypes = Reflect.getMetadata('design:paramtypes', constructClass)
-    let providers = []
-    if (paramtypes) {
-      providers = paramtypes.map((provider: Construct<T> | any) => {
-        const isCustom = Reflect.getMetadata('custom-inject', provider)
-        if (isCustom) {
-          const name = Reflect.getMetadata('name', provider)
-          const injectInfo = injects.find(item => item.name === name)
-          if (!injectInfo)
-            throw new Error(`${name} is not provided to inject`)
-
-          return injectInfo.inject
-        }
-        else {
-          const { name } = provider
-          const injectable = Reflect.getMetadata('injectable', provider)
-          if (!injectable)
-            throw new Error(`${name} is not injectable`)
-          const item = ExistInjectable[name] || factory(provider)
-          ExistInjectable[name] = item
-          return item
-        }
-      })
-    }
-
-    // eslint-disable-next-line new-cap
-    return new constructClass(...providers)
-  }
-
+  // init windows
   let windows: WindowOpts[] = []
   if (Array.isArray(window)) {
     for (const win of window)
@@ -62,6 +33,50 @@ export async function init({ window, controllers, injects = [] }: Options) {
     windows = [typeof window === 'function' ? ({ name: 'main', win: (await window()) }) : ({ name: 'main', win: window })]
   }
 
+  const existInjectableClass = {}
+  /**
+   * factory controller/injectable
+   */
+  function factory<T>(constructClass: Construct<T>): T {
+    const paramtypes: any[] = Reflect.getMetadata(PARAMTYPES_METADATA, constructClass)
+    let providers = []
+    if (paramtypes) {
+      providers = paramtypes.map((provider: Construct<T> | any, index) => {
+        const injectType = Reflect.getMetadata(INJECTABLE, provider)
+        if (injectType === INJECT_TYPE.CLASS) {
+          const { name } = provider
+          const item = existInjectableClass[name] || factory(provider)
+          existInjectableClass[name] = item
+          return item
+        }
+        else if (injectType === INJECT_TYPE.CUSTOM) {
+          const name = Reflect.getMetadata(INJECT_NAME, provider)
+          const injectInfo = injects.find(item => item.name === name)
+          if (!injectInfo)
+            throw new Error(`${name} is not provided to inject`)
+
+          return injectInfo.inject
+        }
+        else if (injectType === INJECT_TYPE.WINDOW) {
+          const name = Reflect.getMetadata(INJECT_NAME, provider)
+          const winOpt = windows.find(item => item.name === name)
+
+          if (!winOpt)
+            throw new Error(`${name} is not provided to inject`)
+
+          return winOpt.win
+        }
+        else {
+          throw new Error(`${constructClass.name}'s parameter [${index}] is not injectable`)
+        }
+      })
+    }
+
+    // eslint-disable-next-line new-cap
+    return new constructClass(...providers)
+  }
+
+  // init controllers
   for (const ControllerClass of controllers) {
     const controller = factory(ControllerClass)
     const proto = ControllerClass.prototype
@@ -71,7 +86,7 @@ export async function init({ window, controllers, injects = [] }: Options) {
 
     funcs.forEach((funcName) => {
       let event: string | null = null
-      event = Reflect.getMetadata('ipc-invoke', proto, funcName)
+      event = Reflect.getMetadata(IPC_INVOKE, proto, funcName)
       if (event) {
         ipcMain.handle(event, async (e, ...args) => {
           try {
@@ -92,7 +107,7 @@ export async function init({ window, controllers, injects = [] }: Options) {
         })
       }
       else {
-        event = Reflect.getMetadata('ipc-on', proto, funcName)
+        event = Reflect.getMetadata(IPC_ON, proto, funcName)
         if (!event)
           return
 
