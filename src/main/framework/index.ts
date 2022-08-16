@@ -1,3 +1,4 @@
+import 'reflect-metadata'
 import { BrowserWindow, ipcMain } from 'electron'
 import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_ON, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 export * from './decorators'
