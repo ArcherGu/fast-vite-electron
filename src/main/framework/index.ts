@@ -88,10 +88,10 @@ export async function init({ window, controllers, injects = [] }: Options) {
       let event: string | null = null
       event = Reflect.getMetadata(IPC_INVOKE, proto, funcName)
       if (event) {
-        ipcMain.handle(event, async (e, ...args) => {
+        ipcMain.handle(event, async (_, ...args) => {
           try {
-            // eslint-disable-next-line no-useless-call
-            const result = await controller[funcName].call(controller, ...args)
+            // eslint-disable-next-line prefer-spread
+            const result = await controller[funcName].apply(controller, args)
 
             return {
               data: result,
@@ -101,6 +101,7 @@ export async function init({ window, controllers, injects = [] }: Options) {
             // eslint-disable-next-line no-console
             console.log(error)
             return {
+              data: undefined,
               error,
             }
           }
@@ -118,7 +119,7 @@ export async function init({ window, controllers, injects = [] }: Options) {
           const func = controller[funcName]
 
           controller[funcName] = async (...args: any[]) => {
-            const result = await func.call(controller, ...args)
+            const result = await func.apply(controller, args)
             webContents.send(event, result)
             return result
           }
