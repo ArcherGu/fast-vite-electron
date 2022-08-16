@@ -1,4 +1,4 @@
-import { Controller, IpcInvoke, IpcOn } from './framework'
+import { Controller, IpcInvoke, IpcOn } from 'einf'
 import { AppService } from './app.service'
 
 @Controller()

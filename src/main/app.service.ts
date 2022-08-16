@@ -1,4 +1,4 @@
-import { Injectable } from './framework'
+import { Injectable } from 'einf'
 
 @Injectable()
 export class AppService {

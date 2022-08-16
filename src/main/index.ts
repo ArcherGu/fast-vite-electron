@@ -1,6 +1,6 @@
 import { app } from 'electron'
+import { createEinf } from 'einf'
 import { AppController } from './app.controller'
-import { init } from './framework'
 import { createWindow } from './main.window'
 
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true'
@@ -25,15 +25,13 @@ async function electronAppInit() {
       })
     }
   }
-
-  await app.whenReady()
 }
 
 async function bootstrap() {
   try {
     await electronAppInit()
 
-    await init({
+    await createEinf({
       window: createWindow,
       controllers: [AppController],
       injects: [{
