@@ -5,7 +5,7 @@ specifiers:
   '@vitejs/plugin-vue': 3.0.3
   '@vue/compiler-sfc': 3.2.37
   '@vue/test-utils': 2.0.2
-  einf: ^1.0.0
+  einf: ^1.1.0
   electron: 20.0.3
   electron-builder: 23.3.3
   eslint: 8.22.0
@@ -24,7 +24,7 @@ specifiers:
   vue-tsc: 0.40.1
 
 dependencies:
-  einf: 1.0.0_electron@20.0.3
+  einf: 1.1.0_electron@20.0.3
   vue: 3.2.33
 
 devDependencies:
@@ -1902,8 +1902,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /einf/1.0.0_electron@20.0.3:
-    resolution: {integrity: sha512-dGesSFAHBAL3mTK51gUN8P+wTfgvATUXz1TDybRMfPiE1t/KwRBZhXozDXAw8pnDh5CySKUGPLZpAuUZfyHFlA==}
+  /einf/1.1.0_electron@20.0.3:
+    resolution: {integrity: sha512-lTflMrSKGKWPc7QjBhB2Z4leT5/H2Ss/rEM+hTcdEnn3jHcZUPbjUY/pT5TbGETWw6lgYjgrk2/EBDRI6GlcdA==}
     engines: {node: '>=14'}
     peerDependencies:
       electron: '>=16.0.0'

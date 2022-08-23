@@ -1,4 +1,4 @@
-import { Controller, IpcInvoke, IpcOn } from 'einf'
+import { Controller, IpcHandle, IpcSend } from 'einf'
 import { AppService } from './app.service'
 
 @Controller()
@@ -7,12 +7,12 @@ export class AppController {
     private appService: AppService,
   ) { }
 
-  @IpcOn('reply-msg')
+  @IpcSend('reply-msg')
   public replyMsg(msg: string) {
     return `${this.appService.getDelayTime()} seconds later, the main process replies to your message: ${msg}`
   }
 
-  @IpcInvoke('send-msg')
+  @IpcHandle('send-msg')
   public async handleSendMsg(msg: string): Promise<string> {
     setTimeout(() => {
       this.replyMsg(msg)
