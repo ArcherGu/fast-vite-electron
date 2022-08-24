@@ -17,7 +17,7 @@
     "postuninstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "einf": "^1.1.1",
+    "einf": "^1.1.0",
     "vue": "^3.2.33"
   },
   "devDependencies": {
