@@ -6,7 +6,7 @@ specifiers:
   '@vue/compiler-sfc': 3.2.39
   '@vue/test-utils': 2.0.2
   einf: ^1.3.0
-  electron: 20.1.2
+  electron: 20.1.3
   electron-builder: 23.3.3
   eslint: 8.23.0
   happy-dom: 6.0.4
@@ -24,7 +24,7 @@ specifiers:
   vue-tsc: 0.40.13
 
 dependencies:
-  einf: 1.3.0_electron@20.1.2
+  einf: 1.3.0_electron@20.1.3
   vue: 3.2.38
 
 devDependencies:
@@ -32,7 +32,7 @@ devDependencies:
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.38
   '@vue/compiler-sfc': 3.2.39
   '@vue/test-utils': 2.0.2_vue@3.2.38
-  electron: 20.1.2
+  electron: 20.1.3
   electron-builder: 23.3.3
   eslint: 8.23.0
   happy-dom: 6.0.4
@@ -44,7 +44,7 @@ devDependencies:
   tslib: 2.4.0
   typescript: 4.8.3
   vite: 3.1.0
-  vite-plugin-doubleshot: 0.0.3_e4txmxjnub6kgy27hzgzfb4vsu
+  vite-plugin-doubleshot: 0.0.3_mhub7uhofvpwoevz37rt2ny73m
   vitest: 0.23.1_happy-dom@6.0.4
   vue-tsc: 0.40.13_typescript@4.8.3
 
@@ -197,7 +197,7 @@ packages:
       ajv-keywords: 3.5.2_ajv@6.12.6
     dev: true
 
-  /@doubleshot/builder/0.0.3_ortx4u3npbvnsji5koqe4dhrxa:
+  /@doubleshot/builder/0.0.3_tm5ado4myteldvvhyvxjoic5om:
     resolution: {integrity: sha512-P+K8KqRHXHBmGq8C1Nh+PCTRR9c0aIRkCXD0wzNTzjFa0RAAYFRCID+18w4v13m8u/Pe9XSI6QmAgeNJ9+zaKg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -215,7 +215,7 @@ packages:
       cac: 6.7.12
       check-package-exists: 1.1.0
       colorette: 2.0.19
-      electron: 20.1.2
+      electron: 20.1.3
       electron-builder: 23.3.3
       esbuild: 0.15.7
       joycon: 3.1.1
@@ -1902,14 +1902,14 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /einf/1.3.0_electron@20.1.2:
+  /einf/1.3.0_electron@20.1.3:
     resolution: {integrity: sha512-tVh7g4Jakez2OJ5gvB0AVgTv9t6XJ9/yB7agcRS0jt6kC2cn3FRQLJ2J0zzxmitZQb1ecEKWU28+H5cYelTgHw==}
     engines: {node: '>=14'}
     peerDependencies:
       electron: '>=16.0.0'
     dependencies:
       colorette: 2.0.19
-      electron: 20.1.2
+      electron: 20.1.3
       reflect-metadata: 0.1.13
     dev: false
 
@@ -1971,8 +1971,8 @@ packages:
       - supports-color
     dev: true
 
-  /electron/20.1.2:
-    resolution: {integrity: sha512-Yz2GAUqgXNr3+7vI+xL3qoCBUw4nVX+MeF/+HNL80y67ZrhMFUbJFirw7Tm6/Kx8r6TBPz0/D3aleeySWFUmzw==}
+  /electron/20.1.3:
+    resolution: {integrity: sha512-DXBHzAwcpCor9MrxG9QA3Zt0sNcQbJ8ZJCYTC6xpuPe5wugBa6RF3hXqDUYdD2yOCUhjLbD3VASWn0+5LdYT3g==}
     engines: {node: '>= 10.17.0'}
     hasBin: true
     requiresBuild: true
@@ -5455,13 +5455,13 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot/0.0.3_e4txmxjnub6kgy27hzgzfb4vsu:
+  /vite-plugin-doubleshot/0.0.3_mhub7uhofvpwoevz37rt2ny73m:
     resolution: {integrity: sha512-xNmwvPCb87wZks+vUOkSJ2M6Bk3//DyTMsfT432Cb9wBYt2PZFFMq2yxltulaYCAn8+mCKJKKNthWN8uKXPiGQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.3_ortx4u3npbvnsji5koqe4dhrxa
+      '@doubleshot/builder': 0.0.3_tm5ado4myteldvvhyvxjoic5om
       vite: 3.1.0
     transitivePeerDependencies:
       - debug
