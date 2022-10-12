@@ -30,7 +30,7 @@
     "eslint": "8.25.0",
     "happy-dom": "7.5.7",
     "lint-staged": "13.0.3",
-    "playwright": "1.27.0",
+    "playwright": "1.27.1",
     "pnpm": "7.13.4",
     "rimraf": "3.0.2",
     "simple-git-hooks": "2.8.0",
