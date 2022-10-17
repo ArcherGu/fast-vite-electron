@@ -14,7 +14,7 @@ specifiers:
   playwright: 1.27.1
   pnpm: 7.13.5
   rimraf: 3.0.2
-  simple-git-hooks: 2.8.0
+  simple-git-hooks: 2.8.1
   tslib: 2.4.0
   typescript: 4.8.4
   vite: 3.1.8
@@ -40,7 +40,7 @@ devDependencies:
   playwright: 1.27.1
   pnpm: 7.13.5
   rimraf: 3.0.2
-  simple-git-hooks: 2.8.0
+  simple-git-hooks: 2.8.1
   tslib: 2.4.0
   typescript: 4.8.4
   vite: 3.1.8
@@ -4603,8 +4603,8 @@ packages:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
     dev: true
 
-  /simple-git-hooks/2.8.0:
-    resolution: {integrity: sha512-ocmZQORwa6x9mxg+gVIAp5o4wXiWOHGXyrDBA0+UxGKIEKOyFtL4LWNKkP/2ornQPdlnlDGDteVeYP5FjhIoWA==}
+  /simple-git-hooks/2.8.1:
+    resolution: {integrity: sha512-DYpcVR1AGtSfFUNzlBdHrQGPsOhuuEJ/FkmPOOlFysP60AHd3nsEpkGq/QEOdtUyT1Qhk7w9oLmFoMG+75BDog==}
     hasBin: true
     requiresBuild: true
     dev: true
