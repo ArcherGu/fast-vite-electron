@@ -15,7 +15,7 @@ specifiers:
   pnpm: 7.14.1
   rimraf: 3.0.2
   simple-git-hooks: 2.8.1
-  tslib: 2.4.0
+  tslib: 2.4.1
   typescript: 4.8.4
   vite: 3.2.2
   vite-plugin-doubleshot: 0.0.6
@@ -41,7 +41,7 @@ devDependencies:
   pnpm: 7.14.1
   rimraf: 3.0.2
   simple-git-hooks: 2.8.1
-  tslib: 2.4.0
+  tslib: 2.4.1
   typescript: 4.8.4
   vite: 3.2.2
   vite-plugin-doubleshot: 0.0.6_o4bszjrc5kc6xwlgk4znttygua
@@ -4535,7 +4535,7 @@ packages:
   /rxjs/7.5.5:
     resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
     dependencies:
-      tslib: 2.4.0
+      tslib: 2.4.1
     dev: true
 
   /safe-buffer/5.1.2:
@@ -5010,8 +5010,8 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
-  /tslib/2.4.0:
-    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+  /tslib/2.4.1:
+    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
     dev: true
 
   /tsup/6.2.1_izmmvacf74d7wpj2aqgzeglccm:
