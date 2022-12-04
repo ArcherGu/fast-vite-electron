@@ -12,7 +12,7 @@ specifiers:
   happy-dom: 7.7.2
   lint-staged: 13.0.4
   playwright: 1.28.1
-  pnpm: 7.17.1
+  pnpm: 7.18.0
   rimraf: 3.0.2
   simple-git-hooks: 2.8.1
   tslib: 2.4.1
@@ -38,7 +38,7 @@ devDependencies:
   happy-dom: 7.7.2
   lint-staged: 13.0.4
   playwright: 1.28.1
-  pnpm: 7.17.1
+  pnpm: 7.18.0
   rimraf: 3.0.2
   simple-git-hooks: 2.8.1
   tslib: 2.4.1
@@ -4257,8 +4257,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.17.1:
-    resolution: {integrity: sha512-O76jPxzoeja81Z/8YyTfuXt+f7qkpsyEJsNBreWYBLHY5rJkjvNE/bIUGQ2uD/rcYPEtmrZZYox21OjAMC9EGw==}
+  /pnpm/7.18.0:
+    resolution: {integrity: sha512-igZRB0ip8cn9f1glYzsPTJblxQcidY7/fSfJ++j6GYLT0pqIlijsdW9ZI4Waaxhi22SC4HZHe5vMiSa2IKoIoA==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
