@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@lightwing/eslint-config': 0.0.8
-  '@vitejs/plugin-vue': 3.2.0
+  '@vitejs/plugin-vue': 4.0.0
   '@vue/compiler-sfc': 3.2.45
   '@vue/test-utils': 2.2.6
   einf: ^1.3.0
@@ -29,7 +29,7 @@ dependencies:
 
 devDependencies:
   '@lightwing/eslint-config': 0.0.8_ha6vam6werchizxrnqvarmz2zu
-  '@vitejs/plugin-vue': 3.2.0_vite@3.2.5+vue@3.2.38
+  '@vitejs/plugin-vue': 4.0.0_vite@3.2.5+vue@3.2.38
   '@vue/compiler-sfc': 3.2.45
   '@vue/test-utils': 2.2.6_vue@3.2.38
   electron: 22.0.0
@@ -780,11 +780,11 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/3.2.0_vite@3.2.5+vue@3.2.38:
-    resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
+  /@vitejs/plugin-vue/4.0.0_vite@3.2.5+vue@3.2.38:
+    resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      vite: ^3.0.0
+      vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
       vite: 3.2.5
