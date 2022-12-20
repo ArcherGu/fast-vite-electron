@@ -19,7 +19,7 @@ specifiers:
   typescript: 4.9.4
   vite: 4.0.2
   vite-plugin-doubleshot: 0.0.6
-  vitest: 0.26.0
+  vitest: 0.26.1
   vue: ^3.2.38
   vue-tsc: 1.0.16
 
@@ -45,7 +45,7 @@ devDependencies:
   typescript: 4.9.4
   vite: 4.0.2
   vite-plugin-doubleshot: 0.0.6_dbbao2zifxtulbej7dhown7l7m
-  vitest: 0.26.0_happy-dom@8.1.0
+  vitest: 0.26.1_happy-dom@8.1.0
   vue-tsc: 1.0.16_typescript@4.9.4
 
 packages:
@@ -5242,8 +5242,8 @@ packages:
     dev: true
     optional: true
 
-  /vite-node/0.26.0_@types+node@17.0.25:
-    resolution: {integrity: sha512-nLtHWCv6reONl1oFsKhQ/LT7n3UNLpvVARAJlmGrQV6qSElht/9AdN41Pa+WSkw2Winh682UzM0Yw0GNlfqejw==}
+  /vite-node/0.26.1_@types+node@17.0.25:
+    resolution: {integrity: sha512-5FJSKZZJz48zFRKHE55WyevZe61hLMQEsqGn+ungfd60kxEztFybZ3yG9ToGFtOWNCCy7Vn5EVuXD8bdeHOSdw==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     dependencies:
@@ -5348,8 +5348,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.26.0_happy-dom@8.1.0:
-    resolution: {integrity: sha512-5kUnms5WOa0qrDCJePEPB13v9mhr+ZT1Qy0qNg0eVj1X7/Fx4GY4L1e5s3OH+BQ/J7M5WtaKsUGv9l1pbC7v2Q==}
+  /vitest/0.26.1_happy-dom@8.1.0:
+    resolution: {integrity: sha512-qTLRnjYmjmJpHlLUtErxtlRqGCe8WItFhGXKklpWivu7CLP9KXN9iTezROe+vf51Kb+BB/fzxK6fUG9DvFGL5Q==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -5385,7 +5385,7 @@ packages:
       tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 4.0.2_@types+node@17.0.25
-      vite-node: 0.26.0_@types+node@17.0.25
+      vite-node: 0.26.1_@types+node@17.0.25
     transitivePeerDependencies:
       - less
       - sass
