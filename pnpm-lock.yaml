@@ -18,7 +18,7 @@ specifiers:
   tslib: 2.4.1
   typescript: 4.9.4
   vite: 4.0.3
-  vite-plugin-doubleshot: 0.0.7
+  vite-plugin-doubleshot: 0.0.8
   vitest: 0.26.3
   vue: ^3.2.45
   vue-tsc: 1.0.19
@@ -44,7 +44,7 @@ devDependencies:
   tslib: 2.4.1
   typescript: 4.9.4
   vite: 4.0.3
-  vite-plugin-doubleshot: 0.0.7_dfqm2hyqy6hzgfwdq4md6e4po4
+  vite-plugin-doubleshot: 0.0.8_dfqm2hyqy6hzgfwdq4md6e4po4
   vitest: 0.26.3_happy-dom@8.1.1
   vue-tsc: 1.0.19_typescript@4.9.4
 
@@ -190,8 +190,8 @@ packages:
       ajv-keywords: 3.5.2_ajv@6.12.6
     dev: true
 
-  /@doubleshot/builder/0.0.7_4gl47vbnwavah233mclplcq6wi:
-    resolution: {integrity: sha512-7AUar/K6BBRce6bnjHw7os1xOiaHW6kAKAb4j5L1hmPFoaQ5FUQLqIEMjf2vWZPzZ9GnjQCgcZyqlEEAs8QPXw==}
+  /@doubleshot/builder/0.0.8_4gl47vbnwavah233mclplcq6wi:
+    resolution: {integrity: sha512-eS/0g8+iDMG2cmwcUTEblHnu7I+j82Vr3g8/i1fTAsl71yLWUPEhmGWGBiwDENdEJw6N9ZE9Tgi89T/Qx9GrQg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -206,7 +206,7 @@ packages:
       '@swc/core': 1.3.24
       bundle-require: 3.1.2_esbuild@0.16.12
       cac: 6.7.14
-      check-package-exists: 1.1.2
+      check-package-exists: 1.1.3
       colorette: 2.0.19
       electron: 22.0.0
       electron-builder: 23.6.0
@@ -693,6 +693,60 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@esm2cjs/execa/6.1.1-cjs.1:
+    resolution: {integrity: sha512-FHxfnmuDIjY1VS/BLzDkL8EkbcFvi8s6x1nYQ1Nyu0An0n88EJcGhDBcRWLFwt3C3nT7xwI+MwHRH1TZcAFW2w==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      '@esm2cjs/human-signals': 3.0.1
+      '@esm2cjs/is-stream': 3.0.0
+      '@esm2cjs/npm-run-path': 5.1.1-cjs.0
+      '@esm2cjs/onetime': 6.0.1-cjs.0
+      '@esm2cjs/strip-final-newline': 3.0.1-cjs.0
+      cross-spawn: 7.0.3
+      get-stream: 6.0.1
+      merge-stream: 2.0.0
+      signal-exit: 3.0.7
+    dev: true
+
+  /@esm2cjs/human-signals/3.0.1:
+    resolution: {integrity: sha512-QZme4eF/PwTpeSbMB4AaWGQ4VSygzE30jI+Oas1NPTtZQAgcHwWVDOQpIW8FUmtzn5Q+2cS7AjnTzbtqtc5P6g==}
+    engines: {node: '>=12.20.0'}
+    dev: true
+
+  /@esm2cjs/is-stream/3.0.0:
+    resolution: {integrity: sha512-qcBscHlJpZFOD5nnmMHkzOrq2xyvsp9fbVreQLS8x2LOs8N3CrNi3fqvFY0GVJR+YSOHscwhG9T5t4Ck7R7QGw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: true
+
+  /@esm2cjs/mimic-fn/4.0.0:
+    resolution: {integrity: sha512-LIIAjcpjLr4rcbYmRQ+eRu55Upy/MMB78seIlwqbnyiA+cTa1/pxWnJ1NHJQrw6tx2wMQmlYoJj+wf16NjWH6Q==}
+    engines: {node: '>=12'}
+    dev: true
+
+  /@esm2cjs/npm-run-path/5.1.1-cjs.0:
+    resolution: {integrity: sha512-CWeAIyE8iNSCgP2ItPE8iPgS+lACqgH+MuFRaWOIl2T7hnHqPFfhAJJ/LcLJJ/RMIxNMeenjFMwc91HW7NWr1A==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      '@esm2cjs/path-key': 4.0.0
+    dev: true
+
+  /@esm2cjs/onetime/6.0.1-cjs.0:
+    resolution: {integrity: sha512-MkZMZSxrSC/6yUuAw6Azc56XOgwHQQIsNDlO/zgFmOcycJBhRwRuc/gdYUUOFNZIh7y+f0JSIxkNdJPFvJ5W0w==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@esm2cjs/mimic-fn': 4.0.0
+    dev: true
+
+  /@esm2cjs/path-key/4.0.0:
+    resolution: {integrity: sha512-fKzZ3uIIP4j+7WfyG0MEkomGHL0hUXWCx1kY2Zct3GTdl4pyY+3k5lCUxjgdDa2Ld1BCjMNorXnRHiBP6jW6CQ==}
+    engines: {node: '>=12'}
+    dev: true
+
+  /@esm2cjs/strip-final-newline/3.0.1-cjs.0:
+    resolution: {integrity: sha512-o41riCGPiOEStayoikBCAqwa6igbv9L9rP+k5UCfQ24EJD/wGrdDs/KTNwkHG5JzDK3T60D5dMkWkLKEPy8gjA==}
+    engines: {node: '>=12'}
     dev: true
 
   /@hapi/hoek/9.3.0:
@@ -1760,10 +1814,11 @@ packages:
     resolution: {integrity: sha512-BrgHpW9NURQgzoNyjfq0Wu6VFO6D7IZEmJNdtgNqpzGG8RuNFHt2jQxWlAs4HMe119chBnv+34syEZtc6IhLtA==}
     dev: true
 
-  /check-package-exists/1.1.2:
-    resolution: {integrity: sha512-N9wDdoaOuxNpizC9mD0hb1pO2yEaPeTWYnppVoh9le5wqK3gKveNc77Kgms8OGtvGpjPgBQUFTfypbqMy7UGaQ==}
+  /check-package-exists/1.1.3:
+    resolution: {integrity: sha512-wsUwRhkmOgZmfRn23qxE/tDFiMZHIOLdPbFheD2bExYUh9rSJPYgNdjLHosrODhFRYUGssJHZvmf8cnM3OXJBg==}
     engines: {node: '>=14'}
     dependencies:
+      '@esm2cjs/execa': 6.1.1-cjs.1
       global-dirs: 3.0.1
       resolve: 1.22.1
     dev: true
@@ -2184,7 +2239,7 @@ packages:
       compare-version: 0.1.2
       debug: 2.6.9
       isbinaryfile: 3.0.3
-      minimist: 1.2.6
+      minimist: 1.2.7
       plist: 3.0.5
     transitivePeerDependencies:
       - supports-color
@@ -3746,7 +3801,7 @@ packages:
     resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==}
     hasBin: true
     dependencies:
-      minimist: 1.2.6
+      minimist: 1.2.7
     dev: true
 
   /json5/2.2.1:
@@ -3845,7 +3900,7 @@ packages:
       log-update: 4.0.0
       p-map: 4.0.0
       rfdc: 1.3.0
-      rxjs: 7.5.7
+      rxjs: 7.8.0
       through: 2.3.8
       wrap-ansi: 7.0.0
     dev: true
@@ -4032,10 +4087,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
-    dev: true
-
-  /minimist/1.2.6:
-    resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
 
   /minimist/1.2.7:
@@ -4643,12 +4694,6 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /rxjs/7.5.7:
-    resolution: {integrity: sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==}
-    dependencies:
-      tslib: 2.4.1
-    dev: true
-
   /rxjs/7.8.0:
     resolution: {integrity: sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==}
     dependencies:
@@ -5081,7 +5126,7 @@ packages:
     dependencies:
       '@types/json5': 0.0.29
       json5: 1.0.1
-      minimist: 1.2.6
+      minimist: 1.2.7
       strip-bom: 3.0.0
     dev: true
 
@@ -5265,13 +5310,13 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot/0.0.7_dfqm2hyqy6hzgfwdq4md6e4po4:
-    resolution: {integrity: sha512-1XgdAMuAtScWDNjnRxkTZxhOmZwNAWWveD2kMguILYT99jWPVyZcZsbqaD9urSFPcOSxm7/8W5qAsE86/NrbBw==}
+  /vite-plugin-doubleshot/0.0.8_dfqm2hyqy6hzgfwdq4md6e4po4:
+    resolution: {integrity: sha512-T2hJ2HmmBCfN0PMxPSxq1uyAQkykHMVUWe+S4mRLXMjcfUHrwfwV0GGIiymimfLNJ0U3st8P5ewh85N+Hq9mTQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.7_4gl47vbnwavah233mclplcq6wi
+      '@doubleshot/builder': 0.0.8_4gl47vbnwavah233mclplcq6wi
       vite: 4.0.3
     transitivePeerDependencies:
       - debug
