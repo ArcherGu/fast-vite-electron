@@ -19,7 +19,7 @@ specifiers:
   typescript: 4.9.4
   vite: 4.0.4
   vite-plugin-doubleshot: 0.0.8
-  vitest: 0.27.2
+  vitest: 0.27.3
   vue: ^3.2.45
   vue-tsc: 1.0.24
 
@@ -45,7 +45,7 @@ devDependencies:
   typescript: 4.9.4
   vite: 4.0.4
   vite-plugin-doubleshot: 0.0.8_jvzq7z3scz6atxzagz4ntilram
-  vitest: 0.27.2_happy-dom@8.1.4
+  vitest: 0.27.3_happy-dom@8.1.4
   vue-tsc: 1.0.24_typescript@4.9.4
 
 packages:
@@ -4672,6 +4672,10 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
+  /std-env/3.3.1:
+    resolution: {integrity: sha512-3H20QlwQsSm2OvAxWIYhs+j01MzzqwMwGiiO1NQaJYZgJZFPuAbf95/DiKRBSTYIJ2FeGUc+B/6mPGcWP9dO3Q==}
+    dev: true
+
   /string-argv/0.3.1:
     resolution: {integrity: sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==}
     engines: {node: '>=0.6.19'}
@@ -5069,8 +5073,8 @@ packages:
     dev: true
     optional: true
 
-  /vite-node/0.27.2_@types+node@17.0.25:
-    resolution: {integrity: sha512-IDwuVhslF10qCnWOGJui7/2KksAOBHi+UbVo6Pqt4f5lgn+kS2sVvYDsETRG5PSuslisGB5CFGvb9I6FQgymBQ==}
+  /vite-node/0.27.3_@types+node@17.0.25:
+    resolution: {integrity: sha512-eyJYOO64o5HIp8poc4bJX+ZNBwMZeI3f6/JdiUmJgW02Mt7LnoCtDMRVmLaY9S05SIsjGe339ZK4uo2wQ+bF9g==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     dependencies:
@@ -5177,8 +5181,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.27.2_happy-dom@8.1.4:
-    resolution: {integrity: sha512-y7tdsL2uaQy+KF18AlmNHZe29ukyFytlxrpSTwwmgLE2XHR/aPucJP9FLjWoqjgqFlXzRAjHlFJLU+HDyI/OsA==}
+  /vitest/0.27.3_happy-dom@8.1.4:
+    resolution: {integrity: sha512-Ld3UVgRVhJUtqvQ3dW89GxiApFAgBsWJZBCWzK+gA3w2yG68csXlGZZ4WDJURf+8ecNfgrScga6xY+8YSOpiMg==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -5211,12 +5215,13 @@ packages:
       local-pkg: 0.4.2
       picocolors: 1.0.0
       source-map: 0.6.1
+      std-env: 3.3.1
       strip-literal: 1.0.0
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 4.0.4_@types+node@17.0.25
-      vite-node: 0.27.2_@types+node@17.0.25
+      vite-node: 0.27.3_@types+node@17.0.25
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
