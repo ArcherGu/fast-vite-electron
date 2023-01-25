@@ -11,7 +11,7 @@ specifiers:
   eslint: 8.32.0
   happy-dom: 8.1.5
   lint-staged: 13.1.0
-  playwright: 1.29.2
+  playwright: 1.30.0
   pnpm: 7.26.0
   rimraf: 4.1.2
   simple-git-hooks: 2.8.1
@@ -37,7 +37,7 @@ devDependencies:
   eslint: 8.32.0
   happy-dom: 8.1.5
   lint-staged: 13.1.0
-  playwright: 1.29.2
+  playwright: 1.30.0
   pnpm: 7.26.0
   rimraf: 4.1.2
   simple-git-hooks: 2.8.1
@@ -4258,19 +4258,19 @@ packages:
       pathe: 1.1.0
     dev: true
 
-  /playwright-core/1.29.2:
-    resolution: {integrity: sha512-94QXm4PMgFoHAhlCuoWyaBYKb92yOcGVHdQLoxQ7Wjlc7Flg4aC/jbFW7xMR52OfXMVkWicue4WXE7QEegbIRA==}
+  /playwright-core/1.30.0:
+    resolution: {integrity: sha512-7AnRmTCf+GVYhHbLJsGUtskWTE33SwMZkybJ0v6rqR1boxq2x36U7p1vDRV7HO2IwTZgmycracLxPEJI49wu4g==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
 
-  /playwright/1.29.2:
-    resolution: {integrity: sha512-hKBYJUtdmYzcjdhYDkP9WGtORwwZBBKAW8+Lz7sr0ZMxtJr04ASXVzH5eBWtDkdb0c3LLFsehfPBTRfvlfKJOA==}
+  /playwright/1.30.0:
+    resolution: {integrity: sha512-ENbW5o75HYB3YhnMTKJLTErIBExrSlX2ZZ1C/FzmHjUYIfxj/UnI+DWpQr992m+OQVSg0rCExAOlRwB+x+yyIg==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      playwright-core: 1.29.2
+      playwright-core: 1.30.0
     dev: true
 
   /plist/3.0.5:
