@@ -9,7 +9,7 @@ specifiers:
   electron: 22.1.0
   electron-builder: 23.6.0
   eslint: 8.33.0
-  happy-dom: 8.2.0
+  happy-dom: 8.2.2
   lint-staged: 13.1.0
   playwright: 1.30.0
   pnpm: 7.26.2
@@ -35,7 +35,7 @@ devDependencies:
   electron: 22.1.0
   electron-builder: 23.6.0
   eslint: 8.33.0
-  happy-dom: 8.2.0
+  happy-dom: 8.2.2
   lint-staged: 13.1.0
   playwright: 1.30.0
   pnpm: 7.26.2
@@ -45,7 +45,7 @@ devDependencies:
   typescript: 4.9.5
   vite: 4.0.4
   vite-plugin-doubleshot: 0.0.9_hn6mqzrxb54a6sry4tlwigrhqi
-  vitest: 0.28.3_happy-dom@8.2.0
+  vitest: 0.28.3_happy-dom@8.2.2
   vue-tsc: 1.0.24_typescript@4.9.5
 
 packages:
@@ -3204,8 +3204,8 @@ packages:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: true
 
-  /happy-dom/8.2.0:
-    resolution: {integrity: sha512-SBMi/ht8zvtXNuSVpXJu+hOEJtNEbM4CxQukcHMm7FCd1sMuitfESwUMX83gl3C2JcEGLcpx/+JnF+rjGl27+A==}
+  /happy-dom/8.2.2:
+    resolution: {integrity: sha512-Glf3mOxTmh0ZdrvoPpbr0kc2Mg6OWCyLf8j36Jyj1EAR3Vs0LLEaZ9HSOWFR9ZwCsBW6YgybT9slJlR9dTxEGA==}
     dependencies:
       css.escape: 1.5.1
       he: 1.2.0
@@ -5319,7 +5319,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.28.3_happy-dom@8.2.0:
+  /vitest/0.28.3_happy-dom@8.2.2:
     resolution: {integrity: sha512-N41VPNf3VGJlWQizGvl1P5MGyv3ZZA2Zvh+2V8L6tYBAAuqqDK4zExunT1Cdb6dGfZ4gr+IMrnG8d4Z6j9ctPw==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -5353,7 +5353,7 @@ packages:
       cac: 6.7.14
       chai: 4.3.7
       debug: 4.3.4
-      happy-dom: 8.2.0
+      happy-dom: 8.2.2
       local-pkg: 0.4.2
       pathe: 1.1.0
       picocolors: 1.0.0
