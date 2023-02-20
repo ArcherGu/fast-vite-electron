@@ -4,7 +4,7 @@ specifiers:
   '@lightwing/eslint-config': 0.0.11
   '@vitejs/plugin-vue': 4.0.0
   '@vue/compiler-sfc': 3.2.47
-  '@vue/test-utils': 2.2.10
+  '@vue/test-utils': 2.3.0
   einf: ^1.3.0
   electron: 23.1.0
   electron-builder: 23.6.0
@@ -31,7 +31,7 @@ devDependencies:
   '@lightwing/eslint-config': 0.0.11_7kw3g6rralp5ps6mg3uyzz6azm
   '@vitejs/plugin-vue': 4.0.0_vite@4.1.2+vue@3.2.45
   '@vue/compiler-sfc': 3.2.47
-  '@vue/test-utils': 2.2.10_vue@3.2.45
+  '@vue/test-utils': 2.3.0_vue@3.2.45
   electron: 23.1.0
   electron-builder: 23.6.0
   eslint: 8.34.0
@@ -1244,8 +1244,8 @@ packages:
     resolution: {integrity: sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==}
     dev: true
 
-  /@vue/test-utils/2.2.10_vue@3.2.45:
-    resolution: {integrity: sha512-UPY+VdWST5vYZ/Qhl+sLuJAv596e6kTbrOPgdGY82qd9kGN/MfjzLT5KXlmpChkiCbPP3abZ8XT25u1n5h+mRg==}
+  /@vue/test-utils/2.3.0_vue@3.2.45:
+    resolution: {integrity: sha512-S8/9Z+B4VSsTUNtZtzS7J1TfxJbf10n+gcH9X8cASbG0Tp7qD6vqs/sUNlmpzk6i7+pP00ptauJp9rygyW89Ww==}
     peerDependencies:
       vue: ^3.0.1
     dependencies:
@@ -1253,6 +1253,7 @@ packages:
       vue: 3.2.45
     optionalDependencies:
       '@vue/compiler-dom': 3.2.47
+      '@vue/server-renderer': 3.2.45_vue@3.2.45
     dev: true
 
   /abbrev/1.1.1:
