@@ -1,21 +1,15 @@
-import type { IpcResponse } from '@common/types'
 import { getCurrentInstance, onUnmounted, toRaw } from 'vue'
 const { ipcRenderer } = window
 
 interface IpcInstance {
-  send: <T = any>(target: string, ...args: any[]) => Promise<IpcResponse<T>>
+  send: <T = any>(target: string, ...args: any[]) => Promise<T>
   on: (event: string, callback: (...args: any[]) => void) => void
 }
 
 export const ipcInstance: IpcInstance = {
-  send: async <T = any>(target, ...args) => {
+  send: (target, ...args) => {
     const payloads: any[] = args.map(e => toRaw(e))
-    const response: IpcResponse<T> = await ipcRenderer.invoke(target.toString(), ...payloads)
-    /* eslint-disable-next-line no-useless-call */
-    if (response.hasOwnProperty.call(response, 'error'))
-      throw response
-
-    return response
+    return ipcRenderer.invoke(target.toString(), ...payloads)
   },
   on: (event, callback) => {
     ipcRenderer.on(event.toString(), (e, ...args) => {
