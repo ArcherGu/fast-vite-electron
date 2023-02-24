@@ -17,8 +17,8 @@
     "postuninstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "einf": "^1.3.0",
-    "vue": "^3.2.45"
+    "einf": "^1.4.0",
+    "vue": "^3.2.47"
   },
   "devDependencies": {
     "@lightwing/eslint-config": "0.0.11",
