@@ -29,7 +29,7 @@
     "electron-builder": "23.6.0",
     "eslint": "8.35.0",
     "happy-dom": "8.9.0",
-    "lint-staged": "13.1.2",
+    "lint-staged": "13.2.0",
     "playwright": "1.31.2",
     "pnpm": "7.29.1",
     "rimraf": "4.4.0",
