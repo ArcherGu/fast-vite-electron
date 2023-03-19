@@ -1,7 +1,7 @@
 {
   "name": "fast-vite-electron",
   "version": "0.0.1",
-  "packageManager": "pnpm@7.29.3",
+  "packageManager": "pnpm@7.30.0",
   "description": "Vite + Electron with esbuild, so fast! ⚡",
   "main": "dist/main/index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "happy-dom": "8.9.0",
     "lint-staged": "13.2.0",
     "playwright": "1.31.2",
-    "pnpm": "7.29.3",
+    "pnpm": "7.30.0",
     "rimraf": "4.4.0",
     "simple-git-hooks": "2.8.1",
     "tslib": "2.5.0",
