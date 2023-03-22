@@ -13,7 +13,7 @@ specifiers:
   lint-staged: 13.2.0
   playwright: 1.31.2
   pnpm: 7.30.0
-  rimraf: 4.4.0
+  rimraf: 4.4.1
   simple-git-hooks: 2.8.1
   tslib: 2.5.0
   typescript: 5.0.2
@@ -39,7 +39,7 @@ devDependencies:
   lint-staged: 13.2.0
   playwright: 1.31.2
   pnpm: 7.30.0
-  rimraf: 4.4.0
+  rimraf: 4.4.1
   simple-git-hooks: 2.8.1
   tslib: 2.5.0
   typescript: 5.0.2
@@ -4956,8 +4956,8 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rimraf/4.4.0:
-    resolution: {integrity: sha512-X36S+qpCUR0HjXlkDe4NAOhS//aHH0Z+h8Ckf2auGJk3PTnx5rLmrHkwNdbVQuCSUhOyFrlRvFEllZOYE+yZGQ==}
+  /rimraf/4.4.1:
+    resolution: {integrity: sha512-Gk8NlF062+T9CqNGn6h4tls3k6T1+/nXdOcSZVikNVtlRdYpA7wRJJMoXmuvOnLW844rPjdQ7JgXCYM6PPC/og==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
