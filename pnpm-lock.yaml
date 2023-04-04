@@ -37,8 +37,8 @@ devDependencies:
     specifier: 13.2.0
     version: 13.2.0
   playwright:
-    specifier: 1.32.1
-    version: 1.32.1
+    specifier: 1.32.2
+    version: 1.32.2
   pnpm:
     specifier: 8.1.0
     version: 8.1.0
@@ -62,7 +62,7 @@ devDependencies:
     version: 0.0.9(electron-builder@23.6.0)(electron@23.2.2)(typescript@5.0.3)(vite@4.2.1)
   vitest:
     specifier: 0.29.8
-    version: 0.29.8(happy-dom@9.1.0)(playwright@1.32.1)
+    version: 0.29.8(happy-dom@9.1.0)(playwright@1.32.2)
   vue-tsc:
     specifier: 1.2.0
     version: 1.2.0(typescript@5.0.3)
@@ -4717,19 +4717,19 @@ packages:
       pathe: 1.1.0
     dev: true
 
-  /playwright-core@1.32.1:
-    resolution: {integrity: sha512-KZYUQC10mXD2Am1rGlidaalNGYk3LU1vZqqNk0gT4XPty1jOqgup8KDP8l2CUlqoNKhXM5IfGjWgW37xvGllBA==}
+  /playwright-core@1.32.2:
+    resolution: {integrity: sha512-zD7aonO+07kOTthsrCR3YCVnDcqSHIJpdFUtZEMOb6//1Rc7/6mZDRdw+nlzcQiQltOOsiqI3rrSyn/SlyjnJQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
 
-  /playwright@1.32.1:
-    resolution: {integrity: sha512-GnEizysWMvoqHC3I9l8+4/ZxeLwLNdJJG76xdKGxzOcIZDcw5RSk/FKrFb5CuA+zcLpjIM2p9eR9Z4CuUDkWXg==}
+  /playwright@1.32.2:
+    resolution: {integrity: sha512-jHVnXJke0PXpuPszKtk9y1zZSlzO5+2a+aockT/AND0oeXx46FiJEFrafthurglLygVZA+1gEbtUM1C7qtTV+Q==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      playwright-core: 1.32.1
+      playwright-core: 1.32.2
     dev: true
 
   /plist@3.0.5:
@@ -5696,7 +5696,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.29.8(happy-dom@9.1.0)(playwright@1.32.1):
+  /vitest@0.29.8(happy-dom@9.1.0)(playwright@1.32.2):
     resolution: {integrity: sha512-JIAVi2GK5cvA6awGpH0HvH/gEG9PZ0a/WoxdiV3PmqK+3CjQMf8c+J/Vhv4mdZ2nRyXFw66sAg6qz7VNkaHfDQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -5743,7 +5743,7 @@ packages:
       local-pkg: 0.4.3
       pathe: 1.1.0
       picocolors: 1.0.0
-      playwright: 1.32.1
+      playwright: 1.32.2
       source-map: 0.6.1
       std-env: 3.3.1
       strip-literal: 1.0.0
