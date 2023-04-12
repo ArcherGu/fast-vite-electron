@@ -1,4 +1,5 @@
 import { getCurrentInstance, onUnmounted, toRaw } from 'vue'
+
 const { ipcRenderer } = window
 
 interface IpcInstance {
