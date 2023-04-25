@@ -14,7 +14,7 @@ devDependencies:
     version: 0.0.14(eslint@8.39.0)(typescript@5.0.4)
   '@vitejs/plugin-vue':
     specifier: 4.2.0
-    version: 4.2.0(vite@4.3.1)(vue@3.2.47)
+    version: 4.2.0(vite@4.3.2)(vue@3.2.47)
   '@vue/compiler-sfc':
     specifier: 3.2.47
     version: 3.2.47
@@ -52,11 +52,11 @@ devDependencies:
     specifier: 5.0.4
     version: 5.0.4
   vite:
-    specifier: 4.3.1
-    version: 4.3.1(@types/node@18.15.11)
+    specifier: 4.3.2
+    version: 4.3.2(@types/node@18.15.11)
   vite-plugin-doubleshot:
     specifier: 0.0.10
-    version: 0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.3.1)
+    version: 0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.3.2)
   vitest:
     specifier: 0.30.1
     version: 0.30.1(happy-dom@9.9.2)(playwright@1.32.3)
@@ -1055,14 +1055,14 @@ packages:
       eslint-visitor-keys: 3.4.0
     dev: true
 
-  /@vitejs/plugin-vue@4.2.0(vite@4.3.1)(vue@3.2.47):
+  /@vitejs/plugin-vue@4.2.0(vite@4.3.2)(vue@3.2.47):
     resolution: {integrity: sha512-hYaXFvEKEwyTmwHq2ft7GGeLBvyYLwTM3E5R1jpvzxg9gO4m5PQcTVvj1wEPKoPL8PAt+KAlxo3gyJWnmwzaWQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.1(@types/node@18.15.11)
+      vite: 4.3.2(@types/node@18.15.11)
       vue: 3.2.47
     dev: true
 
@@ -4560,8 +4560,8 @@ packages:
       sprintf-js: 1.1.2
     optional: true
 
-  /rollup@3.20.6:
-    resolution: {integrity: sha512-2yEB3nQXp/tBQDN0hJScJQheXdvU2wFhh6ld7K/aiZ1vYcak6N/BKjY1QrU6BvO2JWYS8bEs14FRaxXosxy2zw==}
+  /rollup@3.21.0:
+    resolution: {integrity: sha512-ANPhVcyeHvYdQMUyCbczy33nbLzI7RzrBje4uvNiTDJGIMtlKoOStmympwr9OtS1LZxiDmE2wvxHyVhoLtf1KQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -5063,7 +5063,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 3.1.4
       resolve-from: 5.0.0
-      rollup: 3.20.6
+      rollup: 3.21.0
       source-map: 0.8.0-beta.0
       sucrase: 3.24.0
       tree-kill: 1.2.2
@@ -5205,7 +5205,7 @@ packages:
       mlly: 1.2.0
       pathe: 1.1.0
       picocolors: 1.0.0
-      vite: 4.3.1(@types/node@18.15.11)
+      vite: 4.3.2(@types/node@18.15.11)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5216,14 +5216,14 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot@0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.3.1):
+  /vite-plugin-doubleshot@0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.3.2):
     resolution: {integrity: sha512-Sw05inDjlfLCPId+e5fUgRBLTs5CQaeljMEGoaxvtNRMr9vMfEJjo8SLwN69KlSYlLPGpli4zhnSv7njj/C0+A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.9(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)
-      vite: 4.3.1(@types/node@18.15.11)
+      vite: 4.3.2(@types/node@18.15.11)
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -5235,8 +5235,8 @@ packages:
       - typescript
     dev: true
 
-  /vite@4.3.1(@types/node@18.15.11):
-    resolution: {integrity: sha512-EPmfPLAI79Z/RofuMvkIS0Yr091T2ReUoXQqc5ppBX/sjFRhHKiPPF/R46cTdoci/XgeQpB23diiJxq5w30vdg==}
+  /vite@4.3.2(@types/node@18.15.11):
+    resolution: {integrity: sha512-9R53Mf+TBoXCYejcL+qFbZde+eZveQLDYd9XgULILLC1a5ZwPaqgmdVpL8/uvw2BM/1TzetWjglwm+3RO+xTyw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -5263,7 +5263,7 @@ packages:
       '@types/node': 18.15.11
       esbuild: 0.17.11
       postcss: 8.4.21
-      rollup: 3.20.6
+      rollup: 3.21.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -5324,7 +5324,7 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.4.0
       tinypool: 0.4.0
-      vite: 4.3.1(@types/node@18.15.11)
+      vite: 4.3.2(@types/node@18.15.11)
       vite-node: 0.30.1(@types/node@18.15.11)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
