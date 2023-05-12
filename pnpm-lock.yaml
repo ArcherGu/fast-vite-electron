@@ -31,8 +31,8 @@ devDependencies:
     specifier: 8.40.0
     version: 8.40.0
   happy-dom:
-    specifier: 9.16.0
-    version: 9.16.0
+    specifier: 9.17.0
+    version: 9.17.0
   lint-staged:
     specifier: 13.2.2
     version: 13.2.2
@@ -59,7 +59,7 @@ devDependencies:
     version: 0.0.10(electron-builder@23.6.0)(electron@24.3.0)(typescript@5.0.4)(vite@4.3.5)
   vitest:
     specifier: 0.31.0
-    version: 0.31.0(happy-dom@9.16.0)(playwright@1.33.0)
+    version: 0.31.0(happy-dom@9.17.0)(playwright@1.33.0)
   vue-tsc:
     specifier: 1.6.4
     version: 1.6.4(typescript@5.0.4)
@@ -1148,16 +1148,6 @@ packages:
       estree-walker: 2.0.2
       source-map: 0.6.1
 
-  /@vue/compiler-core@3.3.1:
-    resolution: {integrity: sha512-5le1qYSBgLWg2jdLrbydlhnPJkkzMw46UrRUvTnOKlfg6pThtm9ohhqBhNPHbr0RcM1MCbK5WZe/3Ghz0SZjpQ==}
-    dependencies:
-      '@babel/parser': 7.21.5
-      '@vue/shared': 3.3.1
-      estree-walker: 2.0.2
-      source-map-js: 1.0.2
-    dev: true
-    optional: true
-
   /@vue/compiler-core@3.3.2:
     resolution: {integrity: sha512-CKZWo1dzsQYTNTft7whzjL0HsrEpMfiK7pjZ2WFE3bC1NA7caUjWioHSK+49y/LK7Bsm4poJZzAMnvZMQ7OTeg==}
     dependencies:
@@ -1173,17 +1163,9 @@ packages:
       '@vue/compiler-core': 3.2.47
       '@vue/shared': 3.2.47
 
-  /@vue/compiler-dom@3.3.1:
-    resolution: {integrity: sha512-VmgIsoLivCft3+oNc5KM7b9wd0nZxP/g2qilMwi1hJyGA624KWnNKHn4hzBQs4FpzydUVpNy+TWVT8KiRCh3MQ==}
-    requiresBuild: true
-    dependencies:
-      '@vue/compiler-core': 3.3.1
-      '@vue/shared': 3.3.1
-    dev: true
-    optional: true
-
   /@vue/compiler-dom@3.3.2:
     resolution: {integrity: sha512-6gS3auANuKXLw0XH6QxkWqyPYPunziS2xb6VRenM3JY7gVfZcJvkCBHkb5RuNY1FCbBO3lkIi0CdXUCW1c7SXw==}
+    requiresBuild: true
     dependencies:
       '@vue/compiler-core': 3.3.2
       '@vue/shared': 3.3.2
@@ -1290,11 +1272,6 @@ packages:
     resolution: {integrity: sha512-st1SnB/Bkbb9TsieeI4TRX9TqHYIR5wvIma3ZtEben55EYSWa1q5u2BhTNgABSdH+rv3Xwfrvpwh5PmCw6Y53g==}
     dev: true
 
-  /@vue/shared@3.3.1:
-    resolution: {integrity: sha512-ybDBtQ+479HL/bkeIOIAwgpeAEACzztkvulJLbK3JMFuTOv4qDivmV3AIsR8RHYJ+RD9tQxcHWBsX4GqEcYrfw==}
-    dev: true
-    optional: true
-
   /@vue/shared@3.3.2:
     resolution: {integrity: sha512-0rFu3h8JbclbnvvKrs7Fe5FNGV9/5X2rPD7KmOzhLSUAiQH5//Hq437Gv0fR5Mev3u/nbtvmLl8XgwCU20/ZfQ==}
     dev: true
@@ -1307,7 +1284,7 @@ packages:
       js-beautify: 1.14.6
       vue: 3.2.47
     optionalDependencies:
-      '@vue/compiler-dom': 3.3.1
+      '@vue/compiler-dom': 3.3.2
       '@vue/server-renderer': 3.2.47(vue@3.2.47)
     dev: true
 
@@ -3228,8 +3205,8 @@ packages:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: true
 
-  /happy-dom@9.16.0:
-    resolution: {integrity: sha512-goq7grRjIiV2Svb251LWQOo/xm04za2mJ9+assbZJx1KnaVOX1gZBBp4MHbiFNkR6JW7UL81iCtZxCVu+qU5ng==}
+  /happy-dom@9.17.0:
+    resolution: {integrity: sha512-+uuf/Vr4XAaPj94vNyGfnDY+td2dc5RwUNaGNR1vM8kuteOeQ59b6wY61Ik0l4BWcmLK8BICMWSItqA9lXHl0A==}
     dependencies:
       css.escape: 1.5.1
       entities: 4.5.0
@@ -5327,7 +5304,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.31.0(happy-dom@9.16.0)(playwright@1.33.0):
+  /vitest@0.31.0(happy-dom@9.17.0)(playwright@1.33.0):
     resolution: {integrity: sha512-JwWJS9p3GU9GxkG7eBSmr4Q4x4bvVBSswaCFf1PBNHiPx00obfhHRJfgHcnI0ffn+NMlIh9QGvG75FlaIBdKGA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -5372,7 +5349,7 @@ packages:
       chai: 4.3.7
       concordance: 5.0.4
       debug: 4.3.4
-      happy-dom: 9.16.0
+      happy-dom: 9.17.0
       local-pkg: 0.4.3
       magic-string: 0.30.0
       pathe: 1.1.0
