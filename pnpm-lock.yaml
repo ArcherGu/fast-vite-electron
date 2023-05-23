@@ -37,8 +37,8 @@ devDependencies:
     specifier: 13.2.2
     version: 13.2.2
   playwright:
-    specifier: 1.34.0
-    version: 1.34.0
+    specifier: 1.34.1
+    version: 1.34.1
   rimraf:
     specifier: 5.0.1
     version: 5.0.1
@@ -59,7 +59,7 @@ devDependencies:
     version: 0.0.10(electron-builder@23.6.0)(electron@24.3.1)(typescript@5.0.4)(vite@4.3.8)
   vitest:
     specifier: 0.31.1
-    version: 0.31.1(happy-dom@9.20.1)(playwright@1.34.0)
+    version: 0.31.1(happy-dom@9.20.1)(playwright@1.34.1)
   vue-tsc:
     specifier: 1.6.5
     version: 1.6.5(typescript@5.0.4)
@@ -4380,18 +4380,19 @@ packages:
       pathe: 1.1.0
     dev: true
 
-  /playwright-core@1.34.0:
-    resolution: {integrity: sha512-fMUY1+iR6kYbJF/EsOOqzBA99ZHXbw9sYPNjwA4X/oV0hVF/1aGlWYBGPVUEqxBkGANDKMziYoOdKGU5DIP5Gg==}
+  /playwright-core@1.34.1:
+    resolution: {integrity: sha512-4Y5hGLoSrnB/BXj2NFKBNWP/bI9uVejTVbso1ZBtkKZ+O2KiVIeCJ3R4c7Cf2PbP7htjLolHXY+mImt2IWOlEg==}
     engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
-  /playwright@1.34.0:
-    resolution: {integrity: sha512-fh+Q7fw7fPg2jSjDUNgo46PbKNTKQCYbeYXXbMm1hTbhPc0V62WM6h/pqWLTW0tqjfu8TCLdx7tECd/2AbYaHg==}
+  /playwright@1.34.1:
+    resolution: {integrity: sha512-RonTwQifzkCZHsjZKYUKsOJkQAVe1HArnyLcSRrkyDxN46Ytpwki5XzQFdpuv0XD8WtAjs4gI3oMYJiEj5Qo6g==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      playwright-core: 1.34.0
+      playwright-core: 1.34.1
     dev: true
 
   /plist@3.0.5:
@@ -5345,7 +5346,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.31.1(happy-dom@9.20.1)(playwright@1.34.0):
+  /vitest@0.31.1(happy-dom@9.20.1)(playwright@1.34.1):
     resolution: {integrity: sha512-/dOoOgzoFk/5pTvg1E65WVaobknWREN15+HF+0ucudo3dDG/vCZoXTQrjIfEaWvQXmqScwkRodrTbM/ScMpRcQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -5395,7 +5396,7 @@ packages:
       magic-string: 0.30.0
       pathe: 1.1.0
       picocolors: 1.0.0
-      playwright: 1.34.0
+      playwright: 1.34.1
       std-env: 3.3.2
       strip-literal: 1.0.1
       tinybench: 2.5.0
