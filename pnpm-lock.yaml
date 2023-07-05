@@ -35,8 +35,8 @@ devDependencies:
     specifier: 8.44.0
     version: 8.44.0
   happy-dom:
-    specifier: 9.20.3
-    version: 9.20.3
+    specifier: 10.0.3
+    version: 10.0.3
   lint-staged:
     specifier: 13.2.3
     version: 13.2.3
@@ -63,7 +63,7 @@ devDependencies:
     version: 0.0.12(electron-builder@24.4.0)(electron@25.2.0)(typescript@5.1.6)(vite@4.3.9)
   vitest:
     specifier: 0.32.4
-    version: 0.32.4(happy-dom@9.20.3)(playwright@1.35.1)
+    version: 0.32.4(happy-dom@10.0.3)(playwright@1.35.1)
   vue-tsc:
     specifier: 1.8.4
     version: 1.8.4(typescript@5.1.6)
@@ -3546,8 +3546,8 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /happy-dom@9.20.3:
-    resolution: {integrity: sha512-eBsgauT435fXFvQDNcmm5QbGtYzxEzOaX35Ia+h6yP/wwa4xSWZh1CfP+mGby8Hk6Xu59mTkpyf72rUXHNxY7A==}
+  /happy-dom@10.0.3:
+    resolution: {integrity: sha512-WkCP+Z5fX6U5PY+yHP3ElV5D9PoxRAHRWPFq3pG9rg/6Hjf5ak7dozAgSCywsTRUq2qfa8vV8OQvUy5pRXy8EQ==}
     dependencies:
       css.escape: 1.5.1
       entities: 4.5.0
@@ -5868,7 +5868,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.32.4(happy-dom@9.20.3)(playwright@1.35.1):
+  /vitest@0.32.4(happy-dom@10.0.3)(playwright@1.35.1):
     resolution: {integrity: sha512-3czFm8RnrsWwIzVDu/Ca48Y/M+qh3vOnF16czJm98Q/AN1y3B6PBsyV8Re91Ty5s7txKNjEhpgtGPcfdbh2MZg==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -5912,7 +5912,7 @@ packages:
       cac: 6.7.14
       chai: 4.3.7
       debug: 4.3.4
-      happy-dom: 9.20.3
+      happy-dom: 10.0.3
       local-pkg: 0.4.3
       magic-string: 0.30.0
       pathe: 1.1.1
