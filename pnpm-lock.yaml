@@ -38,8 +38,8 @@ devDependencies:
     specifier: 10.9.0
     version: 10.9.0
   lint-staged:
-    specifier: 13.3.0
-    version: 13.3.0
+    specifier: 14.0.0
+    version: 14.0.0
   playwright:
     specifier: 1.37.0
     version: 1.37.0
@@ -3705,8 +3705,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged@13.3.0:
-    resolution: {integrity: sha512-mPRtrYnipYYv1FEE134ufbWpeggNTo+O/UPzngoaKzbzHAthvR55am+8GfHTnqNRQVRRrYQLGW9ZyUoD7DsBHQ==}
+  /lint-staged@14.0.0:
+    resolution: {integrity: sha512-0tLf0pqZYkar/wu3nTctk4rVIG+d7PanDYv4/IQR4qwdqfQkTDziLRFnqMcLuLBTuUqmcLwsHPD2EjQ18d/oaA==}
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
     dependencies:
@@ -4317,7 +4317,7 @@ packages:
         optional: true
     dependencies:
       lilconfig: 2.1.0
-      yaml: 2.2.2
+      yaml: 2.3.1
     dev: true
 
   /postcss-selector-parser@6.0.10:
@@ -5501,12 +5501,7 @@ packages:
     dependencies:
       eslint-visitor-keys: 3.4.2
       lodash: 4.17.21
-      yaml: 2.2.2
-    dev: true
-
-  /yaml@2.2.2:
-    resolution: {integrity: sha512-CBKFWExMn46Foo4cldiChEzn7S7SRV+wqiluAb6xmueD/fGyRHIhX8m14vVGgeFWjN540nKCNVj6P21eQjgTuA==}
-    engines: {node: '>= 14'}
+      yaml: 2.3.1
     dev: true
 
   /yaml@2.3.1:
