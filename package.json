@@ -33,7 +33,7 @@
     "playwright": "1.37.1",
     "rimraf": "5.0.1",
     "simple-git-hooks": "2.9.0",
-    "tslib": "2.6.1",
+    "tslib": "2.6.2",
     "typescript": "5.1.6",
     "vite": "4.4.9",
     "vite-plugin-doubleshot": "0.0.12",
