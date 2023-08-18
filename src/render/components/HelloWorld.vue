@@ -3,7 +3,7 @@ import { sendMsgToMainProcess } from '@render/api'
 import { useIpc } from '@render/plugins/ipc'
 import { ref } from 'vue'
 
-const props = defineProps({
+defineProps({
   title: {
     type: String,
     default: 'Vite + Electron & Esbuild',

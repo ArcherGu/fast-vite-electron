@@ -1,5 +1,8 @@
 {
   "extends": "@lightwing",
+  "rules": {
+    "n/prefer-global/process": "off"
+  },
   "overrides": [
     {
       "files": "src/main/**/*.ts",

@@ -18,10 +18,10 @@
   },
   "dependencies": {
     "einf": "^1.5.0",
-    "vue": "^3.2.47"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "0.0.17",
+    "@lightwing/eslint-config": "0.0.19",
     "@vitejs/plugin-vue": "4.3.1",
     "@vue/compiler-sfc": "3.3.4",
     "@vue/test-utils": "2.4.1",
