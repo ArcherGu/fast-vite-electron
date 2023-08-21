@@ -17,8 +17,8 @@ devDependencies:
     specifier: 0.0.20
     version: 0.0.20(eslint@8.47.0)(typescript@5.1.6)
   '@vitejs/plugin-vue':
-    specifier: 4.3.1
-    version: 4.3.1(vite@4.4.9)(vue@3.3.4)
+    specifier: 4.3.2
+    version: 4.3.2(vite@4.4.9)(vue@3.3.4)
   '@vue/compiler-sfc':
     specifier: 3.3.4
     version: 3.3.4
@@ -1163,8 +1163,8 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@vitejs/plugin-vue@4.3.1(vite@4.4.9)(vue@3.3.4):
-    resolution: {integrity: sha512-tUBEtWcF7wFtII7ayNiLNDTCE1X1afySEo+XNVMNkFXaThENyCowIEX095QqbJZGTgoOcSVDJGlnde2NG4jtbQ==}
+  /@vitejs/plugin-vue@4.3.2(vite@4.4.9)(vue@3.3.4):
+    resolution: {integrity: sha512-iDDhGruwhKkwNwT5qgtGaeTxF4ULs52xpQbsC27F01kf3aQBHtrDP738pmHw4oclVAUA3m+Vk8gxhDV5KbfM+A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
@@ -1763,7 +1763,7 @@ packages:
     dependencies:
       '@esm2cjs/execa': 6.1.1-cjs.1
       global-dirs: 3.0.1
-      resolve: 1.22.2
+      resolve: 1.22.4
     dev: true
 
   /chokidar@3.5.3:
@@ -3236,12 +3236,6 @@ packages:
       ci-info: 3.8.0
     dev: true
 
-  /is-core-module@2.12.1:
-    resolution: {integrity: sha512-Q4ZuBAe2FUsKtyQJoQHlvP8OvBERxO3jEmy1I7hcRXcJBGGHFh/aJBswbXuS9sgrDH2QUO8ilkwNPHvHMd8clg==}
-    dependencies:
-      has: 1.0.3
-    dev: true
-
   /is-core-module@2.13.0:
     resolution: {integrity: sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==}
     dependencies:
@@ -4190,15 +4184,6 @@ packages:
 
   /resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
-    dev: true
-
-  /resolve@1.22.2:
-    resolution: {integrity: sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==}
-    hasBin: true
-    dependencies:
-      is-core-module: 2.12.1
-      path-parse: 1.0.7
-      supports-preserve-symlinks-flag: 1.0.0
     dev: true
 
   /resolve@1.22.4:
