@@ -30,7 +30,7 @@
     "eslint": "8.49.0",
     "happy-dom": "11.0.6",
     "lint-staged": "14.0.1",
-    "playwright": "1.37.1",
+    "playwright": "1.38.0",
     "rimraf": "5.0.1",
     "simple-git-hooks": "2.9.0",
     "tslib": "2.6.2",
