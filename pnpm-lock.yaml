@@ -41,8 +41,8 @@ devDependencies:
     specifier: 14.0.1
     version: 14.0.1
   playwright:
-    specifier: 1.38.0
-    version: 1.38.0
+    specifier: 1.38.1
+    version: 1.38.1
   rimraf:
     specifier: 5.0.1
     version: 5.0.1
@@ -63,7 +63,7 @@ devDependencies:
     version: 0.0.12(electron-builder@24.6.4)(electron@26.2.2)(typescript@5.2.2)(vite@4.4.9)
   vitest:
     specifier: 0.34.5
-    version: 0.34.5(happy-dom@12.1.5)(playwright@1.38.0)
+    version: 0.34.5(happy-dom@12.1.5)(playwright@1.38.1)
   vue-tsc:
     specifier: 1.8.13
     version: 1.8.13(typescript@5.2.2)
@@ -4027,18 +4027,18 @@ packages:
       pathe: 1.1.1
     dev: true
 
-  /playwright-core@1.38.0:
-    resolution: {integrity: sha512-f8z1y8J9zvmHoEhKgspmCvOExF2XdcxMW8jNRuX4vkQFrzV4MlZ55iwb5QeyiFQgOFCUolXiRHgpjSEnqvO48g==}
+  /playwright-core@1.38.1:
+    resolution: {integrity: sha512-tQqNFUKa3OfMf4b2jQ7aGLB8o9bS3bOY0yMEtldtC2+spf8QXG9zvXLTXUeRsoNuxEYMgLYR+NXfAa1rjKRcrg==}
     engines: {node: '>=16'}
     hasBin: true
     dev: true
 
-  /playwright@1.38.0:
-    resolution: {integrity: sha512-fJGw+HO0YY+fU/F1N57DMO+TmXHTrmr905J05zwAQE9xkuwP/QLDk63rVhmyxh03dYnEhnRbsdbH9B0UVVRB3A==}
+  /playwright@1.38.1:
+    resolution: {integrity: sha512-oRMSJmZrOu1FP5iu3UrCx8JEFRIMxLDM0c/3o4bpzU5Tz97BypefWf7TuTNPWeCe279TPal5RtPPZ+9lW/Qkow==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      playwright-core: 1.38.0
+      playwright-core: 1.38.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -4937,7 +4937,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.34.5(happy-dom@12.1.5)(playwright@1.38.0):
+  /vitest@0.34.5(happy-dom@12.1.5)(playwright@1.38.1):
     resolution: {integrity: sha512-CPI68mmnr2DThSB3frSuE5RLm9wo5wU4fbDrDwWQQB1CWgq9jQVoQwnQSzYAjdoBOPoH2UtXpOgHVge/uScfZg==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -4986,7 +4986,7 @@ packages:
       magic-string: 0.30.1
       pathe: 1.1.1
       picocolors: 1.0.0
-      playwright: 1.38.0
+      playwright: 1.38.1
       std-env: 3.3.3
       strip-literal: 1.0.1
       tinybench: 2.5.0
