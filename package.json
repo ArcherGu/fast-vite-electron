@@ -31,7 +31,7 @@
     "happy-dom": "12.1.6",
     "lint-staged": "14.0.1",
     "playwright": "1.38.1",
-    "rimraf": "5.0.1",
+    "rimraf": "5.0.4",
     "simple-git-hooks": "2.9.0",
     "tslib": "2.6.2",
     "typescript": "5.2.2",
