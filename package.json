@@ -25,7 +25,7 @@
     "@vitejs/plugin-vue": "4.3.4",
     "@vue/compiler-sfc": "3.3.4",
     "@vue/test-utils": "2.4.1",
-    "electron": "26.2.2",
+    "electron": "26.2.3",
     "electron-builder": "24.6.4",
     "eslint": "8.50.0",
     "happy-dom": "12.2.1",
