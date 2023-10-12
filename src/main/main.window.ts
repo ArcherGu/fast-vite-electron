@@ -5,8 +5,8 @@ const isDev = !app.isPackaged
 
 export async function createWindow() {
   const win = new BrowserWindow({
-    width: 1000,
-    height: 800,
+    width: 1024,
+    height: 768,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
@@ -15,8 +15,6 @@ export async function createWindow() {
     },
     autoHideMenuBar: !isDev,
   })
-
-  win.maximize()
 
   const URL = isDev
     ? process.env.DS_RENDERER_URL
