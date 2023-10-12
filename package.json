@@ -6,7 +6,7 @@
   "main": "dist/main/index.js",
   "scripts": {
     "dev": "rimraf dist && vite",
-    "build": "rimraf dist && vite build",
+    "build": "rimraf dist && vue-tsc && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "npm run test:main && npm run test:render",
@@ -21,7 +21,7 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "0.0.23",
+    "@lightwing/eslint-config": "0.0.24",
     "@vitejs/plugin-vue": "4.4.0",
     "@vue/compiler-sfc": "3.3.4",
     "@vue/test-utils": "2.4.1",
@@ -30,7 +30,7 @@
     "eslint": "8.51.0",
     "happy-dom": "12.9.1",
     "lint-staged": "14.0.1",
-    "playwright": "1.38.1",
+    "playwright": "1.39.0",
     "rimraf": "5.0.5",
     "simple-git-hooks": "2.9.0",
     "tslib": "2.6.2",
