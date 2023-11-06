@@ -19,12 +19,4 @@ module.exports = lightwing(
       'node/prefer-global/process': 'off',
     },
   },
-  {
-    files: [
-      'src/main/**/*.ts',
-    ],
-    rules: {
-      'ts/consistent-type-imports': 'off',
-    },
-  },
 )
