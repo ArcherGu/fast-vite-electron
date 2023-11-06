@@ -1,4 +1,4 @@
-import { beforeEach, expect, test, vi } from 'vitest'
+import { beforeEach, expect, it, vi } from 'vitest'
 import { BrowserWindow } from 'electron'
 import { restoreOrCreateWindow } from '../main.window'
 
@@ -34,7 +34,7 @@ beforeEach(() => {
   vi.clearAllMocks()
 })
 
-test('Should create new window', async () => {
+it('should create new window', async () => {
   const { mock } = vi.mocked(BrowserWindow)
   expect(mock.instances).toHaveLength(0)
 
@@ -44,7 +44,7 @@ test('Should create new window', async () => {
   expect(mock.instances[0].loadURL).toHaveBeenCalledWith(expect.stringMatching(/index\.html$/))
 })
 
-test('Should restore existing window', async () => {
+it('should restore existing window', async () => {
   const { mock } = vi.mocked(BrowserWindow)
 
   // Create Window and minimize it
@@ -58,7 +58,7 @@ test('Should restore existing window', async () => {
   expect(appWindow.restore).toHaveBeenCalledOnce()
 })
 
-test('Should create new window if previous was destroyed', async () => {
+it('should create new window if previous was destroyed', async () => {
   const { mock } = vi.mocked(BrowserWindow)
 
   // Create Window and destroy it

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import { expect, test, vi } from 'vitest'
+import { expect, it, vi } from 'vitest'
 import HelloWorld from '../components/HelloWorld.vue'
 
 vi.mock('../api', () => ({
@@ -15,7 +15,7 @@ vi.mock('../plugins/ipc', () => ({
 /**
  * @vitest-environment happy-dom
  */
-test('HelloWorld component', async () => {
+it('helloWorld component', async () => {
   expect(HelloWorld).toBeTruthy()
   const wrapper = mount(HelloWorld)
 

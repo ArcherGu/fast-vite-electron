@@ -1,6 +1,6 @@
 import type { ElectronApplication } from 'playwright'
 import { _electron as electron } from 'playwright'
-import { afterAll, beforeAll, expect, test } from 'vitest'
+import { afterAll, beforeAll, expect, it } from 'vitest'
 
 let electronApp: ElectronApplication
 
@@ -15,7 +15,7 @@ afterAll(async () => {
   await electronApp.close()
 })
 
-test('Main window state', async () => {
+it('main window state', async () => {
   const windowState: { isVisible: boolean; isDevToolsOpened: boolean; isCrashed: boolean }
         = await electronApp.evaluate(({ BrowserWindow }) => {
           const mainWindow = BrowserWindow.getAllWindows()[0]
