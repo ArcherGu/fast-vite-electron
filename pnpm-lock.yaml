@@ -7,7 +7,7 @@ settings:
 dependencies:
   einf:
     specifier: ^1.5.0
-    version: 1.5.0(electron@27.0.3)
+    version: 1.5.0(electron@27.0.4)
   vue:
     specifier: ^3.3.7
     version: 3.3.7(typescript@5.2.2)
@@ -26,8 +26,8 @@ devDependencies:
     specifier: 2.4.1
     version: 2.4.1(vue@3.3.7)
   electron:
-    specifier: 27.0.3
-    version: 27.0.3
+    specifier: 27.0.4
+    version: 27.0.4
   electron-builder:
     specifier: 24.6.4
     version: 24.6.4
@@ -60,7 +60,7 @@ devDependencies:
     version: 4.5.0(@types/node@18.15.11)
   vite-plugin-doubleshot:
     specifier: 0.0.12
-    version: 0.0.12(electron-builder@24.6.4)(electron@27.0.3)(typescript@5.2.2)(vite@4.5.0)
+    version: 0.0.12(electron-builder@24.6.4)(electron@27.0.4)(typescript@5.2.2)(vite@4.5.0)
   vitest:
     specifier: 0.34.6
     version: 0.34.6(happy-dom@12.10.3)(playwright@1.39.0)
@@ -167,7 +167,7 @@ packages:
       ajv-keywords: 3.5.2(ajv@6.12.6)
     dev: true
 
-  /@doubleshot/builder@0.0.11(electron-builder@24.6.4)(electron@27.0.3)(typescript@5.2.2):
+  /@doubleshot/builder@0.0.11(electron-builder@24.6.4)(electron@27.0.4)(typescript@5.2.2):
     resolution: {integrity: sha512-dlPnJ2SMxNhwdnijTVaISBQMT4zzM7pVUZivRqoFVGC68omcoceQQWOV14D5bicOCMZtjJ1HEg7y5hDql3/Ohw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -185,7 +185,7 @@ packages:
       cac: 6.7.14
       check-package-exists: 1.1.3
       colorette: 2.0.20
-      electron: 27.0.3
+      electron: 27.0.4
       electron-builder: 24.6.4
       esbuild: 0.18.11
       joycon: 3.1.1
@@ -2074,15 +2074,6 @@ packages:
       get-intrinsic: 1.2.2
       gopd: 1.0.1
       has-property-descriptors: 1.0.0
-    dev: true
-
-  /define-properties@1.1.4:
-    resolution: {integrity: sha512-uckOqKcfaVvtBdsVkdPv3XjveQJsNQqmhXgRi8uhvWWuPYZCNlzT8qAyblUgNoXdHdjMTzAqeGjAoli8f+bzPA==}
-    engines: {node: '>= 0.4'}
-    requiresBuild: true
-    dependencies:
-      has-property-descriptors: 1.0.0
-      object-keys: 1.1.1
 
   /define-properties@1.2.1:
     resolution: {integrity: sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==}
@@ -2091,7 +2082,6 @@ packages:
       define-data-property: 1.1.1
       has-property-descriptors: 1.0.0
       object-keys: 1.1.1
-    dev: true
 
   /delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
@@ -2193,14 +2183,14 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /einf@1.5.0(electron@27.0.3):
+  /einf@1.5.0(electron@27.0.4):
     resolution: {integrity: sha512-KPOrSzaXFBn4bm5l2k5rbzFtGHs/WaIiJvm2qckZreO+/PnNTNQalpGIOI6TE4N9xrlDxiVIs4t1nyuEBdlgKg==}
     engines: {node: '>=14'}
     peerDependencies:
       electron: '>=16.0.0'
     dependencies:
       colorette: 2.0.19
-      electron: 27.0.3
+      electron: 27.0.4
       reflect-metadata: 0.1.13
     dev: false
 
@@ -2246,8 +2236,8 @@ packages:
       - supports-color
     dev: true
 
-  /electron@27.0.3:
-    resolution: {integrity: sha512-VaB9cI1se+mUtz366NP+zxFVnkHLbCBNO4wwouw3FuGyX/m7/Bv1I89JhWOBv78tC+n11ZYMrVD23Jf6EZgVcg==}
+  /electron@27.0.4:
+    resolution: {integrity: sha512-ob29rN1mtiyAXzF8HsHd5jh8bYKd9OQDakfdOExi0F7epU97gXPHaj6JPjbBJ/vpki5d32SyKVePW4vxeNZk1A==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
@@ -3185,7 +3175,7 @@ packages:
     engines: {node: '>= 0.4'}
     requiresBuild: true
     dependencies:
-      define-properties: 1.1.4
+      define-properties: 1.2.1
 
   /globby@11.1.0:
     resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==}
@@ -3203,7 +3193,6 @@ packages:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
     dependencies:
       get-intrinsic: 1.2.2
-    dev: true
 
   /got@11.8.5:
     resolution: {integrity: sha512-o0Je4NvQObAuZPHLFoRSkdG2lTgtcynqymzg2Vupdx6PorhaT5MCbIyXG6d4D94kk8ZG57QeosgdiqfJWhEhlQ==}
@@ -5326,13 +5315,13 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot@0.0.12(electron-builder@24.6.4)(electron@27.0.3)(typescript@5.2.2)(vite@4.5.0):
+  /vite-plugin-doubleshot@0.0.12(electron-builder@24.6.4)(electron@27.0.4)(typescript@5.2.2)(vite@4.5.0):
     resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.11(electron-builder@24.6.4)(electron@27.0.3)(typescript@5.2.2)
+      '@doubleshot/builder': 0.0.11(electron-builder@24.6.4)(electron@27.0.4)(typescript@5.2.2)
       vite: 4.5.0(@types/node@18.15.11)
     transitivePeerDependencies:
       - '@swc/helpers'
