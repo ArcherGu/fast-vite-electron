@@ -15,9 +15,6 @@ export default defineConfig({
       entry: 'src/main/index.ts',
       outDir: 'dist/main',
       external: ['electron'],
-      tsupConfig: {
-        sourcemap: true,
-      },
       electron: {
         build: {
           config: './electron-builder.config.js',
