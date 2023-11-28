@@ -23,8 +23,8 @@ devDependencies:
     specifier: 3.3.9
     version: 3.3.9
   '@vue/test-utils':
-    specifier: 2.4.2
-    version: 2.4.2(vue@3.3.7)
+    specifier: 2.4.3
+    version: 2.4.3(vue@3.3.7)
   electron:
     specifier: 27.1.2
     version: 27.1.2
@@ -1723,8 +1723,8 @@ packages:
     resolution: {integrity: sha512-ZE0VTIR0LmYgeyhurPTpy4KzKsuDyQbMSdM49eKkMnT5X4VfFBLysMzjIZhLEFQYjjOVVfbvUDHckwjDFiO2eA==}
     dev: true
 
-  /@vue/test-utils@2.4.2(vue@3.3.7):
-    resolution: {integrity: sha512-07lLjpG1o9tEBoWQfVOFhDT7+WFCdDeECoeSdzOuVgIi6nxb2JDLGNNOV6+3crPpyg/jMlIocj96UROcgomiGg==}
+  /@vue/test-utils@2.4.3(vue@3.3.7):
+    resolution: {integrity: sha512-F4K7mF+ad++VlTrxMJVRnenKSJmO6fkQt2wpRDiKDesQMkfpniGWsqEi/JevxGBo2qEkwwjvTUAoiGJLNx++CA==}
     peerDependencies:
       '@vue/server-renderer': ^3.0.1
       vue: ^3.0.1
