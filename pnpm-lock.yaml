@@ -41,8 +41,8 @@ devDependencies:
     specifier: 15.1.0
     version: 15.1.0
   playwright:
-    specifier: 1.40.0
-    version: 1.40.0
+    specifier: 1.40.1
+    version: 1.40.1
   rimraf:
     specifier: 5.0.5
     version: 5.0.5
@@ -63,7 +63,7 @@ devDependencies:
     version: 0.0.13(electron-builder@24.9.1)(electron@27.1.2)(typescript@5.3.2)(vite@5.0.3)
   vitest:
     specifier: 0.34.6
-    version: 0.34.6(happy-dom@12.10.3)(playwright@1.40.0)
+    version: 0.34.6(happy-dom@12.10.3)(playwright@1.40.1)
   vue-tsc:
     specifier: 1.8.22
     version: 1.8.22(typescript@5.3.2)
@@ -2963,7 +2963,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 6.11.0(@typescript-eslint/parser@6.11.0)(eslint@8.54.0)(typescript@5.3.2)
       '@typescript-eslint/utils': 6.10.0(eslint@8.54.0)(typescript@5.3.2)
       eslint: 8.54.0
-      vitest: 0.34.6(happy-dom@12.10.3)(playwright@1.40.0)
+      vitest: 0.34.6(happy-dom@12.10.3)(playwright@1.40.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -4497,18 +4497,18 @@ packages:
       pathe: 1.1.1
     dev: true
 
-  /playwright-core@1.40.0:
-    resolution: {integrity: sha512-fvKewVJpGeca8t0ipM56jkVSU6Eo0RmFvQ/MaCQNDYm+sdvKkMBBWTE1FdeMqIdumRaXXjZChWHvIzCGM/tA/Q==}
+  /playwright-core@1.40.1:
+    resolution: {integrity: sha512-+hkOycxPiV534c4HhpfX6yrlawqVUzITRKwHAmYfmsVreltEl6fAZJ3DPfLMOODw0H3s1Itd6MDCWmP1fl/QvQ==}
     engines: {node: '>=16'}
     hasBin: true
     dev: true
 
-  /playwright@1.40.0:
-    resolution: {integrity: sha512-gyHAgQjiDf1m34Xpwzaqb76KgfzYrhK7iih+2IzcOCoZWr/8ZqmdBw+t0RU85ZmfJMgtgAiNtBQ/KS2325INXw==}
+  /playwright@1.40.1:
+    resolution: {integrity: sha512-2eHI7IioIpQ0bS1Ovg/HszsN/XKNwEG1kbzSDDmADpclKc7CyqkHw7Mg2JCz/bbCxg25QUPcjksoMW7JcIFQmw==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      playwright-core: 1.40.0
+      playwright-core: 1.40.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -5407,7 +5407,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@0.34.6(happy-dom@12.10.3)(playwright@1.40.0):
+  /vitest@0.34.6(happy-dom@12.10.3)(playwright@1.40.1):
     resolution: {integrity: sha512-+5CALsOvbNKnS+ZHMXtuUC7nL8/7F1F2DnHGjSsszX8zCjWSSviphCb/NuS9Nzf4Q03KyyDRBAXhF/8lffME4Q==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -5456,7 +5456,7 @@ packages:
       magic-string: 0.30.1
       pathe: 1.1.1
       picocolors: 1.0.0
-      playwright: 1.40.0
+      playwright: 1.40.1
       std-env: 3.3.3
       strip-literal: 1.0.1
       tinybench: 2.5.0
