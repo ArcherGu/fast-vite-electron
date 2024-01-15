@@ -16,7 +16,7 @@ afterAll(async () => {
 })
 
 it('main window state', async () => {
-  const windowState: { isVisible: boolean; isDevToolsOpened: boolean; isCrashed: boolean }
+  const windowState: { isVisible: boolean, isDevToolsOpened: boolean, isCrashed: boolean }
         = await electronApp.evaluate(({ BrowserWindow }) => {
           const mainWindow = BrowserWindow.getAllWindows()[0]
 
