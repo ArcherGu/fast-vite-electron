@@ -18,7 +18,7 @@ devDependencies:
     version: 1.0.25(@vue/compiler-sfc@3.4.19)(eslint@8.56.0)(typescript@5.3.3)(vitest@1.2.2)
   '@vitejs/plugin-vue':
     specifier: 5.0.4
-    version: 5.0.4(vite@5.1.1)(vue@3.4.13)
+    version: 5.0.4(vite@5.1.2)(vue@3.4.13)
   '@vue/compiler-sfc':
     specifier: 3.4.19
     version: 3.4.19
@@ -56,11 +56,11 @@ devDependencies:
     specifier: 5.3.3
     version: 5.3.3
   vite:
-    specifier: 5.1.1
-    version: 5.1.1
+    specifier: 5.1.2
+    version: 5.1.2
   vite-plugin-doubleshot:
     specifier: 0.0.13
-    version: 0.0.13(electron-builder@24.9.1)(electron@28.2.3)(typescript@5.3.3)(vite@5.1.1)
+    version: 0.0.13(electron-builder@24.9.1)(electron@28.2.3)(typescript@5.3.3)(vite@5.1.2)
   vitest:
     specifier: 1.2.2
     version: 1.2.2(happy-dom@13.3.8)
@@ -1540,14 +1540,14 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-vue@5.0.4(vite@5.1.1)(vue@3.4.13):
+  /@vitejs/plugin-vue@5.0.4(vite@5.1.2)(vue@3.4.13):
     resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.1.1
+      vite: 5.1.2
       vue: 3.4.13(typescript@5.3.3)
     dev: true
 
@@ -5514,7 +5514,7 @@ packages:
       debug: 4.3.4
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 5.1.1
+      vite: 5.1.2
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5526,14 +5526,14 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot@0.0.13(electron-builder@24.9.1)(electron@28.2.3)(typescript@5.3.3)(vite@5.1.1):
+  /vite-plugin-doubleshot@0.0.13(electron-builder@24.9.1)(electron@28.2.3)(typescript@5.3.3)(vite@5.1.2):
     resolution: {integrity: sha512-AdeF/4fePxA5rHMGrc2Q2FDtihNcjnWD/YNZTmr2qF8380W9a+2fcDreCVPkTBiwhJcWPUM0nDmQ4ojQgSFggw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.11(electron-builder@24.9.1)(electron@28.2.3)(typescript@5.3.3)
-      vite: 5.1.1
+      vite: 5.1.2
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -5545,8 +5545,8 @@ packages:
       - typescript
     dev: true
 
-  /vite@5.1.1:
-    resolution: {integrity: sha512-wclpAgY3F1tR7t9LL5CcHC41YPkQIpKUGeIuT8MdNwNZr6OqOTLs7JX5vIHAtzqLWXts0T+GDrh9pN2arneKqg==}
+  /vite@5.1.2:
+    resolution: {integrity: sha512-uwiFebQbTWRIGbCaTEBVAfKqgqKNKMJ2uPXsXeLIZxM8MVMjoS3j0cG8NrPxdDIadaWnPSjrkLWffLSC+uiP3Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -5624,7 +5624,7 @@ packages:
       strip-literal: 1.3.0
       tinybench: 2.5.1
       tinypool: 0.8.2
-      vite: 5.1.1
+      vite: 5.1.2
       vite-node: 1.2.2
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
