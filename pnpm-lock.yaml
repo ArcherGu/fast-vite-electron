@@ -35,8 +35,8 @@ devDependencies:
     specifier: 8.57.0
     version: 8.57.0
   happy-dom:
-    specifier: 14.3.8
-    version: 14.3.8
+    specifier: 14.3.9
+    version: 14.3.9
   lint-staged:
     specifier: 15.2.2
     version: 15.2.2
@@ -63,7 +63,7 @@ devDependencies:
     version: 0.0.13(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3)(vite@5.2.6)
   vitest:
     specifier: 1.4.0
-    version: 1.4.0(happy-dom@14.3.8)
+    version: 1.4.0(happy-dom@14.3.9)
   vue-tsc:
     specifier: 2.0.7
     version: 2.0.7(typescript@5.4.3)
@@ -3225,7 +3225,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 7.2.0(@typescript-eslint/parser@7.2.0)(eslint@8.57.0)(typescript@5.4.3)
       '@typescript-eslint/utils': 7.2.0(eslint@8.57.0)(typescript@5.4.3)
       eslint: 8.57.0
-      vitest: 1.4.0(happy-dom@14.3.8)
+      vitest: 1.4.0(happy-dom@14.3.9)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3594,7 +3594,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       at-least-node: 1.0.0
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       jsonfile: 6.1.0
       universalify: 2.0.0
     dev: true
@@ -3820,14 +3820,13 @@ packages:
 
   /graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
-    dev: true
 
   /graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /happy-dom@14.3.8:
-    resolution: {integrity: sha512-jP7p/VQJ08lbIoCsw1Adna3RA86eE+2CNkqvJRWIhrKP7XKZ0e0s2TJSt5lwGS4b7x0z0Ztw0A9P4uQGMHPiiA==}
+  /happy-dom@14.3.9:
+    resolution: {integrity: sha512-0kPQchwthekcYpYN8CvCiq+/z5bqFYDLbTxZ+yDLwT8AFRVJDFadShHRxp3VAZRy7a5isOZ1j/LzsU1dtAIZMQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       entities: 4.5.0
@@ -4246,14 +4245,14 @@ packages:
   /jsonfile@4.0.0:
     resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
 
   /jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
     dev: true
 
   /keyv@4.5.2:
@@ -5974,7 +5973,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.4.0(happy-dom@14.3.8):
+  /vitest@1.4.0(happy-dom@14.3.9):
     resolution: {integrity: sha512-gujzn0g7fmwf83/WzrDTnncZt2UiXP41mHuFYFrdwaLRVQ6JYQEiME2IfEjU3vcFL3VKa75XhI3lFgn+hfVsQw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -6008,7 +6007,7 @@ packages:
       chai: 4.3.10
       debug: 4.3.4
       execa: 8.0.1
-      happy-dom: 14.3.8
+      happy-dom: 14.3.9
       local-pkg: 0.5.0
       magic-string: 0.30.8
       pathe: 1.1.1
