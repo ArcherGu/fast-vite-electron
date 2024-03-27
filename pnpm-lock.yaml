@@ -7,7 +7,7 @@ settings:
 dependencies:
   einf:
     specifier: ^1.5.1
-    version: 1.5.2(electron@29.1.5)
+    version: 1.5.2(electron@29.1.6)
   vue:
     specifier: ^3.4.13
     version: 3.4.21(typescript@5.4.3)
@@ -26,8 +26,8 @@ devDependencies:
     specifier: 2.4.5
     version: 2.4.5
   electron:
-    specifier: 29.1.5
-    version: 29.1.5
+    specifier: 29.1.6
+    version: 29.1.6
   electron-builder:
     specifier: 24.13.3
     version: 24.13.3(electron-builder-squirrel-windows@24.13.3)
@@ -60,7 +60,7 @@ devDependencies:
     version: 5.2.6
   vite-plugin-doubleshot:
     specifier: 0.0.13
-    version: 0.0.13(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3)(vite@5.2.6)
+    version: 0.0.13(electron-builder@24.13.3)(electron@29.1.6)(typescript@5.4.3)(vite@5.2.6)
   vitest:
     specifier: 1.4.0
     version: 1.4.0(happy-dom@14.3.9)
@@ -231,7 +231,7 @@ packages:
       ajv-keywords: 3.5.2(ajv@6.12.6)
     dev: true
 
-  /@doubleshot/builder@0.0.11(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3):
+  /@doubleshot/builder@0.0.11(electron-builder@24.13.3)(electron@29.1.6)(typescript@5.4.3):
     resolution: {integrity: sha512-dlPnJ2SMxNhwdnijTVaISBQMT4zzM7pVUZivRqoFVGC68omcoceQQWOV14D5bicOCMZtjJ1HEg7y5hDql3/Ohw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -249,7 +249,7 @@ packages:
       cac: 6.7.14
       check-package-exists: 1.1.3
       colorette: 2.0.20
-      electron: 29.1.5
+      electron: 29.1.6
       electron-builder: 24.13.3(electron-builder-squirrel-windows@24.13.3)
       esbuild: 0.18.11
       joycon: 3.1.1
@@ -1299,7 +1299,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 20.11.21
+      '@types/node': 20.11.30
       '@types/responselike': 1.0.0
 
   /@types/debug@4.1.7:
@@ -1342,7 +1342,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 20.11.21
+      '@types/node': 20.11.30
 
   /@types/mdast@3.0.10:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
@@ -1354,18 +1354,11 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: true
 
-  /@types/node@20.11.21:
-    resolution: {integrity: sha512-/ySDLGscFPNasfqStUuWWPfL78jompfIoVzLJPVVAHBh6rpG68+pI2Gk+fNLeI8/f1yPYL4s46EleVIc20F1Ow==}
-    requiresBuild: true
-    dependencies:
-      undici-types: 5.26.5
-
   /@types/node@20.11.30:
     resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
     requiresBuild: true
     dependencies:
       undici-types: 5.26.5
-    dev: true
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -1383,7 +1376,7 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 20.11.21
+      '@types/node': 20.11.30
 
   /@types/semver@7.5.0:
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
@@ -1403,7 +1396,7 @@ packages:
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
     requiresBuild: true
     dependencies:
-      '@types/node': 20.11.21
+      '@types/node': 20.11.30
     optional: true
 
   /@typescript-eslint/eslint-plugin@7.4.0(@typescript-eslint/parser@7.4.0)(eslint@8.57.0)(typescript@5.4.3):
@@ -2807,14 +2800,14 @@ packages:
       semver: 7.6.0
     dev: true
 
-  /einf@1.5.2(electron@29.1.5):
+  /einf@1.5.2(electron@29.1.6):
     resolution: {integrity: sha512-mr9a+G+Rgguj/mobZcdYhSwV1R8E8XP7SWszvBI9ClGz1O2b3h21M0Ka0gyMv5oUD5p7EyxWBnuWsxp/1UzKuQ==}
     engines: {node: '>=14'}
     peerDependencies:
       electron: '>=16.0.0'
     dependencies:
       colorette: 2.0.20
-      electron: 29.1.5
+      electron: 29.1.6
       reflect-metadata: 0.2.1
     dev: false
 
@@ -2877,14 +2870,14 @@ packages:
     resolution: {integrity: sha512-osHqhtjojpCsACVnuD11xO5g9xaCyw7Qqn/C2KParkMv42i8jrJJgx3g7mkHfpxwhy9MnOJr8+pKOdZ7qzgizg==}
     dev: true
 
-  /electron@29.1.5:
-    resolution: {integrity: sha512-1uWGRw/ffA62lcrklxGUgVxVtOHojsg/nwsYr+/F9cVjipZJn8iPv/ABGIIexhmUqWcho8BqfTJ4osCBa29gBg==}
+  /electron@29.1.6:
+    resolution: {integrity: sha512-UIYfpHR9gRBFKHyejHuXUVQ7nNzZRnoPVOHlijkvqR+DSLwgJ2ZcVVt0LNduNeO8PhPkY1+6kHonL52OTC1cOw==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
     dependencies:
       '@electron/get': 2.0.2
-      '@types/node': 20.11.21
+      '@types/node': 20.11.30
       extract-zip: 2.0.1
     transitivePeerDependencies:
       - supports-color
@@ -3642,7 +3635,7 @@ packages:
     resolution: {integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==}
     engines: {node: '>=6 <7 || >=8'}
     dependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       jsonfile: 4.0.0
       universalify: 0.1.2
 
@@ -3868,6 +3861,7 @@ packages:
 
   /graceful-fs@4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
+    dev: true
 
   /graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
@@ -5970,13 +5964,13 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot@0.0.13(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3)(vite@5.2.6):
+  /vite-plugin-doubleshot@0.0.13(electron-builder@24.13.3)(electron@29.1.6)(typescript@5.4.3)(vite@5.2.6):
     resolution: {integrity: sha512-AdeF/4fePxA5rHMGrc2Q2FDtihNcjnWD/YNZTmr2qF8380W9a+2fcDreCVPkTBiwhJcWPUM0nDmQ4ojQgSFggw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.11(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3)
+      '@doubleshot/builder': 0.0.11(electron-builder@24.13.3)(electron@29.1.6)(typescript@5.4.3)
       vite: 5.2.6
     transitivePeerDependencies:
       - '@swc/helpers'
