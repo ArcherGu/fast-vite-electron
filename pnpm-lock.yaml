@@ -7,7 +7,7 @@ settings:
 dependencies:
   einf:
     specifier: ^1.5.1
-    version: 1.5.2(electron@29.1.6)
+    version: 1.5.3(electron@29.1.6)
   vue:
     specifier: ^3.4.13
     version: 3.4.21(typescript@5.4.3)
@@ -2731,15 +2731,15 @@ packages:
       semver: 7.6.0
     dev: true
 
-  /einf@1.5.2(electron@29.1.6):
-    resolution: {integrity: sha512-mr9a+G+Rgguj/mobZcdYhSwV1R8E8XP7SWszvBI9ClGz1O2b3h21M0Ka0gyMv5oUD5p7EyxWBnuWsxp/1UzKuQ==}
+  /einf@1.5.3(electron@29.1.6):
+    resolution: {integrity: sha512-rdVjOr8zaj4A/XXFWvazFiN/9cW4FrIzzUHbfe2k8SoWVBvjcun0E+umkRk2yETnkaDOKOsqfbKgrTArXTS/Cg==}
     engines: {node: '>=14'}
     peerDependencies:
       electron: '>=16.0.0'
     dependencies:
       colorette: 2.0.20
       electron: 29.1.6
-      reflect-metadata: 0.2.1
+      reflect-metadata: 0.2.2
     dev: false
 
   /ejs@3.1.9:
@@ -4228,7 +4228,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.11
+      graceful-fs: 4.2.10
     dev: true
 
   /keyv@4.5.2:
@@ -5075,8 +5075,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /reflect-metadata@0.2.1:
-    resolution: {integrity: sha512-i5lLI6iw9AU3Uu4szRNPPEkomnkjRTaVt9hy/bn5g/oSzekBSMeLZblcjP74AW0vBabqERLLIrz+gR8QYR54Tw==}
+  /reflect-metadata@0.2.2:
+    resolution: {integrity: sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==}
     dev: false
 
   /regexp-tree@0.1.27:
