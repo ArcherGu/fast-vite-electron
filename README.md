@@ -8,6 +8,8 @@ This template is used to build vite + electron projects. Build with [Doubleshot]
 
 🎉 [Doubleshot](https://github.com/Doubleshotjs/doubleshot) is a whole new set of tools to help you quickly build and start a node backend or electron main process.
 
+This is a vue version of the template, you can also use [react version](https://github.com/ArcherGu/vite-react-nestjs-electron).
+
 ## Features
 
 - 🔨 [vite-plugin-doubleshot](https://github.com/archergu/doubleshot/tree/main/packages/plugin-vite#readme) to run/build electron main process.
