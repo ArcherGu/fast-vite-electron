@@ -8,7 +8,10 @@ This template is used to build vite + electron projects. Build with [Doubleshot]
 
 🎉 [Doubleshot](https://github.com/Doubleshotjs/doubleshot) is a whole new set of tools to help you quickly build and start a node backend or electron main process.
 
-This is a vue version of the template, you can also use [react version](https://github.com/ArcherGu/vite-react-nestjs-electron).
+This template is based on a small framework [einf](https://github.com/ArcherGu/einf) that I wrote myself, which may not be complete, if you want to apply to production, you can use the templates with integrated nest.js:
+- [Vue.js template](https://github.com/ArcherGu/fast-vite-nestjs-electron)
+- [React template](https://github.com/ArcherGu/vite-react-nestjs-electron)
+- [Svelte.js template](https://github.com/ArcherGu/vite-svelte-nestjs-electron)
 
 ## Features
 
