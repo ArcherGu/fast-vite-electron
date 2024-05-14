@@ -9,6 +9,7 @@ This template is used to build vite + electron projects. Build with [Doubleshot]
 🎉 [Doubleshot](https://github.com/Doubleshotjs/doubleshot) is a whole new set of tools to help you quickly build and start a node backend or electron main process.
 
 This template is based on a small framework [einf](https://github.com/ArcherGu/einf) that I wrote myself, which may not be complete, if you want to apply to production, you can use the templates with integrated nest.js:
+
 - [Vue.js template](https://github.com/ArcherGu/fast-vite-nestjs-electron)
 - [React template](https://github.com/ArcherGu/vite-react-nestjs-electron)
 - [Svelte.js template](https://github.com/ArcherGu/vite-svelte-nestjs-electron)
@@ -16,13 +17,13 @@ This template is based on a small framework [einf](https://github.com/ArcherGu/e
 ## Features
 
 - 🔨 [vite-plugin-doubleshot](https://github.com/archergu/doubleshot/tree/main/packages/plugin-vite#readme) to run/build electron main process.
-<br>
+  <br>
 
 - 😎 Controllers/Services ipc communication, powered by Typescript [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html).
-<br>
+  <br>
 
 - ⚡ Rendering process is powered by [Vite](https://vite.io/).
-<br>
+  <br>
 
 - ⏩ Quick start and build, powered by [tsup](https://tsup.egoist.sh/) and [electron-builder](https://www.electron.build/) integrated in [@doubleshot/builder](https://github.com/Doubleshotjs/doubleshot/tree/main/packages/builder)
 
@@ -32,12 +33,13 @@ In the past, I've been building desktop clients with [vue](https://v3.vuejs.org/
 
 The advent of [vite](https://vitejs.dev/) and [esbuild](https://esbuild.github.io/) greatly improved the development experience and made me feel lightning fast ⚡.
 
- It took me a little time to extract this template and thank you for using it.
+It took me a little time to extract this template and thank you for using it.
 
 ## How to use
 
 - Click the [Use this template](https://github.com/ArcherGu/fast-vite-electron/generate) button (you must be logged in) or just clone this repo.
 - In the project folder:
+
   ```bash
   # install dependencies
   yarn # npm install
@@ -52,12 +54,15 @@ The advent of [vite](https://vitejs.dev/) and [esbuild](https://esbuild.github.i
 ## Note for PNPM
 
 In order to use with `pnpm`, you'll need to adjust your `.npmrc` to use any one the following approaches in order for your dependencies to be bundled correctly (ref: [#6389](https://github.com/electron-userland/electron-builder/issues/6289#issuecomment-1042620422)):
+
 ```
 node-linker=hoisted
 ```
+
 ```
 public-hoist-pattern=*
 ```
+
 ```
 shamefully-hoist=true
 ```
