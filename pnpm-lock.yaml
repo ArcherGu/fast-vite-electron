@@ -10,7 +10,7 @@ importers:
     dependencies:
       einf:
         specifier: ^1.5.3
-        version: 1.5.3(electron@30.0.9)
+        version: 1.5.3(electron@30.1.0)
       vue:
         specifier: ^3.4.27
         version: 3.4.27(typescript@5.4.5)
@@ -28,8 +28,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       electron:
-        specifier: 30.0.9
-        version: 30.0.9
+        specifier: 30.1.0
+        version: 30.1.0
       electron-builder:
         specifier: 24.13.3
         version: 24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3))
@@ -62,7 +62,7 @@ importers:
         version: 5.2.12(@types/node@20.12.11)
       vite-plugin-doubleshot:
         specifier: 0.0.14
-        version: 0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.0.9)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12(@types/node@20.12.11))
+        version: 0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.1.0)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12(@types/node@20.12.11))
       vitest:
         specifier: 1.6.0
         version: 1.6.0(@types/node@20.12.11)(happy-dom@14.12.0)
@@ -1562,8 +1562,8 @@ packages:
   electron-to-chromium@1.4.765:
     resolution: {integrity: sha512-70APzI2AGyJgcWVSnfJCytP2Gejptk6cIm0t5uuUfwdKN63xBIZBzD0N5l/s0hWr8tj0w/p6UaPz+hLAm+Orjw==}
 
-  electron@30.0.9:
-    resolution: {integrity: sha512-ArxgdGHVu3o5uaP+Tqj8cJDvU03R6vrGrOqiMs7JXLnvQHMqXJIIxmFKQAIdJW8VoT3ac3hD21tA7cPO10RLow==}
+  electron@30.1.0:
+    resolution: {integrity: sha512-9O8m7kinjwMH5Df0hpXbwUaqI6pk3aJm1sKQUkQGCF7NDbNkGhu2BXgqaicPU6oe26zQPc5vtwWnHmiKlh1hYA==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -3650,7 +3650,7 @@ snapshots:
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
 
-  '@doubleshot/builder@0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.0.9)(postcss@8.4.38)(typescript@5.4.5)':
+  '@doubleshot/builder@0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.1.0)(postcss@8.4.38)(typescript@5.4.5)':
     dependencies:
       '@swc/core': 1.5.6
       bundle-require: 4.1.0(esbuild@0.18.20)
@@ -3663,7 +3663,7 @@ snapshots:
       tsup: 7.2.0(@swc/core@1.5.6)(postcss@8.4.38)(typescript@5.4.5)
       wait-on: 7.2.0
     optionalDependencies:
-      electron: 30.0.9
+      electron: 30.1.0
       electron-builder: 24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3))
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -5128,10 +5128,10 @@ snapshots:
       minimatch: 9.0.1
       semver: 7.6.2
 
-  einf@1.5.3(electron@30.0.9):
+  einf@1.5.3(electron@30.1.0):
     dependencies:
       colorette: 2.0.20
-      electron: 30.0.9
+      electron: 30.1.0
       reflect-metadata: 0.2.2
 
   ejs@3.1.10:
@@ -5179,7 +5179,7 @@ snapshots:
 
   electron-to-chromium@1.4.765: {}
 
-  electron@30.0.9:
+  electron@30.1.0:
     dependencies:
       '@electron/get': 2.0.3
       '@types/node': 20.12.11
@@ -7155,9 +7155,9 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-doubleshot@0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.0.9)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12(@types/node@20.12.11)):
+  vite-plugin-doubleshot@0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.1.0)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12(@types/node@20.12.11)):
     dependencies:
-      '@doubleshot/builder': 0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.0.9)(postcss@8.4.38)(typescript@5.4.5)
+      '@doubleshot/builder': 0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.1.0)(postcss@8.4.38)(typescript@5.4.5)
       vite: 5.2.12(@types/node@20.12.11)
     transitivePeerDependencies:
       - '@swc/helpers'
