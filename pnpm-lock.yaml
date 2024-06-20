@@ -17,7 +17,7 @@ importers:
     devDependencies:
       '@lightwing/eslint-config':
         specifier: 1.0.59
-        version: 1.0.59(@vue/compiler-sfc@3.4.29)(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.0))
+        version: 1.0.59(@vue/compiler-sfc@3.4.29)(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.3))
       '@vitejs/plugin-vue':
         specifier: 5.0.5
         version: 5.0.5(vite@5.3.1(@types/node@20.12.11))(vue@3.4.29(typescript@5.4.5))
@@ -37,8 +37,8 @@ importers:
         specifier: 9.5.0
         version: 9.5.0
       happy-dom:
-        specifier: 14.12.0
-        version: 14.12.0
+        specifier: 14.12.3
+        version: 14.12.3
       lint-staged:
         specifier: 15.2.7
         version: 15.2.7
@@ -65,7 +65,7 @@ importers:
         version: 0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.0.2)(postcss@8.4.38)(typescript@5.4.5)(vite@5.3.1(@types/node@20.12.11))
       vitest:
         specifier: 1.6.0
-        version: 1.6.0(@types/node@20.12.11)(happy-dom@14.12.0)
+        version: 1.6.0(@types/node@20.12.11)(happy-dom@14.12.3)
       vue-tsc:
         specifier: 2.0.21
         version: 2.0.21(typescript@5.4.5)
@@ -2154,8 +2154,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  happy-dom@14.12.0:
-    resolution: {integrity: sha512-dHcnlGFY2o2CdxfuYpqwSrBrpj/Kuzv4u4f3TU5yHW1GL24dKij4pv1BRjXnXc3uWo8qsCbToF9weaDsm/He8A==}
+  happy-dom@14.12.3:
+    resolution: {integrity: sha512-vsYlEs3E9gLwA1Hp+w3qzu+RUDFf4VTT8cyKqVICoZ2k7WM++Qyd2LwzyTi5bqMJFiIC/vNpTDYuxdreENRK/g==}
     engines: {node: '>=16.0.0'}
 
   has-flag@3.0.0:
@@ -3597,7 +3597,7 @@ snapshots:
 
   7zip-bin@5.2.0: {}
 
-  '@antfu/eslint-config@2.21.1(@eslint-react/eslint-plugin@1.5.15(eslint@9.5.0)(typescript@5.4.5))(@unocss/eslint-plugin@0.61.0(eslint@9.5.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.29)(eslint-plugin-format@0.1.1(eslint@9.5.0))(eslint-plugin-react-hooks@4.6.2(eslint@9.5.0))(eslint-plugin-react-refresh@0.4.7(eslint@9.5.0))(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.0))':
+  '@antfu/eslint-config@2.21.1(@eslint-react/eslint-plugin@1.5.15(eslint@9.5.0)(typescript@5.4.5))(@unocss/eslint-plugin@0.61.0(eslint@9.5.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.29)(eslint-plugin-format@0.1.1(eslint@9.5.0))(eslint-plugin-react-hooks@4.6.2(eslint@9.5.0))(eslint-plugin-react-refresh@0.4.7(eslint@9.5.0))(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.3))':
     dependencies:
       '@antfu/install-pkg': 0.3.3
       '@clack/prompts': 0.7.0
@@ -3622,7 +3622,7 @@ snapshots:
       eslint-plugin-toml: 0.11.0(eslint@9.5.0)
       eslint-plugin-unicorn: 53.0.0(eslint@9.5.0)
       eslint-plugin-unused-imports: 3.2.0(@typescript-eslint/eslint-plugin@7.13.0(@typescript-eslint/parser@7.13.0(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)
-      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@7.13.0(@typescript-eslint/parser@7.13.0(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.0))
+      eslint-plugin-vitest: 0.5.4(@typescript-eslint/eslint-plugin@7.13.0(@typescript-eslint/parser@7.13.0(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.3))
       eslint-plugin-vue: 9.26.0(eslint@9.5.0)
       eslint-plugin-yml: 1.14.0(eslint@9.5.0)
       eslint-processor-vue-blocks: 0.1.2(@vue/compiler-sfc@3.4.29)(eslint@9.5.0)
@@ -4137,9 +4137,9 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.0.8
 
-  '@lightwing/eslint-config@1.0.59(@vue/compiler-sfc@3.4.29)(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.0))':
+  '@lightwing/eslint-config@1.0.59(@vue/compiler-sfc@3.4.29)(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.3))':
     dependencies:
-      '@antfu/eslint-config': 2.21.1(@eslint-react/eslint-plugin@1.5.15(eslint@9.5.0)(typescript@5.4.5))(@unocss/eslint-plugin@0.61.0(eslint@9.5.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.29)(eslint-plugin-format@0.1.1(eslint@9.5.0))(eslint-plugin-react-hooks@4.6.2(eslint@9.5.0))(eslint-plugin-react-refresh@0.4.7(eslint@9.5.0))(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.0))
+      '@antfu/eslint-config': 2.21.1(@eslint-react/eslint-plugin@1.5.15(eslint@9.5.0)(typescript@5.4.5))(@unocss/eslint-plugin@0.61.0(eslint@9.5.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.29)(eslint-plugin-format@0.1.1(eslint@9.5.0))(eslint-plugin-react-hooks@4.6.2(eslint@9.5.0))(eslint-plugin-react-refresh@0.4.7(eslint@9.5.0))(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.3))
       '@eslint-react/eslint-plugin': 1.5.15(eslint@9.5.0)(typescript@5.4.5)
       '@unocss/eslint-plugin': 0.61.0(eslint@9.5.0)(typescript@5.4.5)
       eslint: 9.5.0
@@ -5660,13 +5660,13 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 7.13.0(@typescript-eslint/parser@7.13.0(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5)
 
-  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@7.13.0(@typescript-eslint/parser@7.13.0(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.0)):
+  eslint-plugin-vitest@0.5.4(@typescript-eslint/eslint-plugin@7.13.0(@typescript-eslint/parser@7.13.0(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.3)):
     dependencies:
       '@typescript-eslint/utils': 7.12.0(eslint@9.5.0)(typescript@5.4.5)
       eslint: 9.5.0
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 7.13.0(@typescript-eslint/parser@7.13.0(eslint@9.5.0)(typescript@5.4.5))(eslint@9.5.0)(typescript@5.4.5)
-      vitest: 1.6.0(@types/node@20.12.11)(happy-dom@14.12.0)
+      vitest: 1.6.0(@types/node@20.12.11)(happy-dom@14.12.3)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -6044,7 +6044,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  happy-dom@14.12.0:
+  happy-dom@14.12.3:
     dependencies:
       entities: 4.5.0
       webidl-conversions: 7.0.0
@@ -7270,7 +7270,7 @@ snapshots:
       '@types/node': 20.12.11
       fsevents: 2.3.3
 
-  vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.0):
+  vitest@1.6.0(@types/node@20.12.11)(happy-dom@14.12.3):
     dependencies:
       '@vitest/expect': 1.6.0
       '@vitest/runner': 1.6.0
@@ -7294,7 +7294,7 @@ snapshots:
       why-is-node-running: 2.2.2
     optionalDependencies:
       '@types/node': 20.12.11
-      happy-dom: 14.12.0
+      happy-dom: 14.12.3
     transitivePeerDependencies:
       - less
       - lightningcss
