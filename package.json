@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "einf": "^1.5.3",
-    "vue": "^3.4.27"
+    "vue": "^3.4.31"
   },
   "devDependencies": {
     "@lightwing/eslint-config": "1.0.60",
@@ -37,7 +37,7 @@
     "tslib": "2.6.3",
     "typescript": "5.5.3",
     "vite": "5.3.3",
-    "vite-plugin-doubleshot": "0.0.14",
+    "vite-plugin-doubleshot": "0.0.15",
     "vitest": "1.6.0",
     "vue-tsc": "2.0.26"
   },

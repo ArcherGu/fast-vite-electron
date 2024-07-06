@@ -12,7 +12,7 @@ importers:
         specifier: ^1.5.3
         version: 1.5.3(electron@31.1.0)
       vue:
-        specifier: ^3.4.27
+        specifier: ^3.4.31
         version: 3.4.31(typescript@5.5.3)
     devDependencies:
       '@lightwing/eslint-config':
@@ -61,8 +61,8 @@ importers:
         specifier: 5.3.3
         version: 5.3.3(@types/node@20.12.11)
       vite-plugin-doubleshot:
-        specifier: 0.0.14
-        version: 0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.1.0)(postcss@8.4.39)(typescript@5.5.3)(vite@5.3.3(@types/node@20.12.11))
+        specifier: 0.0.15
+        version: 0.0.15(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.1.0)(postcss@8.4.39)(typescript@5.5.3)(vite@5.3.3(@types/node@20.12.11))
       vitest:
         specifier: 1.6.0
         version: 1.6.0(@types/node@20.12.11)(happy-dom@14.12.3)
@@ -3422,8 +3422,8 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
-  vite-plugin-doubleshot@0.0.14:
-    resolution: {integrity: sha512-7ldaBMuAaRqUOKFTFMle0GZJN333BFFYCJVxgnwvsJnpWUoQdN5TF+G7BtVFiX4x87vNFnkDN1qUbYCmHTs6xw==}
+  vite-plugin-doubleshot@0.0.15:
+    resolution: {integrity: sha512-AgW/FISQXTVq1mEEDUbyKLzyQiR58YdSK4Ji7CfwX0QR5LmrIO8vlCxNAXYTuM4GTIe+Gaeg/aNx5Agd/rIJ0A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
@@ -7277,7 +7277,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-doubleshot@0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.1.0)(postcss@8.4.39)(typescript@5.5.3)(vite@5.3.3(@types/node@20.12.11)):
+  vite-plugin-doubleshot@0.0.15(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.1.0)(postcss@8.4.39)(typescript@5.5.3)(vite@5.3.3(@types/node@20.12.11)):
     dependencies:
       '@doubleshot/builder': 0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.1.0)(postcss@8.4.39)(typescript@5.5.3)
       vite: 5.3.3(@types/node@20.12.11)
