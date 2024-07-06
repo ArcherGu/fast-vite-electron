@@ -37,7 +37,7 @@
     "tslib": "2.6.3",
     "typescript": "5.5.3",
     "vite": "5.3.3",
-    "vite-plugin-doubleshot": "0.0.15",
+    "vite-plugin-doubleshot": "0.0.16",
     "vitest": "1.6.0",
     "vue-tsc": "2.0.26"
   },
