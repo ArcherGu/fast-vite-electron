@@ -20,7 +20,7 @@ importers:
         version: 1.0.70(@typescript-eslint/utils@8.0.1(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(@vue/compiler-sfc@3.4.38)(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@20.12.11)(happy-dom@14.12.3))
       '@vitejs/plugin-vue':
         specifier: 5.1.2
-        version: 5.1.2(vite@5.4.0(@types/node@20.12.11))(vue@3.4.38(typescript@5.5.4))
+        version: 5.1.2(vite@5.4.1(@types/node@20.12.11))(vue@3.4.38(typescript@5.5.4))
       '@vue/compiler-sfc':
         specifier: 3.4.38
         version: 3.4.38
@@ -58,11 +58,11 @@ importers:
         specifier: 5.5.4
         version: 5.5.4
       vite:
-        specifier: 5.4.0
-        version: 5.4.0(@types/node@20.12.11)
+        specifier: 5.4.1
+        version: 5.4.1(@types/node@20.12.11)
       vite-plugin-doubleshot:
         specifier: 0.0.16
-        version: 0.0.16(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.4.0)(postcss@8.4.40)(typescript@5.5.4)(vite@5.4.0(@types/node@20.12.11))
+        version: 0.0.16(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.4.0)(postcss@8.4.41)(typescript@5.5.4)(vite@5.4.1(@types/node@20.12.11))
       vitest:
         specifier: 2.0.5
         version: 2.0.5(@types/node@20.12.11)(happy-dom@14.12.3)
@@ -2944,6 +2944,10 @@ packages:
     resolution: {integrity: sha512-YF2kKIUzAofPMpfH6hOi2cGnv/HrUlfucspc7pDyvv7kGdqXrfj8SCl/t8owkEgKEuu8ZcRjSOxFxVLqwChZ2Q==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.4.41:
+    resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -3514,8 +3518,8 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite@5.4.0:
-    resolution: {integrity: sha512-5xokfMX0PIiwCMCMb9ZJcMyh5wbBun0zUzKib+L65vAZ8GY9ePZMXxFrHbr/Kyll2+LSCY7xtERPpxkBDKngwg==}
+  vite@5.4.1:
+    resolution: {integrity: sha512-1oE6yuNXssjrZdblI9AfBbHCC41nnyoVoEZxQnID6yvQZAFBzxxkqoFLtHUMkYunL8hwOLEjgTuxpkRxvba3kA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -3796,7 +3800,7 @@ snapshots:
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
 
-  '@doubleshot/builder@0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.4.0)(postcss@8.4.40)(typescript@5.5.4)':
+  '@doubleshot/builder@0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.4.0)(postcss@8.4.41)(typescript@5.5.4)':
     dependencies:
       '@swc/core': 1.5.6
       bundle-require: 4.1.0(esbuild@0.18.20)
@@ -3806,7 +3810,7 @@ snapshots:
       esbuild: 0.18.20
       joycon: 3.1.1
       resolve-from: 5.0.0
-      tsup: 7.2.0(@swc/core@1.5.6)(postcss@8.4.40)(typescript@5.5.4)
+      tsup: 7.2.0(@swc/core@1.5.6)(postcss@8.4.41)(typescript@5.5.4)
       wait-on: 7.2.0
     optionalDependencies:
       electron: 31.4.0
@@ -4704,9 +4708,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@vitejs/plugin-vue@5.1.2(vite@5.4.0(@types/node@20.12.11))(vue@3.4.38(typescript@5.5.4))':
+  '@vitejs/plugin-vue@5.1.2(vite@5.4.1(@types/node@20.12.11))(vue@3.4.38(typescript@5.5.4))':
     dependencies:
-      vite: 5.4.0(@types/node@20.12.11)
+      vite: 5.4.1(@types/node@20.12.11)
       vue: 3.4.38(typescript@5.5.4)
 
   '@vitest/eslint-plugin@1.0.1(@typescript-eslint/utils@8.0.1(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4))(eslint@9.9.0(jiti@1.21.6))(typescript@5.5.4)(vitest@2.0.5(@types/node@20.12.11)(happy-dom@14.12.3))':
@@ -6868,12 +6872,12 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  postcss-load-config@4.0.2(postcss@8.4.40):
+  postcss-load-config@4.0.2(postcss@8.4.41):
     dependencies:
       lilconfig: 3.1.2
       yaml: 2.5.0
     optionalDependencies:
-      postcss: 8.4.40
+      postcss: 8.4.41
 
   postcss-selector-parser@6.0.16:
     dependencies:
@@ -6881,6 +6885,12 @@ snapshots:
       util-deprecate: 1.0.2
 
   postcss@8.4.40:
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.1
+      source-map-js: 1.2.0
+
+  postcss@8.4.41:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
@@ -7350,7 +7360,7 @@ snapshots:
 
   tslib@2.6.3: {}
 
-  tsup@7.2.0(@swc/core@1.5.6)(postcss@8.4.40)(typescript@5.5.4):
+  tsup@7.2.0(@swc/core@1.5.6)(postcss@8.4.41)(typescript@5.5.4):
     dependencies:
       bundle-require: 4.1.0(esbuild@0.18.20)
       cac: 6.7.14
@@ -7360,7 +7370,7 @@ snapshots:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss-load-config: 4.0.2(postcss@8.4.40)
+      postcss-load-config: 4.0.2(postcss@8.4.41)
       resolve-from: 5.0.0
       rollup: 3.29.4
       source-map: 0.8.0-beta.0
@@ -7368,7 +7378,7 @@ snapshots:
       tree-kill: 1.2.2
     optionalDependencies:
       '@swc/core': 1.5.6
-      postcss: 8.4.40
+      postcss: 8.4.41
       typescript: 5.5.4
     transitivePeerDependencies:
       - supports-color
@@ -7450,7 +7460,7 @@ snapshots:
       debug: 4.3.6
       pathe: 1.1.2
       tinyrainbow: 1.2.0
-      vite: 5.4.0(@types/node@20.12.11)
+      vite: 5.4.1(@types/node@20.12.11)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -7462,10 +7472,10 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-doubleshot@0.0.16(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.4.0)(postcss@8.4.40)(typescript@5.5.4)(vite@5.4.0(@types/node@20.12.11)):
+  vite-plugin-doubleshot@0.0.16(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.4.0)(postcss@8.4.41)(typescript@5.5.4)(vite@5.4.1(@types/node@20.12.11)):
     dependencies:
-      '@doubleshot/builder': 0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.4.0)(postcss@8.4.40)(typescript@5.5.4)
-      vite: 5.4.0(@types/node@20.12.11)
+      '@doubleshot/builder': 0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@31.4.0)(postcss@8.4.41)(typescript@5.5.4)
+      vite: 5.4.1(@types/node@20.12.11)
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -7476,10 +7486,10 @@ snapshots:
       - ts-node
       - typescript
 
-  vite@5.4.0(@types/node@20.12.11):
+  vite@5.4.1(@types/node@20.12.11):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.4.40
+      postcss: 8.4.41
       rollup: 4.17.2
     optionalDependencies:
       '@types/node': 20.12.11
@@ -7503,7 +7513,7 @@ snapshots:
       tinybench: 2.8.0
       tinypool: 1.0.0
       tinyrainbow: 1.2.0
-      vite: 5.4.0(@types/node@20.12.11)
+      vite: 5.4.1(@types/node@20.12.11)
       vite-node: 2.0.5(@types/node@20.12.11)
       why-is-node-running: 2.3.0
     optionalDependencies:
