@@ -10,7 +10,7 @@ importers:
     dependencies:
       einf:
         specifier: ^1.5.3
-        version: 1.5.3(electron@32.0.0)
+        version: 1.5.3(electron@32.0.1)
       vue:
         specifier: ^3.4.31
         version: 3.4.38(typescript@5.5.4)
@@ -28,8 +28,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       electron:
-        specifier: 32.0.0
-        version: 32.0.0
+        specifier: 32.0.1
+        version: 32.0.1
       electron-builder:
         specifier: 24.13.3
         version: 24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3))
@@ -62,7 +62,7 @@ importers:
         version: 5.4.2(@types/node@20.12.11)
       vite-plugin-doubleshot:
         specifier: 0.0.16
-        version: 0.0.16(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@32.0.0)(postcss@8.4.41)(typescript@5.5.4)(vite@5.4.2(@types/node@20.12.11))
+        version: 0.0.16(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@32.0.1)(postcss@8.4.41)(typescript@5.5.4)(vite@5.4.2(@types/node@20.12.11))
       vitest:
         specifier: 2.0.5
         version: 2.0.5(@types/node@20.12.11)(happy-dom@14.12.3)
@@ -1637,8 +1637,8 @@ packages:
   electron-to-chromium@1.4.765:
     resolution: {integrity: sha512-70APzI2AGyJgcWVSnfJCytP2Gejptk6cIm0t5uuUfwdKN63xBIZBzD0N5l/s0hWr8tj0w/p6UaPz+hLAm+Orjw==}
 
-  electron@32.0.0:
-    resolution: {integrity: sha512-rs+VkhztJd2LvRX7d3ikKH+EIHMW4vKM2l5qp7Dx/dLQAKKz3IFNKyYhYzczDnqO+/jUvx0ic0SQvqpv1/ZAsw==}
+  electron@32.0.1:
+    resolution: {integrity: sha512-5Hd5Jaf9niYVR2hZxoRd3gOrcxPOxQV1XPV5WaoSfT9jLJHFadhlKtuSDIk3U6rQZke+aC7GqPPAv55nWFCMsA==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -3777,7 +3777,7 @@ snapshots:
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
 
-  '@doubleshot/builder@0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@32.0.0)(postcss@8.4.41)(typescript@5.5.4)':
+  '@doubleshot/builder@0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@32.0.1)(postcss@8.4.41)(typescript@5.5.4)':
     dependencies:
       '@swc/core': 1.5.6
       bundle-require: 4.1.0(esbuild@0.18.20)
@@ -3790,7 +3790,7 @@ snapshots:
       tsup: 7.2.0(@swc/core@1.5.6)(postcss@8.4.41)(typescript@5.5.4)
       wait-on: 7.2.0
     optionalDependencies:
-      electron: 32.0.0
+      electron: 32.0.1
       electron-builder: 24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3))
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -5325,10 +5325,10 @@ snapshots:
       minimatch: 9.0.1
       semver: 7.6.3
 
-  einf@1.5.3(electron@32.0.0):
+  einf@1.5.3(electron@32.0.1):
     dependencies:
       colorette: 2.0.20
-      electron: 32.0.0
+      electron: 32.0.1
       reflect-metadata: 0.2.2
 
   ejs@3.1.10:
@@ -5376,7 +5376,7 @@ snapshots:
 
   electron-to-chromium@1.4.765: {}
 
-  electron@32.0.0:
+  electron@32.0.1:
     dependencies:
       '@electron/get': 2.0.3
       '@types/node': 20.12.11
@@ -7411,9 +7411,9 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-doubleshot@0.0.16(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@32.0.0)(postcss@8.4.41)(typescript@5.5.4)(vite@5.4.2(@types/node@20.12.11)):
+  vite-plugin-doubleshot@0.0.16(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@32.0.1)(postcss@8.4.41)(typescript@5.5.4)(vite@5.4.2(@types/node@20.12.11)):
     dependencies:
-      '@doubleshot/builder': 0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@32.0.0)(postcss@8.4.41)(typescript@5.5.4)
+      '@doubleshot/builder': 0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@32.0.1)(postcss@8.4.41)(typescript@5.5.4)
       vite: 5.4.2(@types/node@20.12.11)
     transitivePeerDependencies:
       - '@swc/helpers'
