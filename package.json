@@ -28,7 +28,7 @@
     "@vue/test-utils": "2.4.6",
     "electron": "32.1.2",
     "electron-builder": "25.0.5",
-    "eslint": "9.10.0",
+    "eslint": "9.11.0",
     "happy-dom": "15.7.4",
     "lint-staged": "15.2.10",
     "playwright": "1.47.2",
