@@ -27,7 +27,7 @@
     "@vue/compiler-sfc": "3.5.12",
     "@vue/test-utils": "2.4.6",
     "electron": "32.2.0",
-    "electron-builder": "25.1.7",
+    "electron-builder": "25.1.8",
     "eslint": "9.12.0",
     "happy-dom": "15.7.4",
     "lint-staged": "15.2.10",
