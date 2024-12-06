@@ -1,5 +1,5 @@
-import { beforeEach, expect, it, vi } from 'vitest'
 import { BrowserWindow } from 'electron'
+import { beforeEach, expect, it, vi } from 'vitest'
 import { restoreOrCreateWindow } from '../main.window'
 
 vi.mock('electron', () => {

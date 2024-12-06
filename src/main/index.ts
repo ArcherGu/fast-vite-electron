@@ -1,5 +1,5 @@
-import { app } from 'electron'
 import { createEinf } from 'einf'
+import { app } from 'electron'
 import { AppController } from './app.controller'
 import { createWindow } from './main.window'
 
