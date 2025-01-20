@@ -36,7 +36,7 @@
     "simple-git-hooks": "2.11.1",
     "tslib": "2.8.1",
     "typescript": "5.7.3",
-    "vite": "6.0.7",
+    "vite": "6.0.9",
     "vite-plugin-doubleshot": "0.0.17",
     "vitest": "3.0.2",
     "vue-tsc": "2.2.0"
