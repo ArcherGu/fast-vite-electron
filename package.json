@@ -39,7 +39,7 @@
     "vite": "6.1.1",
     "vite-plugin-doubleshot": "0.0.17",
     "vitest": "3.0.6",
-    "vue-tsc": "2.2.2"
+    "vue-tsc": "2.2.4"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
