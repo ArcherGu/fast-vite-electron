@@ -41,6 +41,14 @@
     "vitest": "3.0.8",
     "vue-tsc": "2.2.8"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "electron",
+      "esbuild",
+      "simple-git-hooks"
+    ]
+  },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
