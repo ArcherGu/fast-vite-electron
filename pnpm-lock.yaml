@@ -10,7 +10,7 @@ importers:
     dependencies:
       einf:
         specifier: ^1.5.3
-        version: 1.5.3(electron@35.0.1)
+        version: 1.5.3(electron@35.0.2)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.2)
@@ -28,8 +28,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       electron:
-        specifier: 35.0.1
-        version: 35.0.1
+        specifier: 35.0.2
+        version: 35.0.2
       electron-builder:
         specifier: 25.1.8
         version: 25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8))
@@ -62,7 +62,7 @@ importers:
         version: 6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0)
       vite-plugin-doubleshot:
         specifier: 0.0.18
-        version: 0.0.18(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.1)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)
+        version: 0.0.18(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.2)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)
       vitest:
         specifier: 3.0.8
         version: 3.0.8(@types/debug@4.1.12)(@types/node@22.13.9)(happy-dom@17.4.4)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0)
@@ -1002,9 +1002,6 @@ packages:
   '@types/node@22.13.9':
     resolution: {integrity: sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==}
 
-  '@types/node@22.7.4':
-    resolution: {integrity: sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==}
-
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
@@ -1823,8 +1820,8 @@ packages:
   electron-to-chromium@1.5.102:
     resolution: {integrity: sha512-eHhqaja8tE/FNpIiBrvBjFV/SSKpyWHLvxuR9dPTdo+3V9ppdLmFB7ZZQ98qNovcngPLYIz0oOBF9P0FfZef5Q==}
 
-  electron@35.0.1:
-    resolution: {integrity: sha512-iQonj6lnPhqfqha2KXx6LzV1dnu6UPTCWK+b7f9Zvg828umGemi22DKbcJ3/q+Opn7iUVTWyqp9z1JQqkIi6OA==}
+  electron@35.0.2:
+    resolution: {integrity: sha512-jo8S4GfBpVIBDGitUrv+Vo/I/ZEEs6IvWprG2KJlxayYIKpufulbQaxDt78cC/79FwFo8MA0JOIwx/b9r5NRag==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -3877,9 +3874,6 @@ packages:
   unconfig@7.0.0:
     resolution: {integrity: sha512-G5CJSoG6ZTxgzCJblEfgpdRK2tos9+UdD2WtecDUVfImzQ0hFjwpH5RVvGMhP4pRpC9ML7NrC4qBsBl0Ttj35A==}
 
-  undici-types@6.19.8:
-    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
-
   undici-types@6.20.0:
     resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
@@ -4250,7 +4244,7 @@ snapshots:
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
 
-  '@doubleshot/builder@0.0.14(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.1)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(yaml@2.7.0)':
+  '@doubleshot/builder@0.0.14(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.2)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(yaml@2.7.0)':
     dependencies:
       '@swc/core': 1.11.4
       bundle-require: 5.1.0(esbuild@0.25.0)
@@ -4263,7 +4257,7 @@ snapshots:
       tsup: 8.4.0(@swc/core@1.11.4)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(yaml@2.7.0)
       wait-on: 8.0.2
     optionalDependencies:
-      electron: 35.0.1
+      electron: 35.0.2
       electron-builder: 25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8))
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
@@ -5022,7 +5016,7 @@ snapshots:
 
   '@types/fs-extra@9.0.13':
     dependencies:
-      '@types/node': 22.7.4
+      '@types/node': 22.13.9
 
   '@types/glob@7.2.0':
     dependencies:
@@ -5049,15 +5043,11 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
-  '@types/node@22.7.4':
-    dependencies:
-      undici-types: 6.19.8
-
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/plist@3.0.5':
     dependencies:
-      '@types/node': 22.7.4
+      '@types/node': 22.13.9
       xmlbuilder: 15.1.1
     optional: true
 
@@ -6041,10 +6031,10 @@ snapshots:
       minimatch: 9.0.1
       semver: 7.6.3
 
-  einf@1.5.3(electron@35.0.1):
+  einf@1.5.3(electron@35.0.2):
     dependencies:
       colorette: 2.0.20
-      electron: 35.0.1
+      electron: 35.0.2
       reflect-metadata: 0.2.2
 
   ejs@3.1.10:
@@ -6104,7 +6094,7 @@ snapshots:
 
   electron-to-chromium@1.5.102: {}
 
-  electron@35.0.1:
+  electron@35.0.2:
     dependencies:
       '@electron/get': 2.0.3
       '@types/node': 22.13.9
@@ -8539,8 +8529,6 @@ snapshots:
       defu: 6.1.4
       jiti: 2.4.2
 
-  undici-types@6.19.8: {}
-
   undici-types@6.20.0: {}
 
   unicorn-magic@0.1.0: {}
@@ -8623,9 +8611,9 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-doubleshot@0.0.18(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.1)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0):
+  vite-plugin-doubleshot@0.0.18(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.2)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0):
     dependencies:
-      '@doubleshot/builder': 0.0.14(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.1)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(yaml@2.7.0)
+      '@doubleshot/builder': 0.0.14(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.2)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(yaml@2.7.0)
       vite: 6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
