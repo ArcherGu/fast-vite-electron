@@ -22,7 +22,7 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "1.0.115",
+    "@lightwing/eslint-config": "1.0.116",
     "@vitejs/plugin-vue": "5.2.4",
     "@vue/compiler-sfc": "3.5.14",
     "@vue/test-utils": "2.4.6",
