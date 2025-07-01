@@ -39,7 +39,7 @@
     "vite": "7.0.0",
     "vite-plugin-doubleshot": "0.0.18",
     "vitest": "3.2.4",
-    "vue-tsc": "2.2.10"
+    "vue-tsc": "3.0.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
