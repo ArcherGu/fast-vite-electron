@@ -30,7 +30,7 @@
     "electron-builder": "26.0.12",
     "eslint": "9.32.0",
     "happy-dom": "18.0.1",
-    "lint-staged": "16.1.2",
+    "lint-staged": "16.1.4",
     "playwright": "1.54.2",
     "rimraf": "6.0.1",
     "simple-git-hooks": "2.13.1",
