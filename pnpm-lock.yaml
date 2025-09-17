@@ -10,7 +10,7 @@ importers:
     dependencies:
       einf:
         specifier: ^1.5.3
-        version: 1.5.3(electron@38.1.1)
+        version: 1.5.3(electron@38.1.2)
       vue:
         specifier: ^3.5.18
         version: 3.5.21(typescript@5.9.2)
@@ -28,8 +28,8 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       electron:
-        specifier: 38.1.1
-        version: 38.1.1
+        specifier: 38.1.2
+        version: 38.1.2
       electron-builder:
         specifier: 26.0.12
         version: 26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12))
@@ -62,7 +62,7 @@ importers:
         version: 7.1.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.1)
       vite-plugin-doubleshot:
         specifier: 0.0.19
-        version: 0.0.19(@swc/core@1.11.4)(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@38.1.1)(esbuild@0.25.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.2)(vite@7.1.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.1))(yaml@2.8.1)
+        version: 0.0.19(@swc/core@1.11.4)(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@38.1.2)(esbuild@0.25.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.2)(vite@7.1.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.1))(yaml@2.8.1)
       vitest:
         specifier: 3.2.4
         version: 3.2.4(@types/debug@4.1.12)(@types/node@22.13.9)(happy-dom@18.0.1)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.1)
@@ -1830,8 +1830,8 @@ packages:
   electron-to-chromium@1.5.190:
     resolution: {integrity: sha512-k4McmnB2091YIsdCgkS0fMVMPOJgxl93ltFzaryXqwip1AaxeDqKCGLxkXODDA5Ab/D+tV5EL5+aTx76RvLRxw==}
 
-  electron@38.1.1:
-    resolution: {integrity: sha512-LTFGxXpbIdU07AwSHLoVYVLbZHDiauT1KgTX1fgCPgPDoQIAGnYft/ABx6PkA+9ulQfBEEqg0mYTWaoReHG8Ag==}
+  electron@38.1.2:
+    resolution: {integrity: sha512-WXUcN3W8h8NTTZViA3KNX0rV2YBU0X0mEUM3ubupXTDY4QtIN7tmiqYVOKSKpR2LckTmBWGuEeY4D6xVoffwKQ==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -4211,7 +4211,7 @@ snapshots:
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
 
-  '@doubleshot/builder@0.0.15(@swc/core@1.11.4)(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@38.1.1)(esbuild@0.25.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.2)(yaml@2.8.1)':
+  '@doubleshot/builder@0.0.15(@swc/core@1.11.4)(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@38.1.2)(esbuild@0.25.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.2)(yaml@2.8.1)':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.25.0)
       cac: 6.7.14
@@ -4222,7 +4222,7 @@ snapshots:
       tsup: 8.5.0(@swc/core@1.11.4)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.2)(yaml@2.8.1)
       wait-on: 8.0.4
     optionalDependencies:
-      electron: 38.1.1
+      electron: 38.1.2
       electron-builder: 26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12))
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
@@ -6052,10 +6052,10 @@ snapshots:
       minimatch: 9.0.1
       semver: 7.6.3
 
-  einf@1.5.3(electron@38.1.1):
+  einf@1.5.3(electron@38.1.2):
     dependencies:
       colorette: 2.0.20
-      electron: 38.1.1
+      electron: 38.1.2
       reflect-metadata: 0.2.2
 
   ejs@3.1.10:
@@ -6116,7 +6116,7 @@ snapshots:
 
   electron-to-chromium@1.5.190: {}
 
-  electron@38.1.1:
+  electron@38.1.2:
     dependencies:
       '@electron/get': 2.0.3
       '@types/node': 22.13.9
@@ -8584,9 +8584,9 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-doubleshot@0.0.19(@swc/core@1.11.4)(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@38.1.1)(esbuild@0.25.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.2)(vite@7.1.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.1))(yaml@2.8.1):
+  vite-plugin-doubleshot@0.0.19(@swc/core@1.11.4)(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@38.1.2)(esbuild@0.25.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.2)(vite@7.1.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.1))(yaml@2.8.1):
     dependencies:
-      '@doubleshot/builder': 0.0.15(@swc/core@1.11.4)(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@38.1.1)(esbuild@0.25.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.2)(yaml@2.8.1)
+      '@doubleshot/builder': 0.0.15(@swc/core@1.11.4)(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@38.1.2)(esbuild@0.25.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.2)(yaml@2.8.1)
       vite: 7.1.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.1)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
