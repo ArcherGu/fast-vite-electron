@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" class="logo">
-  <HelloWorld title="Vite + Electron & Esbuild" />
+  <HelloWorld title="Vite + Electron & esbuild" />
 </template>
 
 <style>
@@ -16,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
   color: #2c3e50;
   margin-top: 60px;
 }
+
 .logo {
   width: 400px;
   border-radius: 1rem;

@@ -1,10 +1,4 @@
-import { contextBridge, ipcRenderer } from 'electron'
+import { contextBridge } from 'electron'
+import electron from './electron'
 
-contextBridge.exposeInMainWorld(
-  'ipcRenderer',
-  {
-    invoke: ipcRenderer.invoke.bind(ipcRenderer),
-    on: ipcRenderer.on.bind(ipcRenderer),
-    removeAllListeners: ipcRenderer.removeAllListeners.bind(ipcRenderer),
-  },
-)
+contextBridge.exposeInMainWorld('electron', electron)

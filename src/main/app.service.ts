@@ -2,7 +2,7 @@ import { Injectable } from 'einf'
 
 @Injectable()
 export class AppService {
-  public getDelayTime(): number {
-    return 2
+  public getTime(): number {
+    return new Date().getTime()
   }
 }

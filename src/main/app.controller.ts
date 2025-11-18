@@ -9,15 +9,13 @@ export class AppController {
 
   @IpcSend('reply-msg')
   public replyMsg(msg: string) {
-    return `${this.appService.getDelayTime()} seconds later, the main process replies to your message: ${msg}`
+    return msg
   }
 
-  @IpcHandle('send-msg')
-  public async handleSendMsg(msg: string): Promise<string> {
-    setTimeout(() => {
-      this.replyMsg(msg)
-    }, this.appService.getDelayTime() * 1000)
+  @IpcHandle('msg')
+  public handleSendMsg(msg: string) {
+    this.replyMsg('this is msg from webContents.send')
 
-    return `The main process received your message: ${msg}`
+    return `The main process received your message: ${msg} at time: ${this.appService.getTime()}`
   }
 }

@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { sendMsgToMainProcess } from '@render/api'
-import { useIpc } from '@render/plugins/ipc'
 import { ref } from 'vue'
 
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     default: 'Vite + Electron & Esbuild',
   },
 })
+
+const { sendMsg: sendMsgToMainProcess, onReplyMsg } = window.electron
 
 const log = ref('')
 const msg = ref('')
@@ -24,15 +24,13 @@ async function sendMsg() {
   }
 }
 
-const ipc = useIpc()
-
-ipc.on('reply-msg', (msg: string) => {
+onReplyMsg((msg: string) => {
   log.value += `[main]: ${msg}  \n`
 })
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <h1>{{ props.title }}</h1>
 
   <textarea v-model="log" cols="60" rows="10" disabled />
   <div style="margin-top: 20px">
