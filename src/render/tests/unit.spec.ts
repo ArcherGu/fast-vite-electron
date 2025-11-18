@@ -4,12 +4,7 @@ import HelloWorld from '../components/HelloWorld.vue'
 
 vi.mock('../api', () => ({
   sendMsgToMainProcess: vi.fn(),
-}))
-
-vi.mock('../plugins/ipc', () => ({
-  useIpc: vi.fn(() => ({
-    on: vi.fn(),
-  })),
+  onReplyMsg: vi.fn(),
 }))
 
 /**

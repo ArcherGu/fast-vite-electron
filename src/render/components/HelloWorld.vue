@@ -1,7 +1,6 @@
 <script setup lang="ts">
+import { onReplyMsg, sendMsgToMainProcess } from '@render/api'
 import { ref } from 'vue'
-
-const { sendMsg: sendMsgToMainProcess, onReplyMsg } = window.electron
 
 const log = ref('')
 const msg = ref('')
