@@ -14,8 +14,7 @@
     "test:render": "vitest run -r src/render --passWithNoTests",
     "test:main": "vitest run -r src/main --passWithNoTests",
     "test:e2e": "vitest run",
-    "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "postinstall": "npx simple-git-hooks && electron-builder install-app-deps"
   },
   "dependencies": {
     "einf": "^1.5.3",

@@ -5,8 +5,8 @@ const isDev = !app.isPackaged
 
 export async function createWindow() {
   const win = new BrowserWindow({
-    width: 1024,
-    height: 768,
+    width: 1280,
+    height: 1024,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
@@ -21,12 +21,6 @@ export async function createWindow() {
     : `file://${join(app.getAppPath(), 'dist/render/index.html')}`
 
   win.loadURL(URL)
-
-  if (isDev)
-    win.webContents.openDevTools()
-
-  else
-    win.removeMenu()
 
   win.on('closed', () => {
     win.destroy()
