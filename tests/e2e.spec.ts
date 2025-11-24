@@ -17,22 +17,22 @@ afterAll(async () => {
 
 it('main window state', async () => {
   const windowState: { isVisible: boolean, isDevToolsOpened: boolean, isCrashed: boolean }
-        = await electronApp.evaluate(({ BrowserWindow }) => {
-          const mainWindow = BrowserWindow.getAllWindows()[0]
+    = await electronApp.evaluate(({ BrowserWindow }) => {
+      const mainWindow = BrowserWindow.getAllWindows()[0]
 
-          const getState = () => ({
-            isVisible: mainWindow.isVisible(),
-            isDevToolsOpened: mainWindow.webContents.isDevToolsOpened(),
-            isCrashed: mainWindow.webContents.isCrashed(),
-          })
+      const getState = () => ({
+        isVisible: mainWindow.isVisible(),
+        isDevToolsOpened: mainWindow.webContents.isDevToolsOpened(),
+        isCrashed: mainWindow.webContents.isCrashed(),
+      })
 
-          return new Promise((resolve) => {
-            if (mainWindow.isVisible())
-              resolve(getState())
-            else
-              mainWindow.once('ready-to-show', () => setTimeout(() => resolve(getState()), 0))
-          })
-        })
+      return new Promise((resolve) => {
+        if (mainWindow.isVisible())
+          resolve(getState())
+        else
+          mainWindow.once('ready-to-show', () => setTimeout(() => resolve(getState()), 0))
+      })
+    })
 
   expect(windowState.isCrashed, 'App was crashed').toBeFalsy()
   expect(windowState.isVisible, 'Main window was not visible').toBeTruthy()
