@@ -28,7 +28,7 @@
     "electron": "40.1.0",
     "electron-builder": "26.7.0",
     "eslint": "9.39.2",
-    "happy-dom": "20.4.0",
+    "happy-dom": "20.5.0",
     "lint-staged": "16.2.7",
     "playwright": "1.58.1",
     "rimraf": "6.1.2",
