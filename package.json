@@ -18,13 +18,14 @@
   },
   "dependencies": {
     "einf": "^1.5.3",
-    "vue": "^3.5.25"
+    "vue": "^3.5.29"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "1.0.145",
+    "@lightwing/eslint-config": "1.0.147",
     "@vitejs/plugin-vue": "6.0.4",
     "@vue/compiler-sfc": "3.5.29",
     "@vue/test-utils": "2.4.6",
+    "baseline-browser-mapping": "^2.10.0",
     "electron": "40.6.1",
     "electron-builder": "26.8.1",
     "eslint": "10.0.2",
@@ -44,6 +45,7 @@
     "onlyBuiltDependencies": [
       "@swc/core",
       "electron",
+      "electron-winstaller",
       "esbuild",
       "simple-git-hooks"
     ]
