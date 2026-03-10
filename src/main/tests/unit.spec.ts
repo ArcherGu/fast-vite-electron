@@ -30,6 +30,8 @@ vi.mock('../bootstrap', () => ({
   destroy: vi.fn(),
 }))
 
+const INDEX_HTML_REGEX = /index\.html$/
+
 beforeEach(() => {
   vi.clearAllMocks()
 })
@@ -41,7 +43,7 @@ it('should create new window', async () => {
   await restoreOrCreateWindow()
   expect(mock.instances).toHaveLength(1)
   expect(mock.instances[0].loadURL).toHaveBeenCalledOnce()
-  expect(mock.instances[0].loadURL).toHaveBeenCalledWith(expect.stringMatching(/index\.html$/))
+  expect(mock.instances[0].loadURL).toHaveBeenCalledWith(expect.stringMatching(INDEX_HTML_REGEX))
 })
 
 it('should restore existing window', async () => {
