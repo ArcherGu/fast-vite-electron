@@ -64,8 +64,8 @@ importers:
         specifier: 8.0.0
         version: 8.0.0(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2)
       vite-plugin-doubleshot:
-        specifier: 0.0.20
-        version: 0.0.20(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.2)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@5.9.3)(vite@8.0.0(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2))(yaml@2.8.2)
+        specifier: 0.0.21
+        version: 0.0.21(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.2)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@5.9.3)(vite@8.0.0(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2))(yaml@2.8.2)
       vitest:
         specifier: 4.1.0
         version: 4.1.0(@types/node@24.10.9)(happy-dom@20.8.4)(vite@8.0.0(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2))
@@ -222,8 +222,8 @@ packages:
     resolution: {integrity: sha512-0cp4PsWQ/9avqTVMCtZ+GirikIA36ikvjtHweU4/j8yLtgObI0+JUPhYFScgwlteveGB1rt3Cm8UhN04XayDig==}
     engines: {node: '>= 8.9.0'}
 
-  '@doubleshot/builder@0.0.16':
-    resolution: {integrity: sha512-VT7twD12JY4l70WwrakHGKWx8zvnIBrCfXyHqMT8+kOaCESCAlmQI5+ZxXeyGQ3C99B3RqMgBxsKZA2WHjn+Uw==}
+  '@doubleshot/builder@0.0.17':
+    resolution: {integrity: sha512-CcN4MpL4zjTLuH0VGig477MMnhpEgTAKSZqgewFfn53eja9r5Ahtw5TR2ujj5WTj4OXZIl4G1EIQF3tktzJSIQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -799,10 +799,6 @@ packages:
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
 
-  '@jridgewell/gen-mapping@0.3.5':
-    resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
-    engines: {node: '>=6.0.0'}
-
   '@jridgewell/remapping@2.3.5':
     resolution: {integrity: sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==}
 
@@ -810,15 +806,8 @@ packages:
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
     engines: {node: '>=6.0.0'}
 
-  '@jridgewell/set-array@1.2.1':
-    resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
-    engines: {node: '>=6.0.0'}
-
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
-
-  '@jridgewell/trace-mapping@0.3.25':
-    resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
@@ -1214,9 +1203,6 @@ packages:
   '@sindresorhus/is@4.6.0':
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
     engines: {node: '>=10'}
-
-  '@standard-schema/spec@1.0.0':
-    resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -1700,8 +1686,8 @@ packages:
     resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
     engines: {node: '>= 4.0.0'}
 
-  axios@1.13.2:
-    resolution: {integrity: sha512-VPk9ebNqPcy5lRGuSlKx752IlDatOjT9paPlm8A7yOuW2Fbvp4X3JznJtT4f0GzGLLiWE9W8onz51SqLYwzGaA==}
+  axios@1.13.6:
+    resolution: {integrity: sha512-ChTCHMouEe2kn713WHbQGcuYrr6fXTBiu460OTwWrWob16g1bXn4vtz07Ope7ewMozJAnEquLk5lWQWtBig9DQ==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1820,8 +1806,8 @@ packages:
   character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
 
-  check-package-exists@1.1.6:
-    resolution: {integrity: sha512-81B3K0T5VEa8KvvvtvPgVs1VRwtjH2mY6qjqdc6gWKLcXkTTHdBoAXTx7ZD+44CVx0he/jZvdgEWN8OL7NEAkQ==}
+  check-package-exists@1.2.2:
+    resolution: {integrity: sha512-DmoOz8PPtqOfoG4Ep9ujXF8Puj/GGZyNydGghb331dQamVqmuL0gS9CvKa0AQzqEukndAeD/5SIzH/PjqGx7GQ==}
     engines: {node: '>=14'}
 
   chokidar@4.0.3:
@@ -1930,10 +1916,6 @@ packages:
 
   config-chain@1.1.13:
     resolution: {integrity: sha512-qj+f8APARXHrM0hraqXYb2/bOVSV4PvJQlNZ/DVj0QrmNM2q2euizkeuVckQ57J+W0mRH6Hvi+k50M4Jul2VRQ==}
-
-  consola@3.4.0:
-    resolution: {integrity: sha512-EiPU8G6dQG0GFHNR8ljnZFki/8a+cQwEQ+7wpxdChl02Q8HXlwEZWD5lqAF8vC2sEC3Tehr8hy7vErz88LHyUA==}
-    engines: {node: ^14.18.0 || >=16.10.0}
 
   consola@3.4.2:
     resolution: {integrity: sha512-5IKcdX0nnYavi6G7TtOhwkYzyjfJlatbjMjuLSfE2kYT5pMDOilZ4OvMhi637CcDICTmz3wARPoyhqyX1Y+XvA==}
@@ -2523,8 +2505,8 @@ packages:
   flatted@3.3.1:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
 
-  follow-redirects@1.15.6:
-    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
+  follow-redirects@1.15.11:
+    resolution: {integrity: sha512-deG2P0JfjrTxl50XGCDyfI97ZGVCxIpfKYmfyrQ54n5FO/0gfIES8C/Psl6kWVDolizcaaxZJnTS0QSMxvnsBQ==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -2779,8 +2761,9 @@ packages:
     resolution: {integrity: sha512-f4RqJKBUe5rQkJ2eJEJBXSticB3hGbN9j0yxxMQFqIW89Jp9WYFtzfTcRlstDKVUTRzSOTLKRfO9vIztenwtxA==}
     engines: {node: '>=18.20'}
 
-  is-core-module@2.13.1:
-    resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
+  is-core-module@2.16.1:
+    resolution: {integrity: sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==}
+    engines: {node: '>= 0.4'}
 
   is-extglob@2.1.1:
     resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
@@ -2847,8 +2830,8 @@ packages:
     resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
     hasBin: true
 
-  joi@18.0.1:
-    resolution: {integrity: sha512-IiQpRyypSnLisQf3PwuN2eIHAsAIGZIrLZkd4zdvIar2bDyhM91ubRjy8a3eYablXsh9BeI/c7dmPYHca5qtoA==}
+  joi@18.0.2:
+    resolution: {integrity: sha512-RuCOQMIt78LWnktPoeBL0GErkNaJPTBGcYuyaBvUOQSpcpcLfWrHPPihYdOGbV5pam9VTWbeoF7TsGiHugcjGA==}
     engines: {node: '>= 20'}
 
   joycon@3.1.1:
@@ -3655,8 +3638,9 @@ packages:
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
 
-  resolve@1.22.8:
-    resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
+  resolve@1.22.11:
+    resolution: {integrity: sha512-RfqAvLnMl313r7c9oclB1HhUEAezcpLjz95wFH4LVuhk9JF/r22qmVP9AMmOU4vMX7Q8pN8jwNg/CSpdFnMjTQ==}
+    engines: {node: '>= 0.4'}
     hasBin: true
 
   responselike@2.0.1:
@@ -4080,8 +4064,8 @@ packages:
     resolution: {integrity: sha512-veufcmxri4e3XSrT0xwfUR7kguIkaxBeosDg00yDWhk49wdwkSUrvvsm7nc75e1PUyvIeZj6nS8VQRYz2/S4Xg==}
     engines: {node: '>=0.6.0'}
 
-  vite-plugin-doubleshot@0.0.20:
-    resolution: {integrity: sha512-iKqYEnMPvrv9rq5CjYWUDmJGsxgB5yrSDmP9hWg8LZnGt8aZsdPkrRpajsJQFIoEpVPvhFrq1opBJmSv2KoaCA==}
+  vite-plugin-doubleshot@0.0.21:
+    resolution: {integrity: sha512-xHQAgEF+Iegfa9NoDFBzHu0Posu2az2pokmPkJV37IMw4TmTFVGtY91+21w7rYFEItmDx8RahoYZ8CmGBRU5+Q==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
@@ -4190,8 +4174,8 @@ packages:
       typescript:
         optional: true
 
-  wait-on@9.0.3:
-    resolution: {integrity: sha512-13zBnyYvFDW1rBvWiJ6Av3ymAaq8EDQuvxZnPIw3g04UqGi4TyoIJABmfJ6zrvKo9yeFQExNkOk7idQbDJcuKA==}
+  wait-on@9.0.4:
+    resolution: {integrity: sha512-k8qrgfwrPVJXTeFY8tl6BxVHiclK11u72DVKhpybHfUL/K6KM4bdyK9EhIVYGytB5MJe/3lq4Tf0hrjM+pvJZQ==}
     engines: {node: '>=20.0.0'}
     hasBin: true
 
@@ -4485,16 +4469,16 @@ snapshots:
       ajv: 6.14.0
       ajv-keywords: 3.5.2(ajv@6.14.0)
 
-  '@doubleshot/builder@0.0.16(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.2)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)':
+  '@doubleshot/builder@0.0.17(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.2)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.27.0)
-      cac: 6.7.14
-      check-package-exists: 1.1.6
+      cac: 7.0.0
+      check-package-exists: 1.2.2
       colorette: 2.0.20
       joycon: 3.1.1
       resolve-from: 5.0.0
       tsup: 8.5.1(@swc/core@1.11.4)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)
-      wait-on: 9.0.3
+      wait-on: 9.0.4
     optionalDependencies:
       electron: 41.0.2
       electron-builder: 26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1))
@@ -5020,12 +5004,6 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.5
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@jridgewell/gen-mapping@0.3.5':
-    dependencies:
-      '@jridgewell/set-array': 1.2.1
-      '@jridgewell/sourcemap-codec': 1.5.5
-      '@jridgewell/trace-mapping': 0.3.25
-
   '@jridgewell/remapping@2.3.5':
     dependencies:
       '@jridgewell/gen-mapping': 0.3.13
@@ -5033,14 +5011,7 @@ snapshots:
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
-  '@jridgewell/set-array@1.2.1': {}
-
   '@jridgewell/sourcemap-codec@1.5.5': {}
-
-  '@jridgewell/trace-mapping@0.3.25':
-    dependencies:
-      '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.5
 
   '@jridgewell/trace-mapping@0.3.31':
     dependencies:
@@ -5304,8 +5275,6 @@ snapshots:
   '@sindresorhus/base62@1.0.0': {}
 
   '@sindresorhus/is@4.6.0': {}
-
-  '@standard-schema/spec@1.0.0': {}
 
   '@standard-schema/spec@1.1.0': {}
 
@@ -5906,9 +5875,9 @@ snapshots:
 
   at-least-node@1.0.0: {}
 
-  axios@1.13.2:
+  axios@1.13.6:
     dependencies:
-      follow-redirects: 1.15.6
+      follow-redirects: 1.15.11
       form-data: 4.0.5
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -6057,11 +6026,11 @@ snapshots:
 
   character-entities@2.0.2: {}
 
-  check-package-exists@1.1.6:
+  check-package-exists@1.2.2:
     dependencies:
       '@esm2cjs/execa': 6.1.1-cjs.1
       global-dirs: 4.0.0
-      resolve: 1.22.8
+      resolve: 1.22.11
 
   chokidar@4.0.3:
     dependencies:
@@ -6149,8 +6118,6 @@ snapshots:
     dependencies:
       ini: 1.3.8
       proto-list: 1.2.4
-
-  consola@3.4.0: {}
 
   consola@3.4.2: {}
 
@@ -6967,7 +6934,7 @@ snapshots:
 
   flatted@3.3.1: {}
 
-  follow-redirects@1.15.6: {}
+  follow-redirects@1.15.11: {}
 
   foreground-child@3.1.1:
     dependencies:
@@ -7245,7 +7212,7 @@ snapshots:
     dependencies:
       builtin-modules: 5.0.0
 
-  is-core-module@2.13.1:
+  is-core-module@2.16.1:
     dependencies:
       hasown: 2.0.2
 
@@ -7304,7 +7271,7 @@ snapshots:
 
   jiti@2.6.1: {}
 
-  joi@18.0.1:
+  joi@18.0.2:
     dependencies:
       '@hapi/address': 5.1.1
       '@hapi/formula': 3.0.2
@@ -7312,7 +7279,7 @@ snapshots:
       '@hapi/pinpoint': 2.0.1
       '@hapi/tlds': 1.1.4
       '@hapi/topo': 6.0.2
-      '@standard-schema/spec': 1.0.0
+      '@standard-schema/spec': 1.1.0
 
   joycon@3.1.1: {}
 
@@ -8264,9 +8231,9 @@ snapshots:
 
   resolve-pkg-maps@1.0.0: {}
 
-  resolve@1.22.8:
+  resolve@1.22.11:
     dependencies:
-      is-core-module: 2.13.1
+      is-core-module: 2.16.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
@@ -8511,7 +8478,7 @@ snapshots:
 
   sucrase@3.35.0:
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/gen-mapping': 0.3.13
       commander: 4.1.1
       glob: 10.5.0
       lines-and-columns: 1.2.4
@@ -8627,7 +8594,7 @@ snapshots:
       bundle-require: 5.1.0(esbuild@0.27.0)
       cac: 6.7.14
       chokidar: 4.0.3
-      consola: 3.4.0
+      consola: 3.4.2
       debug: 4.4.3
       esbuild: 0.27.0
       fix-dts-default-cjs-exports: 1.0.1
@@ -8737,9 +8704,9 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite-plugin-doubleshot@0.0.20(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.2)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@5.9.3)(vite@8.0.0(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2))(yaml@2.8.2):
+  vite-plugin-doubleshot@0.0.21(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.2)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@5.9.3)(vite@8.0.0(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2))(yaml@2.8.2):
     dependencies:
-      '@doubleshot/builder': 0.0.16(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.2)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)
+      '@doubleshot/builder': 0.0.17(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.2)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)
       vite: 8.0.0(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
@@ -8831,11 +8798,11 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  wait-on@9.0.3:
+  wait-on@9.0.4:
     dependencies:
-      axios: 1.13.2
-      joi: 18.0.1
-      lodash: 4.17.21
+      axios: 1.13.6
+      joi: 18.0.2
+      lodash: 4.17.23
       minimist: 1.2.8
       rxjs: 7.8.2
     transitivePeerDependencies:
