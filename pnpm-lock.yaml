@@ -10,7 +10,7 @@ importers:
     dependencies:
       einf:
         specifier: ^1.5.3
-        version: 1.5.3(electron@41.0.4)
+        version: 1.7.0(electron@41.0.4)
       vue:
         specifier: ^3.5.30
         version: 3.5.31(typescript@6.0.2)
@@ -2021,8 +2021,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  einf@1.5.3:
-    resolution: {integrity: sha512-rdVjOr8zaj4A/XXFWvazFiN/9cW4FrIzzUHbfe2k8SoWVBvjcun0E+umkRk2yETnkaDOKOsqfbKgrTArXTS/Cg==}
+  einf@1.7.0:
+    resolution: {integrity: sha512-LlChatDAPcs6/DyplLcXmeDf4X3jEaixq8LU9LXSQO5fybjx9fhA6WUUJMuBidP1FtbdDr3RBjmvQoB6q5wb1Q==}
     engines: {node: '>=14'}
     peerDependencies:
       electron: '>=16.0.0'
@@ -6168,7 +6168,7 @@ snapshots:
       minimatch: 9.0.1
       semver: 7.7.4
 
-  einf@1.5.3(electron@41.0.4):
+  einf@1.7.0(electron@41.0.4):
     dependencies:
       colorette: 2.0.20
       electron: 41.0.4
