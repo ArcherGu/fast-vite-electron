@@ -25,13 +25,13 @@ This template is based on a small framework [einf](https://github.com/ArcherGu/e
 - ⚡ Rendering process is powered by [Vite](https://vite.io/).
   <br>
 
-- ⏩ Quick start and build, powered by [tsup](https://tsup.egoist.sh/) and [electron-builder](https://www.electron.build/) integrated in [@doubleshot/builder](https://github.com/Doubleshotjs/doubleshot/tree/main/packages/builder)
+- ⏩ Quick start and build, powered by [tsdown](https://tsdown.dev/) and [electron-builder](https://www.electron.build/) integrated in [@doubleshot/builder](https://github.com/Doubleshotjs/doubleshot/tree/main/packages/builder)
 
 ## Motivation
 
 In the past, I've been building desktop clients with [vue](https://v3.vuejs.org/) + [vue-cli-plugin-electron-builder](https://github.com/nklayman/vue-cli-plugin-electron-builder), and they work very well. But as the project volume grows, webpack-based build patterns become slower and slower.
 
-The advent of [vite](https://vitejs.dev/) and [esbuild](https://esbuild.github.io/) greatly improved the development experience and made me feel lightning fast ⚡.
+The advent of [vite](https://vitejs.dev/) and [tsdown](https://tsdown.dev/) greatly improved the development experience and kept the build pipeline lightning fast ⚡.
 
 It took me a little time to extract this template and thank you for using it.
 
