@@ -8,18 +8,18 @@
     ],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "baseUrl": ".",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "ignoreDeprecations": "6.0",
     "paths": {
       "@render/*": [
-        "src/render/*"
+        "./src/render/*"
       ],
       "@main/*": [
-        "src/main/*"
+        "./src/main/*"
       ],
       "@common/*": [
-        "src/common/*"
+        "./src/common/*"
       ]
     },
     "resolveJsonModule": true,

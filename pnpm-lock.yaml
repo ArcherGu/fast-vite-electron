@@ -9,10 +9,10 @@ importers:
   .:
     dependencies:
       einf:
-        specifier: ^1.5.3
+        specifier: ^1.7.0
         version: 1.7.0(electron@41.2.0)
       vue:
-        specifier: ^3.5.30
+        specifier: ^3.5.32
         version: 3.5.32(typescript@6.0.2)
     devDependencies:
       '@lightwing/eslint-config':
@@ -28,7 +28,7 @@ importers:
         specifier: 2.4.6
         version: 2.4.6
       baseline-browser-mapping:
-        specifier: ^2.10.0
+        specifier: ^2.10.18
         version: 2.10.18
       electron:
         specifier: 41.2.0
@@ -5423,8 +5423,8 @@ snapshots:
 
   '@typescript-eslint/project-service@8.56.1(typescript@6.0.2)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.56.1(typescript@6.0.2)
-      '@typescript-eslint/types': 8.56.1
+      '@typescript-eslint/tsconfig-utils': 8.58.1(typescript@6.0.2)
+      '@typescript-eslint/types': 8.58.1
       debug: 4.4.3
       typescript: 6.0.2
     transitivePeerDependencies:
