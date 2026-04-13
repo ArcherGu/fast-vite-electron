@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@lightwing/eslint-config": "1.0.154",
-    "@vitejs/plugin-vue": "6.0.5",
+    "@vitejs/plugin-vue": "6.0.6",
     "@vue/compiler-sfc": "3.5.32",
     "@vue/test-utils": "2.4.6",
     "baseline-browser-mapping": "^2.10.18",
