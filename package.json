@@ -38,7 +38,7 @@
     "typescript": "6.0.3",
     "vite": "8.0.9",
     "vite-plugin-doubleshot": "0.0.22",
-    "vitest": "4.1.4",
+    "vitest": "4.1.5",
     "vue-tsc": "3.2.7"
   },
   "pnpm": {
