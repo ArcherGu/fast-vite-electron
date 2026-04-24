@@ -24,7 +24,7 @@
     "@lightwing/eslint-config": "1.0.154",
     "@vitejs/plugin-vue": "6.0.6",
     "@vue/compiler-sfc": "3.5.33",
-    "@vue/test-utils": "2.4.6",
+    "@vue/test-utils": "2.4.8",
     "baseline-browser-mapping": "^2.10.18",
     "electron": "41.3.0",
     "electron-builder": "26.8.1",
