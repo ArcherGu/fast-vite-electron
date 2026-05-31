@@ -4,8 +4,12 @@ allowBuilds:
   esbuild: true
   simple-git-hooks: true
 
+minimumReleaseAgeExclude:
+  - '@vue/language-core@3.3.3'
+  - baseline-browser-mapping@2.10.33
+  - vue-tsc@3.3.3
+
 shellEmulator: true
 trustPolicy: no-downgrade
 trustPolicyExclude:
-  - semver@5.7.2
-  - semver@6.3.1
+  - semver
