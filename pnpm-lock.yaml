@@ -10,7 +10,7 @@ importers:
     dependencies:
       einf:
         specifier: ^1.7.0
-        version: 1.7.0(electron@42.3.2)
+        version: 1.7.0(electron@42.3.3)
       vue:
         specifier: ^3.5.35
         version: 3.5.35(typescript@6.0.3)
@@ -31,8 +31,8 @@ importers:
         specifier: ^2.10.33
         version: 2.10.33
       electron:
-        specifier: 42.3.2
-        version: 42.3.2
+        specifier: 42.3.3
+        version: 42.3.3
       electron-builder:
         specifier: 26.8.1
         version: 26.8.1(electron-builder-squirrel-windows@26.8.1)
@@ -65,7 +65,7 @@ importers:
         version: 8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0)
       vite-plugin-doubleshot:
         specifier: 0.0.23
-        version: 0.0.23(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.2)(esbuild@0.28.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.3(typescript@6.0.3))
+        version: 0.0.23(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.3)(esbuild@0.28.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.3(typescript@6.0.3))
       vitest:
         specifier: 4.1.8
         version: 4.1.8(@types/node@25.9.1)(happy-dom@20.9.0)(vite@8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0))
@@ -1717,8 +1717,8 @@ packages:
     resolution: {integrity: sha512-bO3y10YikuUwUuDUQRM4KfwNkKhnpVO7IPdbsrejwN9/AABJzzTQ4GeHwyzNSrVO+tEH3/Np255a3sVZpZDjvg==}
     engines: {node: '>=8.0.0'}
 
-  electron@42.3.2:
-    resolution: {integrity: sha512-R8qL6TMQ+u5r/l1mL6zWqqK3eQo6Bqi4ScmysgODcy+SNR76HQhvbZUEL/9GqNuF0fNFJxphz/bh/TC4jW8NbA==}
+  electron@42.3.3:
+    resolution: {integrity: sha512-0MwYp9wTb7TrtTalOYqeW+suqd9T/Znstr/nDLKqFGIjHdBZX339guo3mQqTPURRZ/UQmYM4uMpzKpI5wLptfQ==}
     engines: {node: '>= 22.12.0'}
     hasBin: true
 
@@ -4018,7 +4018,7 @@ snapshots:
       ajv: 6.15.0
       ajv-keywords: 3.5.2(ajv@6.15.0)
 
-  '@doubleshot/builder@0.0.22(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.2)(esbuild@0.28.0)(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))':
+  '@doubleshot/builder@0.0.22(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.3)(esbuild@0.28.0)(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.28.0)
       cac: 7.0.0
@@ -4029,7 +4029,7 @@ snapshots:
       tsdown: 0.22.1(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))
       wait-on: 9.0.10
     optionalDependencies:
-      electron: 42.3.2
+      electron: 42.3.3
       electron-builder: 26.8.1(electron-builder-squirrel-windows@26.8.1)
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
@@ -5538,10 +5538,10 @@ snapshots:
       minimatch: 9.0.9
       semver: 7.8.1
 
-  einf@1.7.0(electron@42.3.2):
+  einf@1.7.0(electron@42.3.3):
     dependencies:
       colorette: 2.0.20
-      electron: 42.3.2
+      electron: 42.3.3
       reflect-metadata: 0.2.2
 
   ejs@3.1.10:
@@ -5600,7 +5600,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  electron@42.3.2:
+  electron@42.3.3:
     dependencies:
       '@electron/get': 5.0.0
       '@types/node': 24.12.4
@@ -7759,9 +7759,9 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite-plugin-doubleshot@0.0.23(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.2)(esbuild@0.28.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.3(typescript@6.0.3)):
+  vite-plugin-doubleshot@0.0.23(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.3)(esbuild@0.28.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.3(typescript@6.0.3)):
     dependencies:
-      '@doubleshot/builder': 0.0.22(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.2)(esbuild@0.28.0)(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))
+      '@doubleshot/builder': 0.0.22(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.3)(esbuild@0.28.0)(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))
       vite: 8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
