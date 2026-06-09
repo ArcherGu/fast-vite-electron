@@ -8,6 +8,13 @@ const config = {
   },
   publish: null,
   npmRebuild: false,
+  ...(process.env.CI
+    ? {
+        linux: {
+          target: ['dir'],
+        },
+      }
+    : {}),
   mac: {
     identity: null,
     notarize: false,
