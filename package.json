@@ -24,7 +24,7 @@
     "@lightwing/eslint-config": "1.0.156",
     "@typescript/native": "npm:typescript@7.0.2",
     "@vitejs/plugin-vue": "6.0.8",
-    "@vue/compiler-sfc": "3.5.39",
+    "@vue/compiler-sfc": "3.5.40",
     "@vue/test-utils": "2.4.11",
     "baseline-browser-mapping": "^2.10.33",
     "electron": "43.1.1",
