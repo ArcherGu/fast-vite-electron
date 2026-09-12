@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "npm run test:main && npm run test:render",
-    "test:render": "vitest run -r src/render --passWithNoTests",
+    "test:render": "vitest run --config vitest.render.config.mts",
     "test:main": "vitest run -r src/main --passWithNoTests",
     "test:e2e": "vitest run",
     "postinstall": "npx simple-git-hooks && electron-builder install-app-deps"
@@ -21,7 +21,7 @@
     "vue": "^3.5.42"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "1.0.158",
+    "@lightwing/eslint-config": "1.0.160",
     "@typescript/native": "npm:typescript@7.0.2",
     "@vitejs/plugin-vue": "6.0.8",
     "@vue/compiler-sfc": "3.5.42",
@@ -39,7 +39,7 @@
     "typescript": "npm:@typescript/typescript6@6.0.2",
     "vite": "8.3.0",
     "vite-plugin-doubleshot": "0.0.26",
-    "vitest": "4.1.11",
+    "vitest": "5.0.0",
     "vue-tsc": "3.3.11"
   },
   "simple-git-hooks": {
