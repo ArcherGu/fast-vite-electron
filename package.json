@@ -29,7 +29,7 @@
     "baseline-browser-mapping": "^2.11.20",
     "electron": "44.4.3",
     "electron-builder": "26.15.3",
-    "eslint": "10.10.0",
+    "eslint": "10.11.0",
     "happy-dom": "20.14.5",
     "lint-staged": "17.5.1",
     "playwright": "1.63.0",
