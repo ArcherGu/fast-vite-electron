@@ -18,7 +18,8 @@
     {
       "description": "Keep security overrides within their intended major version",
       "matchDepTypes": [
-        "pnpm.overrides"
+        "pnpm.overrides",
+        "pnpm-workspace.overrides"
       ],
       "matchUpdateTypes": [
         "major"
@@ -28,7 +29,8 @@
     {
       "description": "Avoid the why-is-node-running release without provenance",
       "matchDepTypes": [
-        "pnpm.overrides"
+        "pnpm.overrides",
+        "pnpm-workspace.overrides"
       ],
       "matchPackageNames": [
         "why-is-node-running"
