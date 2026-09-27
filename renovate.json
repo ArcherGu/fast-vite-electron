@@ -24,6 +24,16 @@
         "major"
       ],
       "enabled": false
+    },
+    {
+      "description": "Avoid the why-is-node-running release without provenance",
+      "matchDepTypes": [
+        "pnpm.overrides"
+      ],
+      "matchPackageNames": [
+        "why-is-node-running"
+      ],
+      "allowedVersions": "!/^3\\.2\\.2$/"
     }
   ]
 }

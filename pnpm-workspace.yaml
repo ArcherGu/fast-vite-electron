@@ -14,6 +14,8 @@ minimumReleaseAgeExclude:
   - undici@7.29.0
 
 overrides:
+  # 3.2.2 has no provenance; retain the attested release without weakening trustPolicy.
+  vitest>why-is-node-running: 3.2.1
   esbuild: 0.28.2
 
 shellEmulator: true
