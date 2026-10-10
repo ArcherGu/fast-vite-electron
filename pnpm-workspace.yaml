@@ -15,7 +15,7 @@ minimumReleaseAgeExclude:
 
 overrides:
   # 3.2.2 has no provenance; retain the attested release without weakening trustPolicy.
-  vitest>why-is-node-running: 3.2.1
+  vitest>why-is-node-running: 3.2.3
   esbuild: 0.28.2
 
 shellEmulator: true
