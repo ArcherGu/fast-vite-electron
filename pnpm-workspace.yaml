@@ -5,15 +5,14 @@ allowBuilds:
   simple-git-hooks: true
 
 minimumReleaseAgeExclude:
-  - brace-expansion@1.1.18
-  - brace-expansion@2.1.4
-  - brace-expansion@5.0.9
   - esbuild@0.28.2
   - form-data@4.0.6
-  - undici@6.28.0
-  - undici@7.29.0
 
 overrides:
+  tinypool@<2.1.2: ^2.2.0
+  katex@<0.18.2: ^0.18.2
+  minimatch@>=9.0.0 <11.0.1: ^11.0.1
+  glob@>=9.0.0 <14.0.2: ^14.0.2
   # 3.2.2 has no provenance; retain the attested release without weakening trustPolicy.
   vitest>why-is-node-running: 3.2.3
   esbuild: 0.28.2
