@@ -17,8 +17,8 @@
     "postinstall": "npx simple-git-hooks && electron-builder install-app-deps"
   },
   "dependencies": {
-    "einf": "^1.7.0",
-    "vue": "^3.5.42"
+    "einf": "^1.7.3",
+    "vue": "^3.5.44"
   },
   "devDependencies": {
     "@lightwing/eslint-config": "1.0.160",
@@ -26,7 +26,7 @@
     "@vitejs/plugin-vue": "6.0.10",
     "@vue/compiler-sfc": "3.5.45",
     "@vue/test-utils": "2.5.1",
-    "baseline-browser-mapping": "^2.11.20",
+    "baseline-browser-mapping": "^2.11.34",
     "electron": "45.2.3",
     "electron-builder": "26.18.0",
     "eslint": "10.14.0",
