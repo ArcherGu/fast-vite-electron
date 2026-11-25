@@ -27,7 +27,7 @@
     "@vue/compiler-sfc": "3.5.46",
     "@vue/test-utils": "2.6.0",
     "baseline-browser-mapping": "^2.11.20",
-    "electron": "45.4.1",
+    "electron": "45.5.0",
     "electron-builder": "26.18.0",
     "eslint": "10.15.0",
     "happy-dom": "21.0.4",
